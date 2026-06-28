@@ -13,15 +13,6 @@
             margin: 50px 100px;
         }
 
-        a {
-            text-decoration: none;
-            font-family: "Space Grotesk", sans-serif;
-            color: rgba(0, 0, 0, 1);
-            font-size: 20px;
-            font-weight: 400;
-
-        }
-
         .container1 {
             line-height: 28px;
             display: flex;
@@ -29,6 +20,13 @@
             justify-content: space-between;
             align-items: center;
             text-decoration: none;
+        }
+
+        .left {
+            gap: 50px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
         }
 
         img.logo {
@@ -42,61 +40,71 @@
             gap: 35px;
         }
 
-        img {}
-
         h1 {
             color: #000000;
             font-family: "Space Grotesk", sans-serif;
-            font-size: 60px;
+            font-size: 70px;
             font-style: medium;
             font-weight: 500;
             text-align: left;
         }
 
         h2 {
-            color: #000000;
-            font-family: "Space Grotesk", sans-serif;
-            font-size: 20px;
             line-height: 28px;
-            font-style: regular;
-            font-weight: 400;
             text-align: left;
         }
 
-        .middle {
+        .container2 {
             display: flex;
-            justify-content: space-around;
             gap: 108px;
         }
 
         .text {
-            width: 531px;
+            text-decoration: none;
+            font-family: "Space Grotesk", sans-serif;
+            color: rgba(0, 0, 0, 1);
+            font-size: 20px;
+            font-style: regular;
+            font-weight: 400;
         }
     </style>
 </head>
 
 <body>
     <div class="container1">
-        <div class="left">
+        <div class="top">
             <a href="https://www.instagram.com/billieeilish" target="_blank"><img class="logo" src="images/logo.png"
                     width="50"></a>
         </div>
-        <div><a href="index.html">About us</a></div>
-        <div><a href="about.html">Services</a></div>
-        <div><a href="projects.html">Use Cases</a></div>
-        <div><a href="contact.html">Pricing</a></div>
-        <div><a href="contact.html">Blog</a></div>
+
+        <div class="top">
+
+            <div class="left">
+                <a class="text" href="index.html">About us</a>
+
+                <a class="text" href="about.html">Services</a>
+
+                <a class="text" href="projects.html">Use Cases</a>
+
+                <a class="text" href="contact.html">Pricing</a>
+                <a class="text" href="contact.html">Blog</a>
+                <button class="text" type="button" onclick="window.open('https://store.billieeilish.com/')">Request
+                    a
+                    quote</button>
+            </div>
+        </div>
     </div>
-    <div class="middle">
+    <div class="container2">
         <div class="content text">
             <h1> Navigating the digital landscape for success</h1>
-            <h2>Our digital marketing agency helps businesses grow and succeed online through a range of services
+            <h2 class="text">Our digital marketing agency helps businesses grow and succeed online through a range of
+                services
                 including
                 SEO, PPC, social media marketing, and content creation.</h2>
             <button>Book a consultation</button>
         </div>
         <div class="content">
-            <img src="images/Illustration.png" alt="Illustration" width="800">
+            <img src="images/Illustration.png" alt="Illustration" width="600">
         </div>
     </div>
 
