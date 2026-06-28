@@ -23,7 +23,7 @@
         }
 
         .left {
-            gap: 50px;
+            gap: 60px;
             display: flex;
             align-items: center;
             justify-content: space-between;
@@ -31,7 +31,7 @@
 
         img.logo {
             width: 219.54px;
-            height: 50px;
+            height: 56px;
             margin-right: 20px;
         }
 
@@ -41,70 +41,101 @@
         }
 
         h1 {
-            color: #000000;
+
             font-family: "Space Grotesk", sans-serif;
-            font-size: 70px;
+            font-size: 60px;
             font-style: medium;
             font-weight: 500;
             text-align: left;
+            width: 531px;
         }
 
-        h2 {
+        p {
             line-height: 28px;
             text-align: left;
+            width: 498px;
         }
 
         .container2 {
             display: flex;
             gap: 108px;
+            margin: 30px 0px;
         }
 
         .text {
             text-decoration: none;
             font-family: "Space Grotesk", sans-serif;
-            color: rgba(0, 0, 0, 1);
             font-size: 20px;
             font-style: regular;
             font-weight: 400;
+        }
+
+        .black {
+            color: rgb(0, 0, 0);
+        }
+
+        .white {
+            color: rgb(255, 255, 255);
+        }
+
+        .whitebutton {
+            background-color: rgb(255, 255, 255);
+            padding: 20px 32px;
+            border: 1px solid rgb(25, 26, 35);
+            border-radius: 12px;
+        }
+
+        .blackbutton {
+            background-color: rgb(25, 26, 35);
+            padding: 20px 32px;
+            border-radius: 14px;
+            margin: 30px 0px;
+        }
+
+        .illustration {
+            margin: 50px 30px;
         }
     </style>
 </head>
 
 <body>
     <div class="container1">
-        <div class="top">
-            <a href="https://www.instagram.com/billieeilish" target="_blank"><img class="logo" src="images/logo.png"
-                    width="50"></a>
+        <div>
+            <a href="https://www.instagram.com/billieeilish" target="_blank"><img class="logo"
+                    src="images/logo.png"></a>
         </div>
 
-        <div class="top">
+        <div>
 
             <div class="left">
-                <a class="text" href="index.html">About us</a>
+                <a class="black text" href="index.html">About us</a>
 
-                <a class="text" href="about.html">Services</a>
+                <a class="black text" href="about.html">Services</a>
 
-                <a class="text" href="projects.html">Use Cases</a>
+                <a class="black text" href="projects.html">Use Cases</a>
 
-                <a class="text" href="contact.html">Pricing</a>
-                <a class="text" href="contact.html">Blog</a>
-                <button class="text" type="button" onclick="window.open('https://store.billieeilish.com/')">Request
+                <a class="black text" href="contact.html">Pricing</a>
+                <a class="black text" href="contact.html">Blog</a>
+                <button class="black text whitebutton" type="button"
+                    onclick="window.open('https://store.billieeilish.com/')">Request
                     a
                     quote</button>
             </div>
         </div>
     </div>
     <div class="container2">
-        <div class="content text">
-            <h1> Navigating the digital landscape for success</h1>
-            <h2 class="text">Our digital marketing agency helps businesses grow and succeed online through a range of
+        <div class="content">
+            <h1 class="black"> Navigating the digital landscape for success</h1>
+            <p class="black text">Our digital marketing agency helps businesses grow and succeed online through
+                a range
+                of
                 services
                 including
-                SEO, PPC, social media marketing, and content creation.</h2>
-            <button>Book a consultation</button>
+                SEO, PPC, social media marketing, and content creation.</p>
+            <button class="white text blackbutton">Book a consultation</button>
         </div>
         <div class="content">
-            <img src="images/Illustration.png" alt="Illustration" width="600">
+            <img class="illustration" src="images/Illustration.png" alt="Illustration" width="600.46">
         </div>
     </div>
 
