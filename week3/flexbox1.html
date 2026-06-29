@@ -9,23 +9,30 @@
         @import url('https://fonts.googleapis.com/css2?family=Oxygen:wght@300;400;700&display=swap');
 
         body {
-            background-color: rgb(255, 17, 184);
+            background-color: rgb(246, 245, 239);
         }
 
         h3 {
             font-weight: bold;
             font-family: "Oxygen", sans-serif;
-            margin: bottom: 20px;
+            font-size: 21px;
+
         }
 
         p {
             font-weight: light;
             font-family: "Oxygen", sans-serif;
             font-size: 12px;
+            line-height: 18px;
+        }
+
+        h3,
+        p {
+            margin: 12px;
         }
 
         img {
-            border-radius: 5px;
+            border-radius: 7px;
         }
 
         .container {
@@ -33,20 +40,13 @@
             margin: 0 auto;
             display: flex;
             justify-content: center;
-            gap: 10px;
+            gap: 20px;
         }
 
         .project {
             background-color: white;
-            padding: 15px;
-            border-radius: 10px;
-            line-height: 1.5;
-        }
-
-        .images {
-            display: flex;
-            justify-content: center;
-            align-items: center;
+            padding: 17px;
+            border-radius: 13px;
         }
     </style>
 </head>
@@ -54,7 +54,7 @@
 <body>
     <div class="container">
         <div class="project">
-            <img src="images/custom-img-017-copyright.jpg" width="100%">
+            <img class="images" src="images/custom-img-017-copyright.jpg" width="100%">
             <h3>Residential projects</h3>
             <p>We build sustainable and modern homes for comfortable living.</p>
         </div>
