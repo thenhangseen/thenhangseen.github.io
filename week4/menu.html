@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise 1: Responsive Menu</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Oxygen:wght@300;400;700&display=swap');
+
+        .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1px 10px;
+            gap: 5%;
+        }
+
+        .container2 {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 60px;
+        }
+
+        .logo {
+            width: 150px;
+        }
+
+        .menu {
+            text-decoration: none;
+            justify-content: space-between;
+            font-weight: 700;
+            font-family: "Oxygen", sans-serif;
+            font-size: 13px;
+
+        }
+
+        .black {
+            color: #000;
+        }
+
+        .orange {
+            color: #f8612a;
+        }
+
+        .contact {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+        }
+
+        .icons {
+            margin-right: 10px;
+            width: 20px;
+        }
+
+        .button {
+            background-color: #f8612a;
+            color: #fff;
+            border: none;
+            border-radius: 7px;
+            font-size: 12px;
+            padding: 10px 13px;
+            cursor: pointer;
+        }
+
+        .phone {
+            display: flex;
+            align-items: center;
+        }
+
+        h3 {
+            text-decoration: none;
+            font-family: Arial, sans-serif;
+            font-size: 13px;
+            font-weight: regular;
+            text-decoration: none;
+            color: #000;
+        }
+
+        @media screen and (max-width: 1200px) {
+
+            .menu {
+                display: none;
+            }
+        }
+
+        @media screen and (max-width: 700px) {
+
+            .menu {
+                display: none;
+            }
+
+            .contact {
+                display: none;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+
+        <div class="main logo container2">
+            <a href="https://positivus-marketing-agency.webflow.io/#" target="_self"><img class="logo"
+                    src="images/elementralogo.webp"></a>
+        </div>
+        <div class="container2">
+            <a class="black menu" href="https://positivus-marketing-agency.webflow.io/#">Home</a>
+            <a class="orange menu" href="https://positivus-marketing-agency.webflow.io/#">Services</a>
+            <a class="black menu" href="https://positivus-marketing-agency.webflow.io/#">Work</a>
+            <a class="black menu" href="https://positivus-marketing-agency.webflow.io/#">Project Details</a>
+            <a class="black menu" href="https://positivus-marketing-agency.webflow.io/#">Contact</a>
+        </div>
+        <div class="contact container2">
+            <a href="https://www.instagram.com/billieeilish/" target="_blank">
+                <div class="phone">
+                    <img class="icons" src="images/phone-call.png">
+                    <h3>555-123-4567</h3>
+                </div>
+            </a>
+            <button class="button" type="button"
+                onclick="window.open('https://positivus-marketing-agency.webflow.io/#','_self')">Contact</button>
+
+        </div>
+
+    </div>
+</body>
+
+</html>

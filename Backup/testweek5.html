@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        body {
+            background-color: pink;
+        }
+
+        @media screen and (min-width: 1080px) {
+            body {
+                background-color: lightgreen;
+            }
+
+            /(overwrites the code above since min-width is 480px, so right now more than 480px so it overwrites the above code. But if left than 480px, then it will not be overwrited and will be gone, hence the background will become pink.)
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Resize the browser window to see the effect!</h1>
+
+    <p>The media query is applied if the media type is screen, and the viewport width is 480px or more.</p>
+
+</body>
+
+</html>
