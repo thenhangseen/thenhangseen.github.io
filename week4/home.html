@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise 2: Positivus</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap');
+
+        body {
+            display: block;
+            margin: 50px 100px;
+        }
+
+        .container1 {
+            line-height: 28px;
+            display: flex;
+            gap: 50px;
+            justify-content: space-between;
+            align-items: center;
+            text-decoration: none;
+        }
+
+        .left {
+            gap: 60px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        img.logo {
+            width: 219.54px;
+            height: 56px;
+            margin-right: 20px;
+        }
+
+        .heading {
+            justify-content: flex-start;
+            gap: 35px;
+        }
+
+        h1 {
+
+            font-family: "Space Grotesk", sans-serif;
+            font-size: 60px;
+            font-style: medium;
+            font-weight: 500;
+            text-align: left;
+            width: 70%;
+        }
+
+        p {
+            line-height: 28px;
+            text-align: left;
+            width: 60%;
+        }
+
+        .container2 {
+            display: flex;
+            gap: 10px;
+            margin: 30px 0px;
+        }
+
+        .text {
+            text-decoration: none;
+            font-family: "Space Grotesk", sans-serif;
+            font-size: 20px;
+            font-style: regular;
+            font-weight: 400;
+        }
+
+        .black {
+            color: rgb(0, 0, 0);
+        }
+
+        .white {
+            color: rgb(255, 255, 255);
+        }
+
+        .whitebutton {
+            background-color: rgb(255, 255, 255);
+            padding: 20px 32px;
+            border: 1px solid rgb(25, 26, 35);
+            border-radius: 12px;
+        }
+
+        .blackbutton {
+            background-color: rgb(25, 26, 35);
+            padding: 20px 32px;
+            border-radius: 14px;
+            margin: 30px 0px;
+        }
+
+        .illustration {
+            margin: 50px 30px;
+            min-width: 500px;
+        }
+
+        .companylogo {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 96px;
+        }
+
+        @media screen and (max-width: 1200px) {
+
+            .menu {
+                display: none;
+            }
+
+            .button {
+                display: none;
+            }
+
+            .hamburger {
+                display: block;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container1">
+        <div>
+            <a href="https://positivus-marketing-agency.webflow.io/#" target="_self"><img class="logo"
+                    src="images/logo.png"></a>
+        </div>
+
+        <div>
+
+            <div class="left">
+                <a class="black text" href="https://positivus-marketing-agency.webflow.io/#">About us</a>
+
+                <a class="black text" href="https://positivus-marketing-agency.webflow.io/#">Services</a>
+
+                <a class="black text" href="https://positivus-marketing-agency.webflow.io/#">Use Cases</a>
+
+                <a class="black text" href="https://positivus-marketing-agency.webflow.io/#">Pricing</a>
+                <a class="black text" href="https://positivus-marketing-agency.webflow.io/#">Blog</a>
+                <button class="black text whitebutton" type="button"
+                    onclick="window.open('https://positivus-marketing-agency.webflow.io/#','_self')">Request
+                    a
+                    quote</button>
+            </div>
+        </div>
+    </div>
+    <div class="container2">
+        <div class="content">
+            <h1 class="black"> Navigating the digital landscape for success</h1>
+            <p class="black text">Our digital marketing agency helps businesses grow and succeed online through
+                a range
+                of
+                services
+                including
+                SEO, PPC, social media marketing, and content creation.</p>
+            <button class="white text blackbutton" type="button"
+                onclick="window.open('https://positivus-marketing-agency.webflow.io/#','_self')">Book a
+                consultation</button>
+        </div>
+        <div class="content">
+            <img class="illustration" src="images/Illustration.png" alt="Illustration" width="100%">
+        </div>
+    </div>
+    <div class="companylogo">
+        <div><img src="images/amazon.jpg"></div>
+        <div><img src="images/dribbble.jpg"></div>
+        <div><img src="images/hubspot.jpg"></div>
+        <div><img src="images/notion.jpg"></div>
+        <div><img src="images/netflix.jpg"></div>
+        <div><img src="images/zoom.jpg"></div>
+    </div>
+
+
+
+</body>
+
+</html>
