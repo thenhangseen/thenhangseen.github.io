@@ -104,6 +104,65 @@
             gap: 96px;
         }
 
+        h3 {
+            font-family: "Space Grotesk", sans-serif;
+            font-size: 40px;
+            font-style: medium;
+            font-weight: 500;
+            text-align: left;
+            padding: 0px 6px;
+            background-color: #B9FF66;
+            border-radius: 7px;
+        }
+
+        .servicescontainer {
+            display: flex;
+            align-items: center;
+            gap: 40px;
+            margin-top: 140px;
+            margin-bottom: 1px;
+        }
+
+        .servicesp {
+            font-family: "Space Grotesk", sans-serif;
+            font-size: 18px;
+            font-style: regular;
+            font-weight: 400;
+        }
+
+        .column {
+            display: flex;
+            gap: 90px;
+            margin: 30px 0px;
+            background-color: #ff3030;
+            max-width: 600px;
+            max-height: 310px;
+        }
+
+        .incolumn {
+            min-height: 210px;
+            align-items: flex-start;
+            gap: 500px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            gap: 63px;
+            margin: 50px;
+            border-radius: 45px;
+        }
+
+        .learnmore {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            text-decoration: none;
+        }
+
+        .smallillus {
+            max-width: 210px;
+            align-items: center;
+        }
+
         @media screen and (max-width: 1200px) {
 
             .menu {
@@ -170,6 +229,36 @@
         <div><img src="images/notion.jpg"></div>
         <div><img src="images/netflix.jpg"></div>
         <div><img src="images/zoom.jpg"></div>
+    </div>
+    <div class="servicescontainer">
+        <div>
+            <h3> Services</h3>
+        </div>
+        <div>
+            <p class="servicesp">At our digital marketing agency, we offer a range of services to help businesses grow
+                and succeed online.
+                These services include:</p>
+        </div>
+    </div>
+    <p>helllooooo</p>
+    <div class="column">
+        <div class="incolumn">
+            <div>
+                <h4 class="black"> Search engine optimization</h4>
+            </div>
+
+            <div>
+                <a class="learnmore" href="https://www.instagram.com/billieeilish/" target="_blank">
+                    <div class="learnmore">
+                        <img class="icons" src="images/blackarrowicon.png" width="41px">
+                        <h4>Learn More</h4>
+                    </div>
+                </a>
+            </div>
+        </div>
+        <div class="incolumn">
+            <img class="smallillus" src="images/illus1.png" alt="Illustration">
+        </div>
     </div>
 
 
