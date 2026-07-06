@@ -56,10 +56,16 @@
             width: 60%;
         }
 
+        .content {
+            width: 60%;
+        }
+
         .container2 {
             display: flex;
+            width: 100%;
+            justify-content: space-between;
             gap: 10px;
-            margin: 30px 0px;
+            margin: 50px 0px;
         }
 
         .text {
@@ -93,8 +99,8 @@
         }
 
         .illustration {
-            margin: 50px 30px;
-            min-width: 500px;
+            align-items: center;
+            width: 100%;
         }
 
         .companylogo {
@@ -132,23 +138,24 @@
 
         .column {
             display: flex;
-            gap: 90px;
-            margin: 30px 0px;
-            background-color: #ff3030;
-            max-width: 600px;
+            gap: 30px;
+            background-color: #f3f3f3;
+            width: 100%;
             max-height: 310px;
+            border-radius: 45px;
+            border: 1px solid #000000;
+            justify-content: space-between;
+            padding: 30px;
         }
 
         .incolumn {
-            min-height: 210px;
+            max-height: 210px;
             align-items: flex-start;
-            gap: 500px;
             display: flex;
             flex-direction: column;
-            justify-content: center;
-            gap: 63px;
+            justify-content: space-between;
+            gap: 90px;
             margin: 50px;
-            border-radius: 45px;
         }
 
         .learnmore {
@@ -161,6 +168,38 @@
         .smallillus {
             max-width: 210px;
             align-items: center;
+        }
+
+        .title {
+            font-family: "Space Grotesk", sans-serif;
+            font-size: 30px;
+            font-style: medium;
+            font-weight: 500;
+            border-radius: 7px;
+            padding: 0px 7px;
+            background-color: #B9FF66;
+            font-display: swap;
+            display: inline-block;
+
+        }
+
+        .columncontainer {
+            display: flex;
+            gap: 30px;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .leftcolumn {
+            justify-content: space-between;
+            gap: 90px;
+            display: flex;
+            flex-direction: column;
+            max-width: 221px;
+            max-height: 210px;
+            align-items: flex-start;
+
+
         }
 
         @media screen and (max-width: 1200px) {
@@ -218,7 +257,7 @@
                 onclick="window.open('https://positivus-marketing-agency.webflow.io/#','_self')">Book a
                 consultation</button>
         </div>
-        <div class="content">
+        <div>
             <img class="illustration" src="images/Illustration.png" alt="Illustration" width="100%">
         </div>
     </div>
@@ -240,27 +279,48 @@
                 These services include:</p>
         </div>
     </div>
-    <p>helllooooo</p>
-    <div class="column">
-        <div class="incolumn">
-            <div>
-                <h4 class="black"> Search engine optimization</h4>
-            </div>
+    <div class="columncontainer">
+        <div class="column">
+            <div class="leftcolumn">
+                <div>
+                    <span class="black title"> Search engine </span>
+                    <span class="black title">optimization</span>
+                </div>
 
-            <div>
-                <a class="learnmore" href="https://www.instagram.com/billieeilish/" target="_blank">
-                    <div class="learnmore">
-                        <img class="icons" src="images/blackarrowicon.png" width="41px">
-                        <h4>Learn More</h4>
-                    </div>
-                </a>
+                <div>
+                    <a class="learnmore" href="https://www.instagram.com/billieeilish/" target="_blank">
+                        <div class="learnmore">
+                            <img class="icons" src="images/blackarrowicon.png" width="41px">
+                            <h4 class="black text">Learn More</h4>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="incolumn">
+                <img class="smallillus" src="images/illus1.png" alt="Illustration">
             </div>
         </div>
-        <div class="incolumn">
-            <img class="smallillus" src="images/illus1.png" alt="Illustration">
+        <div class="column">
+            <div class="leftcolumn">
+                <div>
+                    <span class="black title"> Search engine </span>
+                    <span class="black title">optimization</span>
+                </div>
+
+                <div>
+                    <a class="learnmore" href="https://www.instagram.com/billieeilish/" target="_blank">
+                        <div class="learnmore">
+                            <img class="icons" src="images/blackarrowicon.png" width="41px">
+                            <h4 class="black text">Learn More</h4>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="incolumn">
+                <img class="smallillus" src="images/illus1.png" alt="Illustration">
+            </div>
         </div>
     </div>
-
 
 
 </body>
