@@ -280,6 +280,10 @@
             display: none;
         }
 
+        .contenthide {
+            display: none;
+        }
+
 
         @media screen and (max-width: 1450px) {
 
@@ -332,19 +336,13 @@
                 display: none;
             }
 
-            .companylogoog {
-                display: none;
-            }
-
-            .companylogohide {
-                display: block;
-                justify-content: space-between;
-                align-items: center;
-                gap: 96px;
-            }
 
             .companylogo {
                 margin-top: 20px;
+                flex-wrap: wrap;
+                align-items: center;
+                gap: 40px 30px;
+                justify-content: center;
             }
 
             .hamburgermenu {
@@ -375,19 +373,91 @@
                 display: block;
                 width: 70%;
                 align-items: center;
+                justify-content: center;
             }
 
             .illustration {
                 display: none;
             }
 
-            .content,
+            .content {
+                display: none;
+            }
+
+            .contenthide {
+                display: block;
+                align-items: center;
+                justify-content: center;
+            }
+
+
             text,
             h1,
             h3,
             p {
                 text-align: center;
                 align-items: center;
+            }
+
+            .container2 {
+                align-items: center;
+                justify-content: center;
+            }
+
+            .servicescontainer {
+                display: block;
+                align-items: center;
+                gap: 40px;
+                margin-top: 140px;
+                margin-bottom: 1px;
+            }
+
+            p,
+            h1 {
+                width: 100%;
+            }
+
+            .blackbutton {
+                align-items: center;
+                justify-content: center;
+                display: block;
+            }
+
+            .bottomright {
+                display: none;
+            }
+
+            .bottomcontainer {
+                display: block;
+                justify-content: center space-between;
+                align-items: center;
+                border-radius: 45px;
+                background-color: #f3f3f3;
+                padding: 20px 50px;
+                gap: 0px;
+                margin-top: 120px;
+                max-width: 1235px;
+                min-height: 347px;
+            }
+
+            .bottomleft {
+                display: block;
+                flex-direction: column;
+                gap: 10px;
+                min-width: 500px;
+                justify-content: center;
+                align-items: center;
+            }
+
+            .h2 {
+                display: block;
+                align-items: center;
+                justify-content: center;
+            }
+
+            .center {
+                align-items: center;
+                justify-content: center;
             }
 
         }
@@ -418,7 +488,7 @@
                     quote</button>
 
             </div>
-            <div><a href="https://positivus-marketing-agency.webflow.io/#" target="_self"><img class=" hamburgermenu"
+            <div><a href="https://positivus-marketing-agency.webflow.io/#"><img class=" hamburgermenu"
                         src="images/menu.png"></a></div>
         </div>
     </div>
@@ -439,26 +509,27 @@
         <div>
             <img class="illustration" src="images/Illustration.png" alt="Illustration" width="100%">
         </div>
+        <div class="contenthide">
+            <h1 class="black"> Navigating the digital landscape for success</h1>
+            <p class="black text">Our digital marketing agency helps businesses grow and succeed online through
+                a range
+                of
+                services
+                including
+                SEO, PPC, social media marketing, and content creation.</p>
+            <button class="white text blackbutton" type="button"
+                onclick="window.open('https://positivus-marketing-agency.webflow.io/#','_self')">Book a
+                consultation</button>
+        </div>
     </div>
-    <div class="companylogoog companylogo">
+
+    <div class=" companylogo">
         <div><img src="images/amazon.jpg"></div>
         <div><img src="images/dribbble.jpg"></div>
         <div><img src="images/hubspot.jpg"></div>
         <div><img src="images/notion.jpg"></div>
         <div><img src="images/netflix.jpg"></div>
         <div><img src="images/zoom.jpg"></div>
-    </div>
-    <div class="companylogohide">
-        <div class="companylogo">
-            <div><img src="images/amazon.jpg"></div>
-            <div><img src="images/dribbble.jpg"></div>
-            <div><img src="images/hubspot.jpg"></div>
-        </div>
-        <div class="companylogo">
-            <div><img src="images/notion.jpg"></div>
-            <div><img src="images/netflix.jpg"></div>
-            <div><img src="images/zoom.jpg"></div>
-        </div>
     </div>
     <div class="servicescontainer">
         <div>
@@ -480,7 +551,7 @@
                     </div>
 
                     <div>
-                        <a class="learnmore" href="https://www.instagram.com/billieeilish/" target="_blank">
+                        <a class="learnmore" href="https://positivus-marketing-agency.webflow.io/#" target="_blank">
                             <div class="learnmore">
                                 <img class="icons" src="images/blackarrowicon.png" width="41px">
                                 <h4 class="black text">Learn More</h4>
@@ -500,7 +571,7 @@
                     </div>
 
                     <div>
-                        <a class="learnmore" href="https://www.instagram.com/billieeilish/" target="_blank">
+                        <a class="learnmore" href="https://positivus-marketing-agency.webflow.io/#" target="_blank">
                             <div class="learnmore">
                                 <img class="icons" src="images/blackarrowicon.png" width="41px">
                                 <h4 class="black text">Learn More</h4>
@@ -522,7 +593,7 @@
                     </div>
 
                     <div>
-                        <a class="learnmore" href="https://www.instagram.com/billieeilish/" target="_blank">
+                        <a class="learnmore" href="https://positivus-marketing-agency.webflow.io/#" target="_blank">
                             <div class="learnmore">
                                 <img class="icons" src="images/whitearrowicon.png" width="41px">
                                 <h4 class="white text">Learn More</h4>
@@ -542,7 +613,7 @@
                     </div>
 
                     <div>
-                        <a class="learnmore" href="https://www.instagram.com/billieeilish/" target="_blank">
+                        <a class="learnmore" href="https://positivus-marketing-agency.webflow.io/#" target="_blank">
                             <div class="learnmore">
                                 <img class="icons" src="images/blackarrowicon.png" width="41px">
                                 <h4 class="black text">Learn More</h4>
@@ -564,7 +635,7 @@
                     </div>
 
                     <div>
-                        <a class="learnmore" href="https://www.instagram.com/billieeilish/" target="_blank">
+                        <a class="learnmore" href="https://positivus-marketing-agency.webflow.io/#" target="_blank">
                             <div class="learnmore">
                                 <img class="icons" src="images/blackarrowicon.png" width="41px">
                                 <h4 class="black text">Learn More</h4>
@@ -584,7 +655,7 @@
                     </div>
 
                     <div>
-                        <a class="learnmore" href="https://www.instagram.com/billieeilish/" target="_blank">
+                        <a class="learnmore" href="https://positivus-marketing-agency.webflow.io/#" target="_blank">
                             <div class="learnmore">
                                 <img class="icons" src="images/whitearrowicon.png" width="41px">
                                 <h4 class="white text">Learn More</h4>
@@ -608,7 +679,7 @@
                 </div>
 
                 <div>
-                    <a class="learnmore" href="https://www.instagram.com/billieeilish/" target="_blank">
+                    <a class="learnmore" href="https://positivus-marketing-agency.webflow.io/#" target="_blank">
                         <div class="learnmore">
                             <img class="icons" src="images/blackarrowicon.png" width="41px">
                             <h4 class="black text">Learn More</h4>
@@ -628,7 +699,7 @@
                 </div>
 
                 <div>
-                    <a class="learnmore" href="https://www.instagram.com/billieeilish/" target="_blank">
+                    <a class="learnmore" href="https://positivus-marketing-agency.webflow.io/#" target="_blank">
                         <div class="learnmore">
                             <img class="icons" src="images/blackarrowicon.png" width="41px">
                             <h4 class="black text">Learn More</h4>
@@ -649,7 +720,7 @@
                 </div>
 
                 <div>
-                    <a class="learnmore" href="https://www.instagram.com/billieeilish/" target="_blank">
+                    <a class="learnmore" href="https://positivus-marketing-agency.webflow.io/#" target="_blank">
                         <div class="learnmore">
                             <img class="icons" src="images/whitearrowicon.png" width="41px">
                             <h4 class="white text">Learn More</h4>
@@ -669,7 +740,7 @@
                 </div>
 
                 <div>
-                    <a class="learnmore" href="https://www.instagram.com/billieeilish/" target="_blank">
+                    <a class="learnmore" href="https://positivus-marketing-agency.webflow.io/#" target="_blank">
                         <div class="learnmore">
                             <img class="icons" src="images/blackarrowicon.png" width="41px">
                             <h4 class="black text">Learn More</h4>
@@ -691,7 +762,7 @@
                 </div>
 
                 <div>
-                    <a class="learnmore" href="https://www.instagram.com/billieeilish/" target="_blank">
+                    <a class="learnmore" href="https://positivus-marketing-agency.webflow.io/#" target="_blank">
                         <div class="learnmore">
                             <img class="icons" src="images/blackarrowicon.png" width="41px">
                             <h4 class="black text">Learn More</h4>
@@ -711,7 +782,7 @@
                 </div>
 
                 <div>
-                    <a class="learnmore" href="https://www.instagram.com/billieeilish/" target="_blank">
+                    <a class="learnmore" href="https://positivus-marketing-agency.webflow.io/#" target="_blank">
                         <div class="learnmore">
                             <img class="icons" src="images/whitearrowicon.png" width="41px">
                             <h4 class="white text">Learn More</h4>
@@ -726,7 +797,7 @@
     </div>
     <div class="bottomcontainer">
         <div class="bottomleft">
-            <div>
+            <div class="center">
                 <h2 class="black title"> Let's make things happen</h2>
             </div>
             <div>
@@ -735,7 +806,7 @@
                     business grow and succeed online.</p>
             </div>
             <div><button class="white text blackbutton" type="button"
-                    onclick="window.open('https://positivus-marketing-agency.webflow.io/#','_self')">Get your free
+                    onclick="window.open('https://positivus-marketing-agency.webflow.io/#')">Get your free
                     proposal</button>
             </div>
         </div>
