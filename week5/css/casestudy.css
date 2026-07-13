@@ -49,7 +49,7 @@ h1 {
 p {
     line-height: 28px;
     text-align: left;
-    width: 60%;
+    width: 90%;
 }
 
 .content {
@@ -78,6 +78,11 @@ p {
 
 .white {
     color: rgb(255, 255, 255);
+}
+
+.green {
+    color: #B9FF66;
+
 }
 
 .whitebutton {
@@ -115,14 +120,18 @@ h3 {
     padding: 0px 6px;
     background-color: #B9FF66;
     border-radius: 7px;
+    display: inline-block;
+
 }
 
 .servicescontainer {
     display: flex;
     align-items: center;
     gap: 40px;
-    margin-top: 140px;
-    margin-bottom: 1px;
+}
+
+.serviceright {
+    max-width: 580px;
 }
 
 .servicesp {
@@ -295,12 +304,16 @@ h3 {
 }
 
 .bigblackcontainer {
-    border-radius: 35px;
+    border-radius: 45px;
     align-items: stretch;
     justify-content: space-between;
     gap: 30px;
     display: flex;
     padding: 50px;
+}
+
+.hidebigblackcontainer {
+    display: none;
 }
 
 .learnmore2 {
@@ -310,54 +323,12 @@ h3 {
     text-decoration: none;
 }
 
-
-@media screen and (max-width: 770px) {
-
-    .left {
-        display: none;
-    }
-
-    .companylogoog {
-        display: none;
-    }
-
-    .companylogohide {
-        display: block;
-        justify-content: space-between;
-        align-items: center;
-        gap: 96px;
-    }
-
-    .companylogo {
-        margin-top: 20px;
-    }
-
-    .hamburgermenu {
-        display: block;
-        height: 67.2px;
-    }
-
-    .columncontainer {
-        display: block;
-        gap: 60px;
-    }
-
-    .megacontainer {
-        display: none;
-    }
-
-    .megacontainerhide {
-        display: block;
-        justify-content: space-between;
-        align-items: center;
-    }
-
-    .column {
-        gap: 70px;
-    }
+.spaceunder {
+    margin-bottom: 10%;
 }
 
-@media screen and (max-width: 1000px) {
+
+@media screen and (max-width: 700px) {
     .left {
         display: none;
     }
@@ -419,7 +390,6 @@ h3 {
 
     text,
     h1,
-    h3,
     p {
         text-align: center;
         align-items: center;
@@ -434,8 +404,6 @@ h3 {
         display: block;
         align-items: center;
         gap: 40px;
-        margin-top: 140px;
-        margin-bottom: 1px;
     }
 
     p,
@@ -486,4 +454,111 @@ h3 {
         justify-content: center;
     }
 
+    .bigblackcontainer {
+        display: none;
+    }
+
+    .hidebigblackcontainer {
+        border-radius: 45px;
+        align-items: stretch;
+        justify-content: space-between;
+        gap: 30px;
+        display: flex;
+        padding: 50px;
+        flex-direction: column;
+    }
+
+    .servicecenter {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        display: flex;
+    }
+
+    .h3 {
+        margin: 0% 0%;
+    }
+
+    .servicescontainer {
+        display: block;
+        align-items: center;
+        gap: 40px;
+    }
+}
+
+@media screen and (max-width: 70px) {
+
+    .left {
+        display: none;
+    }
+
+    .companylogoog {
+        display: none;
+    }
+
+    .companylogohide {
+        display: block;
+        justify-content: space-between;
+        align-items: center;
+        gap: 96px;
+    }
+
+    .companylogo {
+        margin-top: 20px;
+    }
+
+    .hamburgermenu {
+        display: block;
+        height: 67.2px;
+    }
+
+    .columncontainer {
+        display: block;
+        gap: 60px;
+    }
+
+    .megacontainer {
+        display: none;
+    }
+
+    .megacontainerhide {
+        display: block;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .column {
+        gap: 70px;
+    }
+
+    .bigblackcontainer {
+        display: none;
+    }
+
+    .hidebigblackcontainer {
+        border-radius: 45px;
+        align-items: stretch;
+        justify-content: space-between;
+        gap: 30px;
+        display: flex;
+        padding: 50px;
+        flex-direction: column;
+    }
+
+    .servicecenter {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        display: flex;
+    }
+
+    .h3 {
+        margin: 0%;
+    }
+
+    .servicescontainer {
+        display: block;
+        align-items: center;
+        gap: 40px;
+    }
 }
