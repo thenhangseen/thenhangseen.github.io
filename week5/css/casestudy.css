@@ -336,8 +336,33 @@ h3 {
     gap: 30px;
     display: flex;
     padding: 50px;
-    border-color: #000000;
-    border-width: 1px;
+    border: 1px solid #000000;
+    box-shadow: 0px 5px 0px #000000;
+}
+
+.numberedtitle {
+    font-size: 30px;
+    font-weight: 500;
+    font-family: "Space Grotesk", sans-serif;
+    margin: 0%;
+}
+
+.number {
+    font-size: 60px;
+    font-weight: 500;
+    font-family: "Space Grotesk", sans-serif;
+    margin: 0%;
+}
+
+.moretop {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    max-width: 77px;
+}
+
+.workingprocess {
+    flex-direction: column;
 }
 
 @media screen and (max-width: 700px) {
