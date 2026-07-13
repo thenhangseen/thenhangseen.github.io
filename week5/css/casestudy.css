@@ -411,8 +411,26 @@ h3 {
 }
 
 .x {
-    width="100px"
+    width: "100px"
 }
+
+.exp {
+    border-top: 1px solid #000000;
+    margin-top: 20px;
+    width: 100%;
+    padding-top;
+
+}
+
+.name {
+    text-decoration: none;
+    font-family: "Space Grotesk", sans-serif;
+    font-size: 20px;
+    font-style: regular;
+    font-weight: 500;
+}
+
+
 
 
 
