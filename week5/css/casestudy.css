@@ -1,0 +1,489 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap');
+
+body {
+    display: block;
+    padding-top: 3%;
+    padding-bottom: 3%;
+    padding-left: 5%;
+    padding-right: 5%;
+
+}
+
+.container1 {
+    line-height: 28px;
+    display: flex;
+    gap: 50px;
+    justify-content: space-between;
+    align-items: center;
+    text-decoration: none;
+}
+
+.left {
+    gap: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+img.logo {
+    width: 219.54px;
+    height: 56px;
+    margin-right: 20px;
+}
+
+.heading {
+    justify-content: flex-start;
+    gap: 35px;
+}
+
+h1 {
+
+    font-family: "Space Grotesk", sans-serif;
+    font-size: 60px;
+    font-style: medium;
+    font-weight: 500;
+    text-align: left;
+    width: 70%;
+}
+
+p {
+    line-height: 28px;
+    text-align: left;
+    width: 60%;
+}
+
+.content {
+    width: 60%;
+}
+
+.container2 {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    gap: 10px;
+    margin: 50px 0px;
+}
+
+.text {
+    text-decoration: none;
+    font-family: "Space Grotesk", sans-serif;
+    font-size: 20px;
+    font-style: regular;
+    font-weight: 400;
+}
+
+.black {
+    color: rgb(0, 0, 0);
+}
+
+.white {
+    color: rgb(255, 255, 255);
+}
+
+.whitebutton {
+    background-color: rgb(255, 255, 255);
+    padding: 20px 32px;
+    border: 1px solid rgb(25, 26, 35);
+    border-radius: 12px;
+}
+
+.blackbutton {
+    background-color: rgb(25, 26, 35);
+    padding: 20px 32px;
+    border-radius: 14px;
+    margin: 30px 0px;
+}
+
+.illustration {
+    align-items: center;
+    width: 100%;
+}
+
+.companylogo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 96px;
+}
+
+h3 {
+    font-family: "Space Grotesk", sans-serif;
+    font-size: 40px;
+    font-style: medium;
+    font-weight: 500;
+    text-align: left;
+    padding: 0px 6px;
+    background-color: #B9FF66;
+    border-radius: 7px;
+}
+
+.servicescontainer {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    margin-top: 140px;
+    margin-bottom: 1px;
+}
+
+.servicesp {
+    font-family: "Space Grotesk", sans-serif;
+    font-size: 18px;
+    font-style: regular;
+    font-weight: 400;
+}
+
+.greenbackground {
+    background-color: #B9FF66;
+}
+
+.greybackground {
+    background-color: #f3f3f3;
+}
+
+.blackbackground {
+    background-color: #191A23;
+}
+
+.whitebackground {
+    background-color: #FFFFFF;
+}
+
+.column {
+    display: flex;
+    gap: 45px;
+    width: 100%;
+    max-height: 210px;
+    border-radius: 45px;
+    border: 1px solid #000000;
+    box-shadow: 0px 5px 0px #000000;
+    justify-content: space-between;
+    padding: 50px 50px;
+}
+
+.incolumn {
+    max-height: 210px;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 90px;
+    margin: 0px;
+}
+
+.learnmore {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    text-decoration: none;
+}
+
+.smallillus {
+    max-width: 210px;
+    align-items: center;
+
+}
+
+.title {
+    font-family: "Space Grotesk", sans-serif;
+    font-size: 30px;
+    font-style: medium;
+    font-weight: 500;
+    border-radius: 7px;
+    padding: 0px 7px;
+    font-display: swap;
+    display: inline-block;
+
+}
+
+.columncontainer {
+    display: flex;
+    gap: 60px;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 6440px;
+    max-height: 310px;
+}
+
+.leftcolumn {
+    justify-content: space-between;
+    gap: 90px;
+    display: flex;
+    flex-direction: column;
+    max-width: 221px;
+    max-height: 210px;
+    align-items: flex-start;
+
+
+}
+
+.megacontainer {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 60px;
+    margin-top: 80px;
+}
+
+.bottomcontainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 45px;
+    background-color: #f3f3f3;
+    padding: 20px 50px;
+    gap: 0px;
+    margin-top: 120px;
+    max-width: 1235px;
+    min-height: 347px;
+}
+
+.bottomleft {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    min-width: 500px;
+}
+
+.hamburgermenu {
+    display: none;
+}
+
+.companylogohide {
+    display: none;
+}
+
+.megacontainerhide {
+    display: none;
+    justify-content: space-between;
+    align-items: center;
+    flex-shrink: 0;
+}
+
+.columnhide {
+    display: flex;
+    gap: 45px;
+    width: 100%;
+    max-height: 210px;
+    border-radius: 45px;
+    border: 1px solid #000000;
+    box-shadow: 0px 5px 0px #000000;
+    justify-content: space-between;
+    padding: 50px 50px;
+    margin-bottom: 60px;
+    align-items: center;
+}
+
+.illustrationhide {
+    display: none;
+}
+
+.contenthide {
+    display: none;
+}
+
+.bigblackson {
+    justify-content: space-between;
+    flex-direction: column;
+    display: flex;
+    flex: 1;
+
+}
+
+.divider {
+    width: 1px;
+    background: #FFFFFF;
+}
+
+.bigblackcontainer {
+    border-radius: 35px;
+    align-items: stretch;
+    justify-content: space-between;
+    gap: 30px;
+    display: flex;
+    padding: 50px;
+}
+
+.learnmore2 {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    text-decoration: none;
+}
+
+
+@media screen and (max-width: 770px) {
+
+    .left {
+        display: none;
+    }
+
+    .companylogoog {
+        display: none;
+    }
+
+    .companylogohide {
+        display: block;
+        justify-content: space-between;
+        align-items: center;
+        gap: 96px;
+    }
+
+    .companylogo {
+        margin-top: 20px;
+    }
+
+    .hamburgermenu {
+        display: block;
+        height: 67.2px;
+    }
+
+    .columncontainer {
+        display: block;
+        gap: 60px;
+    }
+
+    .megacontainer {
+        display: none;
+    }
+
+    .megacontainerhide {
+        display: block;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .column {
+        gap: 70px;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .left {
+        display: none;
+    }
+
+
+    .companylogo {
+        margin-top: 20px;
+        flex-wrap: wrap;
+        align-items: center;
+        gap: 40px 30px;
+        justify-content: center;
+    }
+
+    .hamburgermenu {
+        display: block;
+        height: 67.2px;
+    }
+
+    .columncontainer {
+        display: block;
+        gap: 60px;
+    }
+
+    .megacontainer {
+        display: none;
+    }
+
+    .megacontainerhide {
+        display: block;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .column {
+        gap: 70px;
+    }
+
+    .illustrationhide {
+        display: block;
+        width: 70%;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .illustration {
+        display: none;
+    }
+
+    .content {
+        display: none;
+    }
+
+    .contenthide {
+        display: block;
+        align-items: center;
+        justify-content: center;
+    }
+
+
+    text,
+    h1,
+    h3,
+    p {
+        text-align: center;
+        align-items: center;
+    }
+
+    .container2 {
+        align-items: center;
+        justify-content: center;
+    }
+
+    .servicescontainer {
+        display: block;
+        align-items: center;
+        gap: 40px;
+        margin-top: 140px;
+        margin-bottom: 1px;
+    }
+
+    p,
+    h1 {
+        width: 100%;
+    }
+
+    .blackbutton {
+        align-items: center;
+        justify-content: center;
+        display: block;
+    }
+
+    .bottomright {
+        display: none;
+    }
+
+    .bottomcontainer {
+        display: block;
+        justify-content: center space-between;
+        align-items: center;
+        border-radius: 45px;
+        background-color: #f3f3f3;
+        padding: 20px 50px;
+        gap: 0px;
+        margin-top: 120px;
+        max-width: 1235px;
+        min-height: 347px;
+    }
+
+    .bottomleft {
+        display: block;
+        flex-direction: column;
+        gap: 10px;
+        min-width: 500px;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .h2 {
+        display: block;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .center {
+        align-items: center;
+        justify-content: center;
+    }
+
+}
