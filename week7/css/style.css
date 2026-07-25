@@ -47,15 +47,16 @@ div.box2 {
     flex-direction: column;
 }
 
-child {
+.child {
     justify-items: center;
     justify-content: space-between;
     flex-direction: row;
     display: flex;
+    align-items: center;
 
 }
 
-contents {
-    display: block;
-    flex-direction: row;
+.contents {
+    display: flex;
+    align-items: center;
 }
