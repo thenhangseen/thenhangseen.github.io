@@ -14,7 +14,7 @@ div.relative {
     height: 500px;
     background: blue;
     margin: auto;
-    background-image: url("images/man.jpg");
+    background-image: url(../images/man.jpg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -29,18 +29,18 @@ div.box1 {
     height: 110px;
     border-radius: 8px;
     background: white;
-    justify-items: center;
     flex-direction: column;
     justify-content: space-between;
     gap: 50px;
+    padding: 20px;
 }
 
 div.box2 {
     position: absolute;
     bottom: 20px;
     left: -80px;
-    width: 30%;
-    height: 20%;
+    width: 210px;
+    height: 110px;
     border-radius: 5px;
     background: #ccff00;
     justify-items: center;
@@ -49,14 +49,27 @@ div.box2 {
 
 .child {
     justify-items: center;
-    justify-content: space-between;
     flex-direction: row;
     display: flex;
     align-items: center;
 
 }
 
+.child1 {
+    gap: 10px;
+}
+
 .contents {
     display: flex;
     align-items: center;
+}
+
+.icon {
+    width: 25px;
+}
+
+.progressbar {
+    width: 100%;
+    padding-top: 8px;
+    padding-bottom: 8px;
 }
