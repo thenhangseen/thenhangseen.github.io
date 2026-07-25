@@ -23,29 +23,36 @@ div.relative {
 
 div.box1 {
     position: absolute;
-    top: 20px;
-    right: -70px;
-    width: 210px;
-    height: 110px;
+    top: 33px;
+    right: -130px;
+    width: 280px;
+    height: 150px;
     border-radius: 8px;
     background: white;
     flex-direction: column;
     justify-content: space-between;
     gap: 50px;
-    padding: 20px;
+    padding-top: 25px;
+    padding-bottom: 25px;
+
+    padding-left: 30px;
+    padding-right: 30px;
 }
 
 div.box2 {
     position: absolute;
     bottom: 40px;
     left: -80px;
-    width: 301px;
-    height: 176px;
-    border-radius: 5px;
+    width: 400px;
+    height: 240px;
+    border-radius: 10px;
     background: #ccff00;
     flex-direction: column;
     justify-content: space-between;
-    padding: 20px;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-top: 50px;
+    padding-bottom: 50px;
 }
 
 .child {
@@ -66,7 +73,7 @@ div.box2 {
 }
 
 .icon {
-    width: 25px;
+    width: 35px;
 }
 
 .progressbar {
@@ -76,6 +83,26 @@ div.box2 {
 }
 
 .divider {
-    height: 1px;
+    width: 250px;
+    height: 2px;
     background: #000000;
+    margin-top: 27px;
+    margin-bottom: 27px;
+}
+
+h1 {
+    font-size: 60px;
+    font-family: sans-serif;
+    font-weight: bold;
+}
+
+h2 {
+    font-size: 40px;
+    font-family: sans-serif;
+    font-weight: bold;
+}
+
+p {
+    font-family: sans-serif;
+    font-size: 19px;
 }
