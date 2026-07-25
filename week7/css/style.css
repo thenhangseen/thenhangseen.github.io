@@ -1,0 +1,61 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #1717b8;
+}
+
+div.relative {
+    position: relative;
+    width: 50%;
+    height: 500px;
+    background: blue;
+    margin: auto;
+    background-image: url("images/man.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+
+div.box1 {
+    position: absolute;
+    top: 20px;
+    right: -70px;
+    width: 210px;
+    height: 110px;
+    border-radius: 8px;
+    background: white;
+    justify-items: center;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 50px;
+}
+
+div.box2 {
+    position: absolute;
+    bottom: 20px;
+    left: -80px;
+    width: 30%;
+    height: 20%;
+    border-radius: 5px;
+    background: #ccff00;
+    justify-items: center;
+    flex-direction: column;
+}
+
+child {
+    justify-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+    display: flex;
+
+}
+
+contents {
+    display: block;
+    flex-direction: row;
+}
