@@ -11,7 +11,7 @@ body {
 div.relative {
     position: relative;
     width: 50%;
-    height: 500px;
+    height: 650px;
     background: blue;
     margin: auto;
     background-image: url(../images/man.jpg);
@@ -37,14 +37,15 @@ div.box1 {
 
 div.box2 {
     position: absolute;
-    bottom: 20px;
+    bottom: 40px;
     left: -80px;
-    width: 210px;
-    height: 110px;
+    width: 301px;
+    height: 176px;
     border-radius: 5px;
     background: #ccff00;
-    justify-items: center;
     flex-direction: column;
+    justify-content: space-between;
+    padding: 20px;
 }
 
 .child {
@@ -72,4 +73,9 @@ div.box2 {
     width: 100%;
     padding-top: 8px;
     padding-bottom: 8px;
+}
+
+.divider {
+    height: 1px;
+    background: #000000;
 }
