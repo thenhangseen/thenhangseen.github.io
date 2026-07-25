@@ -5,19 +5,23 @@
 }
 
 body {
-    background: #1717b8;
+
+    background-image: linear-gradient(to bottom, #0E1049, #071099);
 }
 
 div.relative {
     position: relative;
     width: 50%;
     height: 650px;
-    background: blue;
-    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: auto;
+    margin-right: auto;
     background-image: url(../images/man.jpg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+    border-radius: 8px;
 }
 
 
@@ -34,7 +38,6 @@ div.box1 {
     gap: 50px;
     padding-top: 25px;
     padding-bottom: 25px;
-
     padding-left: 30px;
     padding-right: 30px;
 }
