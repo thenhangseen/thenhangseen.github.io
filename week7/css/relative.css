@@ -8,7 +8,8 @@
     max-width: 600px;
     text-align: center;
     margin: 0 auto;
-    padding: 10px;
+    padding-top: 30px;
+    padding-bottom: 20px;
 }
 
 h1 {
@@ -47,7 +48,7 @@ h3 {
 }
 
 .boxes {
-    padding: 15px;
+    padding: 0px;
     align-items: center;
     display: flex;
     flex-direction: column;
@@ -65,8 +66,8 @@ h3 {
     display: flex;
     padding-top: 20px;
     padding-bottom: 20px;
-    padding-left: 15px;
-    padding-right: 15px;
+    padding-left: 20px;
+    padding-right: 20px;
     box-shadow: 0px 10px 10px #E3EAF0;
 }
 
