@@ -1,0 +1,22 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.header {
+    max-width: 600px;
+    text-align: center;
+    margin: 0 auto;
+    padding: 10px;
+}
+
+h1 {
+    margin-bottom: 10px;
+    font-family: sans-serif;
+    font-weight: 600;
+}
+
+p {
+    font-family: sans-serif;
+}
