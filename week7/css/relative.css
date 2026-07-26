@@ -88,3 +88,12 @@ h3 {
     display: flex;
     justify-content: space-evenly;
 }
+
+@media screen and (max-width: 1300px) {
+    .content {
+        display: flex;
+        flex-direction: column;
+        max-height: none;
+    }
+
+}
