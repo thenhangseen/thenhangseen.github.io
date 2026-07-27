@@ -1,0 +1,16 @@
+.topsection {
+    background-color: #F0EDF5;
+    text-align: center;
+    margin: 0 auto;
+    padding-top: 30px;
+    padding-bottom: 20px;
+}
+
+.row {
+    justify-content: space-around;
+    display: flex;
+    padding: 40px;
+    gap: 50px;
+}
+
+.imageandcard {}
