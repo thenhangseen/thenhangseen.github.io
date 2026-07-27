@@ -53,7 +53,7 @@ topsectiontitle {
 
 .purplecard {
     position: relative;
-    top: -74%;
+    top: 27%;
     left: -50%;
     text-align: center;
     align-items: center;
@@ -85,7 +85,7 @@ topsectiontitle {
 
 .imageandcardhide {
     align-items: center;
-    display: block;
+    display: none;
     justify-content: space-evenly;
     justify-items: center;
 }
@@ -138,6 +138,10 @@ topsectiontitle {
 
     .imageandcard {
         display: none;
+    }
+
+    .imageandcardhide {
+        display: block;
     }
 }
 
