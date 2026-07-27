@@ -14,3 +14,7 @@
 }
 
 .imageandcard {}
+
+.reasons {
+    display: flex;
+}
