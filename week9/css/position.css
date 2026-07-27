@@ -24,7 +24,7 @@ div.relative {
 }
 
 
-div.box1 {
+div.revenuegrowth {
     position: absolute;
     top: 33px;
     right: -130px;
@@ -41,7 +41,7 @@ div.box1 {
     padding-right: 30px;
 }
 
-div.box2 {
+div.yearsofexperience {
     position: absolute;
     bottom: 40px;
     left: -80px;
@@ -57,7 +57,7 @@ div.box2 {
     padding-bottom: 50px;
 }
 
-.child {
+.section {
     justify-items: center;
     flex-direction: row;
     display: flex;
@@ -65,7 +65,7 @@ div.box2 {
 
 }
 
-.child1 {
+.gap {
     gap: 10px;
 }
 
