@@ -5,10 +5,14 @@ select {
     height: 50px;
     width: 500px;
     text-align: left;
+    margin: 10px 20px;
 }
 
 .questions {
     justify-content: space-between;
     justify-items: flex;
-    padding-bottom: 10%;
+}
+
+body {
+    margin: 50px 20px;
 }
