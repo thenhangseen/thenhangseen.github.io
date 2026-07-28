@@ -1,0 +1,157 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,200..900;1,8..60,200..900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+* {
+    box-sizing: border-box;
+}
+
+
+body {
+    margin: 0;
+}
+
+
+.top {
+    display: flex;
+    background-color: #f0edf5;
+    padding: 20px 40px;
+    margin-top: 20px;
+}
+
+
+.top-image img {
+    width: 70%;
+    height: auto;
+    margin-left: 150px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+
+.top-text {
+    margin-top: 60px;
+    margin-left: 0px;
+}
+
+
+.section-title-purple {
+    margin-bottom: 24px;
+    margin-top: 24px;
+}
+
+
+.body-text {
+    width: 300px;
+    margin-bottom: 24px;
+}
+
+
+.button-white {
+    font-family: "Work Sans", sans-serif;
+    text-decoration: none;
+
+}
+
+
+
+@media (max-width: 850px) {
+
+    .top {
+        display: block;
+        padding: 50px 15px 50px;
+    }
+
+
+    .top-image img {
+        width: 90%;
+        height: auto;
+        margin-left: 40px;
+        margin-top: 0;
+        margin-bottom: 40px;
+    }
+
+
+    .top-text {
+        margin-top: 24px;
+        margin-left: 40px;
+    }
+
+
+    .section-title-purple {
+        font-size: 52px;
+        line-height: 65.3px;
+        margin-top: 24px;
+        margin-bottom: 24px;
+    }
+
+    .section-title-purple br {
+        display: none;
+    }
+
+
+    .body-text br {
+        display: none;
+    }
+
+    .body-text {
+        width: 100%;
+        margin-bottom: 24px;
+    }
+
+
+}
+
+
+@media (max-width: 500px) {
+
+    .top {
+        padding: 50px 30px 50px;
+    }
+
+
+    .top-image img {
+        width: 100%;
+        height: auto;
+        margin-left: 0;
+        margin-top: 0;
+        margin-bottom: 40px;
+    }
+
+
+    .top-text {
+        margin-top: 24px;
+        margin-left: 0;
+    }
+
+
+    .small-description {
+        margin-bottom: 24px;
+    }
+
+
+    .section-title-purple {
+        font-size: 40px;
+        line-height: 48.1px;
+        margin-top: 0;
+        margin-bottom: 24px;
+        width: 80%;
+    }
+
+
+    .section-title-purple br {
+        display: none;
+    }
+
+
+    .body-text {
+        width: 81%;
+        margin-bottom: 24px;
+    }
+
+
+    .body-text br {
+        display: none;
+    }
+
+
+}
