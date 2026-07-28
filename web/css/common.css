@@ -18,6 +18,8 @@
     --bg-pink: #F9F1F2;
     --bg-blue: #EEF6F7;
     --bg-yellow: #F3E7D7;
+    --bg-grey: #F9F9FB;
+    --bg-drakblue: #212934;
     --font-bold: "Source Serif 4", serif;
     --font-regular: "Work Sans", sans-serif;
 }
@@ -25,7 +27,7 @@
 /* === GLOBAL TYPOGRAPHY  === */
 .section-title-purple,
 .section-subtitle,
-.box-subtitle{
+.box-subtitle {
     font-family: var(--font-bold);
     color: var(--text-purple);
 }
@@ -42,7 +44,7 @@
     letter-spacing: -1px;
 }
 
-.box-subtitle{
+.box-subtitle {
     font-size: 25px;
     line-height: 1.36px;
 }
@@ -104,8 +106,8 @@
     color: var(--text-purple);
 }
 
-.menu{
-    display:none;
+.menu {
+    display: none;
 }
 
 .navigationtop {
@@ -141,12 +143,17 @@
     padding: 8px 0px 10px;
     font-size: 14px;
     justify-content: flex-end;
-    margin: 0px 24px;
+    margin: 0px 30px;
+    flex-wrap: wrap;
+    justify-content: center;
+    color: var(--text-purple);
 }
 
 .submenu a:hover {
     text-decoration: none;
     border-radius: 6px;
+    background-color: var(--bg-grey);
+    color: var(--bg-drakblue);
 }
 
 a:hover {
@@ -343,24 +350,28 @@ a {
 }
 
 @media screen and (max-width: 850px) {
-    .section-title-purple,.section-title-white{
+
+    .section-title-purple,
+    .section-title-white {
         font-size: 52px;
-        line-height:65.3px;
+        line-height: 65.3px;
     }
 
-    .section-subtitle{
-        font-size:35px;
-        line-height:44.9px;
+    .section-subtitle {
+        font-size: 35px;
+        line-height: 44.9px;
     }
 
     .navigationcontent {
         display: none;
     }
 
-    .menu{
-        display:block;
+    .menu {
+        display: block;
     }
 }
+
+@media screen and (max-width: 899px) {}
 
 @media screen and (max-width: 771px) {
     .footer {
@@ -375,25 +386,26 @@ a {
         flex-wrap: wrap;
     }
 
-    .box-subtitle{
+    .box-subtitle {
         font-size: 22px;
     }
 }
 
 @media screen and (max-width: 500px) {
-    .section-title-purple,.section-title-white{
+
+    .section-title-purple,
+    .section-title-white {
         font-size: 40px;
-        line-height:48.4px;
+        line-height: 48.4px;
     }
 
-    .section-subtitle{
-        font-size:28px;
-        line-height:35.8px;
+    .section-subtitle {
+        font-size: 28px;
+        line-height: 35.8px;
     }
 
-    .footer-text{
-        font-size:22px;
+    .footer-text {
+        font-size: 22px;
     }
 
 }
-
