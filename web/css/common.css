@@ -76,7 +76,7 @@
 
 .button-white {
     padding: 13px 29px;
-    font: 14px;
+    font-size: 14px;
     border-radius: 6px;
     background-color: var(--bg-white);
     color: var(--text-purple);
@@ -84,7 +84,7 @@
 
 .button-purple {
     padding: 13px 29px;
-    font: 14px;
+    font-size: 14px;
     border-radius: 6px;
     background-color: var(--text-purple);
     color: var(--bg-white);
