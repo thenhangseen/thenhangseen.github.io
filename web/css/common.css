@@ -334,6 +334,16 @@ a {
 }
 
 @media screen and (max-width: 850px) {
+    .section-title-purple,.section-title-white{
+        font-size: 52px;
+        line-height:65.3px;
+    }
+
+    .section-subtitle{
+        font-size:35px;
+        line-height:44.9px;
+    }
+
     .navigationcontent {
         display: none;
     }
@@ -355,5 +365,26 @@ a {
     .footercontent {
         flex-wrap: wrap;
     }
+
+    .box-subtitle{
+        font-size: 22px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .section-title-purple,.section-title-white{
+        font-size: 40px;
+        line-height:48.4px;
+    }
+
+    .section-subtitle{
+        font-size:28px;
+        line-height:35.8px;
+    }
+
+    .footer-text{
+        font-size:22px;
+    }
+
 }
 
