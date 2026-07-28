@@ -103,7 +103,7 @@
     background-color: #F0EDF5;
     text-align: center;
     padding: 10px;
-    font-size: 14px;
+    font-size: 12px;
     display: block;
     line-height: 20px;
 }
@@ -132,6 +132,12 @@
     padding: 8px 0px 10px;
     font-size: 14px;
     justify-content: flex-end;
+    margin: 0px 24px;
+}
+
+.submenu a:hover {
+    text-decoration: none;
+    border-radius: 6px;
 }
 
 a:hover {
@@ -146,15 +152,18 @@ a {
 
 .submenu {
     opacity: 0;
+    background-color: var(--bg-white);
+    border-radius: 6px;
     position: absolute;
     pointer-events: none;
-    transition: all 1.5s;
-
+    transition: all 0.5s;
+    font-size: 15px;
 }
+
 
 .submenu a {
     display: block;
-    padding: 10px;
+    padding: 15px 20px;
 }
 
 .has-submenu>a::after {
@@ -164,7 +173,7 @@ a {
 .has-submenu:hover>.submenu {
     opacity: 1;
     pointer-events: auto;
-    margin-top: 8px;
+    margin-top: 10px;
 }
 
 .account {
