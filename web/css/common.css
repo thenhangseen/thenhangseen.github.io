@@ -24,7 +24,8 @@
 
 /* === GLOBAL TYPOGRAPHY  === */
 .section-title-purple,
-.section-subtitle {
+.section-subtitle,
+.box-subtitle{
     font-family: var(--font-bold);
     color: var(--text-purple);
 }
@@ -39,6 +40,11 @@
     font-size: 56px;
     line-height: 67.8px;
     letter-spacing: -1px;
+}
+
+.box-subtitle{
+    font-size: 25px;
+    line-height: 1.36px;
 }
 
 .section-subtitle {
@@ -98,6 +104,9 @@
     color: var(--text-purple);
 }
 
+.menu{
+    display:none;
+}
 
 .navigationtop {
     background-color: #F0EDF5;
@@ -279,26 +288,6 @@ a {
     }
 }
 
-@media screen and (max-width: 850px) {
-    .navigationcontent {
-        display: none;
-    }
-}
-
-@media screen and (max-width: 771px) {
-    .footer {
-        padding: 40px 21.5451px;
-    }
-
-    .footerleft {
-        margin: 0px 9.89583px;
-    }
-
-    .footercontent {
-        flex-wrap: wrap;
-    }
-}
-
 @media screen and (max-width: 1176px) {
     .footertop {
         flex-direction: column;
@@ -344,8 +333,27 @@ a {
     }
 }
 
-@media screen and (min-width: 850px) {
-    .menu {
+@media screen and (max-width: 850px) {
+    .navigationcontent {
         display: none;
     }
+
+    .menu{
+        display:block;
+    }
 }
+
+@media screen and (max-width: 771px) {
+    .footer {
+        padding: 40px 21.5451px;
+    }
+
+    .footerleft {
+        margin: 0px 9.89583px;
+    }
+
+    .footercontent {
+        flex-wrap: wrap;
+    }
+}
+
