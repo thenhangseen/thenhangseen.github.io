@@ -1,0 +1,161 @@
+.topsection {
+    background-color: #F0EDF5;
+    text-align: center;
+    margin: 0 auto;
+    padding: 40px 0px;
+}
+
+topsectiontitle {
+    .padding: 40px 0px;
+}
+
+.whytrustus {
+    padding: 100px 30px;
+    margin: 0 auto;
+}
+
+.row {
+    justify-content: space-evenly;
+    display: flex;
+    gap: 40px;
+}
+
+.imageandcard {
+    align-items: center;
+    min-width: 35%;
+}
+
+.introduction {
+    max-width: 650px;
+    margin: 0 auto;
+    padding-bottom: 40px;
+}
+
+.introductiontitle {
+    padding-bottom: 40px;
+}
+
+.reasons {
+    display: flex;
+    flex-direction: row;
+    max-width: 550px;
+    justify-items: center;
+    gap: 10px;
+    align-items: center;
+    justify-content: space-evenly;
+    padding-bottom: 40px;
+}
+
+.answer {
+    justify-content: space-between;
+    align-items: left;
+}
+
+.purplecard {
+    position: relative;
+    top: 27%;
+    left: -50%;
+    text-align: center;
+    align-items: center;
+    margin: 0 auto;
+    height: 397px;
+    width: 288.71px;
+    background-color: #F0EDF5;
+    box-shadow: 0px 4px 20px #67637125;
+    justify-content: space-evenly;
+    padding-top: 100px;
+
+}
+
+.year {
+    padding-top: 20px;
+}
+
+.weddingcake {
+    height: 100%;
+    background-image: url(../images/weddingcake.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.weddingcakeicons {
+    max-width: 124.89px;
+}
+
+.imageandcardhide {
+    align-items: center;
+    display: none;
+    justify-content: space-evenly;
+    justify-items: center;
+}
+
+.weddingcakehide {
+    width: 511.09px;
+    height: 733.34px;
+    background-image: url(../images/weddingcake.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.purplecardhide {
+    position: relative;
+    top: -40px;
+    text-align: center;
+    align-items: center;
+    margin: 0 auto;
+    min-height: 216.61;
+    max-width: 420px;
+    background-color: #F0EDF5;
+    box-shadow: 0px 4px 20px #67637125;
+    justify-content: space-evenly;
+    padding: 40px 40px;
+
+}
+
+@media screen and (max-width: 1200px) {
+    .row {
+        display: block;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .reasons {
+        display: flex;
+        justify-items: flex-start;
+        max-width: fit-content;
+        max-width: 1000px;
+    }
+
+    .answer {
+        justify-items: center;
+    }
+
+    .introduction {
+        max-width: fit-content;
+    }
+
+    .imageandcard {
+        display: none;
+    }
+
+    .imageandcardhide {
+        display: block;
+    }
+}
+
+@media screen and (max-width: 500px) {
+
+    .reasons {
+        display: block;
+    }
+
+    .weddingcakehide {
+        display: none;
+    }
+
+    .imageandcardhide {
+        padding: 40px 0px;
+    }
+}
