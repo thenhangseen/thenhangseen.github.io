@@ -1,0 +1,14 @@
+input,
+textarea,
+select {
+    border-radius: 100px;
+    height: 50px;
+    width: 500px;
+    text-align: left;
+}
+
+.questions {
+    justify-content: space-between;
+    justify-items: flex;
+    padding-bottom: 10%;
+}
