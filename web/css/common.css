@@ -24,7 +24,8 @@
 
 /* === GLOBAL TYPOGRAPHY  === */
 .section-title-purple,
-.section-subtitle {
+.section-subtitle,
+.box-subtitle{
     font-family: var(--font-bold);
     color: var(--text-purple);
 }
@@ -39,6 +40,11 @@
     font-size: 56px;
     line-height: 67.8px;
     letter-spacing: -1px;
+}
+
+.box-subtitle{
+    font-size: 25px;
+    line-height: 1.36px;
 }
 
 .section-subtitle {
@@ -76,7 +82,7 @@
 
 .button-white {
     padding: 13px 29px;
-    font: 14px;
+    font-size: 14px;
     border-radius: 6px;
     background-color: var(--bg-white);
     color: var(--text-purple);
@@ -84,7 +90,7 @@
 
 .button-purple {
     padding: 13px 29px;
-    font: 14px;
+    font-size: 14px;
     border-radius: 6px;
     background-color: var(--text-purple);
     color: var(--bg-white);
@@ -98,6 +104,9 @@
     color: var(--text-purple);
 }
 
+.menu{
+    display:none;
+}
 
 .navigationtop {
     background-color: #F0EDF5;
@@ -288,26 +297,6 @@ a {
     }
 }
 
-@media screen and (max-width: 850px) {
-    .navigationcontent {
-        display: none;
-    }
-}
-
-@media screen and (max-width: 771px) {
-    .footer {
-        padding: 40px 21.5451px;
-    }
-
-    .footerleft {
-        margin: 0px 9.89583px;
-    }
-
-    .footercontent {
-        flex-wrap: wrap;
-    }
-}
-
 @media screen and (max-width: 1176px) {
     .footertop {
         flex-direction: column;
@@ -353,8 +342,58 @@ a {
     }
 }
 
-@media screen and (min-width: 850px) {
-    .menu {
+@media screen and (max-width: 850px) {
+    .section-title-purple,.section-title-white{
+        font-size: 52px;
+        line-height:65.3px;
+    }
+
+    .section-subtitle{
+        font-size:35px;
+        line-height:44.9px;
+    }
+
+    .navigationcontent {
         display: none;
     }
+
+    .menu{
+        display:block;
+    }
 }
+
+@media screen and (max-width: 771px) {
+    .footer {
+        padding: 40px 21.5451px;
+    }
+
+    .footerleft {
+        margin: 0px 9.89583px;
+    }
+
+    .footercontent {
+        flex-wrap: wrap;
+    }
+
+    .box-subtitle{
+        font-size: 22px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .section-title-purple,.section-title-white{
+        font-size: 40px;
+        line-height:48.4px;
+    }
+
+    .section-subtitle{
+        font-size:28px;
+        line-height:35.8px;
+    }
+
+    .footer-text{
+        font-size:22px;
+    }
+
+}
+
