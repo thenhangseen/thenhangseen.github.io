@@ -1,0 +1,121 @@
+.seasonal-promotion{
+    display: flex;
+    flex-direction: column;
+    max-width: 1160px;
+    max-height: 782px;
+    margin: 0 auto;
+    gap:40px;
+}
+
+.section-title-purple{
+    display: flex;
+    justify-content: center;
+}
+
+.body-text{
+    max-width: 675px;
+    max-height: 60px;
+    text-align: center;
+    display: flex;
+    align-self: center;
+}
+
+.container-seasonal-promotion-option{
+    display:flex;
+    justify-content: space-between;
+    max-width: 1160px;
+    max-height: 450px;
+    gap:60px;
+}
+
+.seasonal-box{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 350px;
+    max-height:450px;
+    gap:40px;
+}
+
+.container-seasonal-promotion-img{
+    max-width: 350px;
+    max-height: 350px;
+}
+
+.section-subtitle,.button{
+    display: flex;
+    justify-content: center;
+}
+
+.button-purple{
+    margin: 0 auto;
+    max-width: 210px;
+    max-height: 60px;
+}
+
+@media screen and (max-width: 850px) {
+    .seasonal-promotion{
+    max-width: 810px;
+    min-height: 1500px;
+    margin: 0 auto;
+    padding: 10px;
+    }
+
+    .body-text{
+    max-width: 500px;
+    max-height: none;
+    text-align: center;
+    display: flex;
+    align-self: center;
+    }
+
+    .container-seasonal-promotion-option{
+    max-width:809px;
+    max-height: 366px;
+    }
+
+    .seasonal-box{
+    max-width: 240px;
+    max-height:366px;
+    gap:40px;
+    }
+
+}
+
+
+@media screen and (max-width: 780px) {
+    .seasonal-promotion{
+        max-width: 1160px;
+        min-height: 1500px;
+        margin: 0px auto 320px auto;
+    }
+
+    .section-title-purple{
+        max-width: none;
+    }
+
+    .body-text{
+        max-width: 370px;
+        max-height: none;
+        text-align: center;
+        display: flex;
+        align-self: center;
+    }
+
+    .container-seasonal-promotion-option{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        max-width:none;
+        max-height: none;
+    }
+
+    .seasonal-box{
+        max-width: 350px;
+        max-height:450px;
+    }
+
+
+
+}
