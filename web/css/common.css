@@ -134,6 +134,10 @@
     justify-content: flex-end;
 }
 
+a:hover {
+    text-decoration: underline;
+}
+
 a {
     text-decoration: none;
 }
