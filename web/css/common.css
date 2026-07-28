@@ -128,12 +128,37 @@
 
 .navigationcontent {
     display: flex;
-    flex-direction: row;
     gap: 38px;
     padding: 8px 0px 10px;
     font-size: 14px;
+    justify-content: flex-end;
 }
 
+a {
+    text-decoration: none;
+}
+
+.submenu {
+    opacity: 0;
+    position: absolute;
+    pointer-events: none;
+    transition: all 0.5s;
+
+}
+
+.submenu a {
+    display: block;
+    padding: 10px;
+}
+
+.has-submenu>a::after {
+    margin-left: 2px;
+}
+
+.has-submenu:hover>.submenu {
+    opacity: 1;
+    pointer-events: auto;
+}
 
 .account {
     display: flex;
