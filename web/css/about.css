@@ -1,34 +1,42 @@
 .top {
     display: flex;
     background-color: #f0edf5;
-    padding: 20px 40px;
     margin-top: 20px;
+    justify-content: center;
+    align-items: center;
+    padding: 45px 0;
+
 }
 
+.top-image {
+    width: 60%;
+    display: flex;
+    justify-content: flex-end;
+}
 
 .top-image img {
-    width: 70%;
-    height: auto;
-    margin-left: 150px;
-    margin-top: 10px;
-    margin-bottom: 10px;
-}
+    width: 80%;
 
+}
 
 .top-text {
-    margin-top: 60px;
-    margin-left: 0px;
+    width: 40%;
+    padding-left: 50px;
+    padding-left: 73px;
 }
+
 
 
 .section-title-purple {
     margin-bottom: 24px;
     margin-top: 24px;
+    width: 50%;
+
 }
 
 
 .body-text {
-    width: 300px;
+    width: 50%;
     margin-bottom: 24px;
 }
 
@@ -39,50 +47,120 @@
 
 }
 
+.creating {
+    padding: 100px 40px;
+    text-align: center;
+}
+
+.creating-title {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.creating-title .body-text {
+    width: 700px;
+    max-width: 100%;
+    margin: 25px auto 0;
+}
+
+.icons {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.icon-box {
+    width: 16.66%;
+    text-align: center;
+}
+
+.icon-box img {
+    width: 70px;
+    height: 70px;
+}
+
+.icon-box .body-text {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+
 
 
 @media (max-width: 850px) {
 
     .top {
         display: block;
-        padding: 50px 15px 50px;
+        width: 100%;
+        padding: 52px 20px;
     }
 
+    .top-image {
+        width: 100%;
+        margin: 0;
+    }
 
     .top-image img {
-        width: 90%;
+        display: block;
+        width: 100%;
         height: auto;
-        margin-left: 40px;
-        margin-top: 0;
-        margin-bottom: 40px;
     }
-
 
     .top-text {
-        margin-top: 24px;
-        margin-left: 40px;
+        width: 100%;
+        margin: 0;
+        padding: 0;
+
     }
 
-
-    .section-title-purple {
-        font-size: 52px;
-        line-height: 65.3px;
+    .small-description {
         margin-top: 24px;
         margin-bottom: 24px;
     }
 
-    .section-title-purple br {
-        display: none;
-    }
-
-
-    .body-text br {
-        display: none;
+    .section-title-purple {
+        width: 80%;
+        margin-bottom: 24px;
+        font-size: 52px;
+        line-height: 65.3px;
+        letter-spacing: -1px;
     }
 
     .body-text {
-        width: 100%;
+        width: 90%;
         margin-bottom: 24px;
+    }
+
+    .button-white {
+        display: inline-block;
+    }
+
+    .creating {
+        padding: 50px 20px;
+    }
+
+    .creating-title .body-text {
+        width: 100%;
+    }
+
+    .icons {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .icon-box {
+        width: 100%;
+        margin-bottom: 30px;
+    }
+
+    .icon-box .body-text {
+        margin-bottom: 12px;
+    }
+
+    .icon-box img {
+        width: 70px;
+        height: 70px;
     }
 
 
@@ -92,7 +170,7 @@
 @media (max-width: 500px) {
 
     .top {
-        padding: 50px 30px 50px;
+        padding: 50px 30px;
     }
 
 
@@ -101,15 +179,8 @@
         height: auto;
         margin-left: 0;
         margin-top: 0;
-        margin-bottom: 40px;
+
     }
-
-
-    .top-text {
-        margin-top: 24px;
-        margin-left: 0;
-    }
-
 
     .small-description {
         margin-bottom: 24px;
@@ -118,27 +189,48 @@
 
     .section-title-purple {
         font-size: 40px;
-        line-height: 48.1px;
-        margin-top: 0;
+        line-height: 48.4px;
         margin-bottom: 24px;
-        width: 80%;
+        letter-spacing: -1px;
+        width: 100%;
     }
-
-
-    .section-title-purple br {
-        display: none;
-    }
-
 
     .body-text {
-        width: 81%;
+        width: 90%;
         margin-bottom: 24px;
     }
 
-
-    .body-text br {
-        display: none;
+    .creating {
+        padding: 50px 20px;
     }
 
+    .creating-title {
+        margin-bottom: 40px;
+    }
+
+    .creating-title .body-text {
+        width: 100%;
+    }
+
+    .icons {
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: flex-start;
+    }
+
+    .icon-box {
+        width: 33.33%;
+        margin-bottom: 35px;
+    }
+
+    .icon-box .body-text {
+        width: 100%;
+        margin-bottom: 15px;
+    }
+
+    .icon-box img {
+        width: 65px;
+        height: 65px;
+    }
 
 }
