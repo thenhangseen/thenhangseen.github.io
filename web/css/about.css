@@ -44,23 +44,23 @@
 .button-white {
     font-family: "Work Sans", sans-serif;
     text-decoration: none;
+    border: 0;
 
 }
 
 .creating {
     padding: 100px 40px;
-    text-align: center;
 }
 
 .creating-title {
     text-align: center;
     margin-bottom: 40px;
+    width: 100%;
 }
 
-.creating-title .body-text {
-    width: 700px;
-    max-width: 100%;
-    margin: 25px auto 0;
+.creating-title p {
+    width: 55%;
+    margin: 40px auto 0;
 }
 
 .icons {
@@ -75,13 +75,13 @@
 }
 
 .icon-box img {
-    width: 70px;
-    height: 70px;
+    width: 30%;
+    height: 30%;
 }
 
 .icon-box .body-text {
     width: 100%;
-    margin-bottom: 20px;
+    margin-bottom: 24px
 }
 
 
@@ -136,11 +136,23 @@
     }
 
     .creating {
-        padding: 50px 20px;
+        padding: 100px 40px;
     }
 
-    .creating-title .body-text {
+    .creating-title {
         width: 100%;
+    }
+
+    .creating h2 {
+        font-size: 52px;
+        line-height: 65.3px;
+        letter-spacing: -1px;
+
+    }
+
+    .creating-title p {
+        width: 75%;
+        margin-bottom: 40px;
     }
 
     .icons {
@@ -151,11 +163,12 @@
 
     .icon-box {
         width: 100%;
-        margin-bottom: 30px;
+        margin-bottom: 40px;
     }
 
     .icon-box .body-text {
-        margin-bottom: 12px;
+        width: 100%;
+        margin-bottom: 24px;
     }
 
     .icon-box img {
@@ -201,15 +214,23 @@
     }
 
     .creating {
-        padding: 50px 20px;
+        padding: 100px 40px;
     }
 
     .creating-title {
         margin-bottom: 40px;
     }
 
-    .creating-title .body-text {
+    .creating h2 {
+        font-size: 40px;
+        line-height: 48.8px;
+        letter-spacing: -1px;
+
+    }
+
+    .creating-title p {
         width: 100%;
+        margin-bottom: 40px;
     }
 
     .icons {
@@ -220,12 +241,12 @@
 
     .icon-box {
         width: 33.33%;
-        margin-bottom: 35px;
+        margin-bottom: 40px;
     }
 
     .icon-box .body-text {
         width: 100%;
-        margin-bottom: 15px;
+        margin-bottom: 24px;
     }
 
     .icon-box img {
