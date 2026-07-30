@@ -43,9 +43,7 @@
 
 .button-white {
     font-family: "Work Sans", sans-serif;
-    text-decoration: none;
     border: 0;
-
 }
 
 .creating {
@@ -104,7 +102,7 @@
 
 .product-text {
     width: 50%;
-    padding: 95px 50px;
+    padding: 50px 50px;
 }
 
 .product-one {
@@ -113,7 +111,7 @@
 
 .product-one-text {
     width: 50%;
-    margin-left: 100px;
+    margin-left: 80px;
 }
 
 .product-one-small {
@@ -135,18 +133,14 @@
     display: flex;
 }
 
-.product-one-button {
-    margin-top: 0;
-    border: 0;
-}
-
 .product-two {
     display: flex;
 }
 
 .product-two-text {
     width: 50%;
-    padding-left: 200px;
+    padding: 100px 30px;
+    margin-left: 80px;
 }
 
 .product-two-small {
@@ -154,22 +148,125 @@
 }
 
 .product-two-title {
-    width: 65%;
+    width: 50%;
     margin-top: 0;
     margin-bottom: 24px;
 }
 
 .product-two-body {
-    width: 80%;
+    width: 61%;
     margin-bottom: 24px;
 }
 
-.product-two-button {
+.product-button {
     margin-top: 0;
     border: 0;
+    font-family: "Work Sans", sans-serif;
+}
+
+.message {
+    background-color: #f0edf5;
+    text-align: center;
+    padding: 100px 20px 100px;
+    margin-top: 100px;
+}
+
+.message .small-description {
+    margin-top: 0;
+    margin-bottom: 40px;
+}
+
+.message .section-title-purple {
+    width: 80%;
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+.ingredients {
+    display: flex;
+    width: 100%;
+    gap: 15px;
+}
+
+.ingredient {
+    width: calc((100% - 45px) / 4);
+    text-align: center;
 }
 
 
+.ingredient-image {
+    width: 100%;
+}
+
+.ingredient-image img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.ingredient-image .ingredient-mobile {
+    display: none;
+}
+
+
+.ingredient-text {
+    width: 100%;
+    margin-top: 16px;
+    margin-bottom: 10px;
+}
+
+
+.ingredient-subtitle {
+    margin-top: 0;
+    margin-bottom: 24px;
+}
+
+.years {
+    padding: 100px 20px;
+    margin-left: 80px;
+}
+
+.years-text {
+    position: relative;
+    width: 65%;
+    margin-left: 10%;
+}
+
+.years-circle {
+    position: absolute;
+    width: 460px;
+    height: 460px;
+    background-color: #f0edf5;
+    border-radius: 50%;
+    left: 30%;
+    top: 12%;
+}
+
+.years-small {
+    margin-top: 0;
+    margin-bottom: 24px;
+}
+
+.years-subtitle {
+    position: relative;
+    width: 60%;
+    margin-top: 0;
+    margin-bottom: 24px;
+}
+
+.love-icon {
+    width: 40px;
+}
+
+.downimages {
+    width: 100%;
+    margin-bottom: 60px;
+}
+
+.downimages img {
+    display: block;
+    width: 100%;
+}
 
 
 @media (max-width: 850px) {
@@ -279,14 +376,15 @@
         width: 100%;
     }
 
-    .product-one-text {
-        padding: 40px 20px;
-        margin-left: 0;
+    .product-two-small,
+    .product-one-small {
+        margin-top: 0;
     }
 
+    .product-one-text,
     .product-two-text {
-        padding: 40px 20px;
-
+        padding: 40px 50px;
+        margin-left: 0;
     }
 
     .product-one-title,
@@ -301,10 +399,73 @@
 
     .product-one-body,
     .product-two-body {
-        width: 90%;
+        width: 100%;
         margin-bottom: 24px;
     }
 
+    .message {
+        padding: 60px 20px;
+        margin-top: 60px;
+    }
+
+    .message .section-title-purple {
+        width: 80%;
+    }
+
+    .ingredient-text {
+        width: 100%;
+        text-align: center;
+        margin-top: 24px;
+        margin-bottom: 24px;
+    }
+
+
+    .ingredient-subtitle {
+        width: 100%;
+        text-align: center;
+        margin-top: 0;
+        margin-bottom: 40px;
+    }
+
+    .ingredients {
+        flex-wrap: wrap;
+        gap: 15px;
+    }
+
+    .ingredient {
+        width: calc((100% - 15px) / 2);
+    }
+
+    .years {
+        padding: 60px 0;
+    }
+
+    .years-text {
+        width: 100%;
+        margin-left: 5px;
+    }
+
+    .years-small {
+        margin-bottom: 40px;
+    }
+
+    .years-subtitle {
+        margin-bottom: 40px;
+    }
+
+    .years-circle {
+        width: 380px;
+        height: 380px;
+        left: 20%;
+        top: 20%;
+    }
+
+    .downimages img {
+        height: 300px;
+        object-fit: cover;
+        object-position: center;
+        margin-top: 40px;
+    }
 
 }
 
@@ -323,11 +484,6 @@
         margin-top: 0;
 
     }
-
-    .small-description {
-        margin-bottom: 24px;
-    }
-
 
     .section-title-purple {
         font-size: 40px;
@@ -383,4 +539,88 @@
         height: 65px;
     }
 
+    .product-one-text,
+    .product-two-text {
+        padding: 40px 30px;
+    }
+
+    .product-one-title {
+        width: 100%;
+    }
+
+    .product-two-title {
+        width: 85%;
+    }
+
+    .product-one-body,
+    .product-two-body {
+        width: 100%;
+    }
+
+
+    .message {
+        padding: 60px 20px;
+        margin-top: 60px;
+    }
+
+    .message .section-title-purple {
+        width: 95%;
+    }
+
+    .ingredients {
+        display: block;
+    }
+
+    .ingredient {
+        width: 100%;
+    }
+
+    .ingredient-image .ingredient-desktop {
+        display: none;
+    }
+
+    .ingredient-image .ingredient-mobile {
+        display: block;
+        width: 100%;
+    }
+
+    .ingredient-text {
+        margin-top: 24px;
+        margin-bottom: 24px;
+        width: 100%;
+        text-align: center;
+
+    }
+
+    .ingredient-subtitle {
+        margin-top: 0;
+        margin-bottom: 40px;
+
+    }
+
+    .years-text {
+        width: 100%;
+        margin-left: -50px;
+    }
+
+    .years-small {
+        margin-bottom: 40px;
+    }
+
+    .years-subtitle {
+        width: 100%;
+        margin-bottom: 40px;
+
+    }
+
+    .years-circle {
+        width: 280px;
+        height: 280px;
+        left: 20%;
+        top: 20%;
+    }
+
+    .downimages img {
+        height: 210px;
+    }
 }
