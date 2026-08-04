@@ -138,6 +138,118 @@
     margin: 0 auto;
 }
 
+.founders {
+    width: 100%;
+    padding: 0 25px;
+    text-align: center;
+}
+
+.founders>.section-title-purple {
+    margin: 0 0 40px;
+}
+
+
+.founders .subtitle {
+    width: 75%;
+    margin: 0 auto;
+}
+
+
+.founder-container {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 40px;
+}
+
+.founder {
+    width: 45%;
+    text-align: center;
+}
+
+.founder img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.founder .boy,
+.founder .girl {
+    margin-top: 40px;
+    margin-bottom: 24px;
+}
+
+.founders .baking {
+    margin: 40px auto 100px;
+    text-align: center;
+}
+
+.timeline {
+    width: 100%;
+    padding: 0px 25px;
+    text-align: center;
+    margin-bottom: 100px;
+}
+
+.timeline .section-title-purple {
+    margin: 0;
+
+}
+
+.timeline-subtitle {
+    margin: 40px 0 40px;
+
+}
+
+.timeline-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 28px;
+    width: 100%;
+}
+
+.timeline-card {
+    width: 25%;
+    min-height: 340px;
+    padding: 38px 28px;
+    background-color: #F0EDF5;
+    text-align: center;
+}
+
+.timeline-card img {
+    display: block;
+    width: 75px;
+    height: 75px;
+    margin: 0 auto 40px;
+}
+
+.timeline-card .section-subtitle {
+    margin: 0 0 24px;
+}
+
+.timeline-card .body-text {
+    margin: 0 0 24px;
+}
+
+.timeline-card .down {
+    margin-bottom: 0;
+}
+
+.statistics {
+    display: flex;
+    justify-content: space-around;
+    padding: 0px 40px 40px;
+    text-align: center;
+}
+
+.stat {
+    width: 25%;
+}
+
+.stat .section-subtitle {
+    margin: 0 0 24px;
+}
+
 @media screen and (max-width: 850px) {
     .section-title-purple {
         font-size: 52px;
@@ -251,6 +363,90 @@
         width: 100%;
     }
 
+    .founders {
+        padding: 0 0 0px;
+    }
+
+    .founders>.section-title-purple {
+        margin: 0 20px 40px;
+
+    }
+
+    .founders .subtitle {
+        width: 65%;
+    }
+
+    .founder-container {
+        flex-direction: column;
+        margin-top: 0px;
+    }
+
+
+    .founder {
+        width: 100%;
+    }
+
+    .founder img {
+        width: 100%;
+        margin-bottom: 40px;
+        margin-top: 40px;
+    }
+
+    .founder .boy,
+    .founder .girl {
+        margin-bottom: 24px;
+    }
+
+    .timeline {
+        margin-bottom: 100px;
+    }
+
+    .timeline .section-title-purple {
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    .timeline-subtitle {
+        margin: 40px 0 40px;
+    }
+
+    .timeline-container {
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+
+    .timeline-card {
+        width: 47%;
+        min-height: 280px;
+        padding: 40px 40px;
+    }
+
+    .timeline-card img {
+        width: 65px;
+        height: 65px;
+        margin: 0 auto 40px;
+    }
+
+    .timeline-card .down {
+        margin-bottom: 0;
+        width: 80%;
+        margin-left: 30px;
+        margin-right: 30px;
+    }
+
+    .statistics {
+        flex-wrap: wrap;
+        row-gap: 45px;
+    }
+
+    .stat {
+        width: 50%;
+    }
+
+    .stat .section-subtitle {
+        margin-bottom: 24px;
+    }
+
 }
 
 
@@ -340,5 +536,66 @@
     .card .body-text {
         width: 65%;
     }
+
+
+    .founders .subtitle {
+        width: 90%;
+
+    }
+
+    .founder-container {
+        margin-top: 0px;
+    }
+
+    .founders .baking {
+        width: 88%;
+        margin-top: 40px;
+    }
+
+    .timeline {
+        padding: 0 40px;
+    }
+
+    .timeline .section-title-purple {
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .timeline-container {
+        flex-direction: column;
+        gap: 40px;
+    }
+
+    .timeline-card {
+        width: 100%;
+        min-height: 0;
+        padding: 40px 40px;
+    }
+
+    .timeline-card img {
+        width: 65px;
+        height: 65px;
+        margin: 0 auto 40px;
+    }
+
+    .timeline-card .down {
+        margin-left: 30px;
+        margin-right: 30px;
+    }
+
+
+    .statistics {
+        flex-direction: column;
+    }
+
+    .stat {
+        width: 100%;
+        margin-bottom: 40px;
+    }
+
+    .stat .section-subtitle {
+        margin-bottom: 24px;
+    }
+
 
 }
