@@ -57,6 +57,7 @@
 
 .small-description {
     margin: 24px 10px;
+
 }
 
 .story-content {
@@ -78,6 +79,64 @@
     width: 85%;
 }
 
+.why-founded {
+    display: flex;
+    width: 100%;
+    background-color: #F0EDF5;
+    margin-bottom: 100px;
+    padding: 35px;
+    margin-top: 140px;
+
+}
+
+
+.why-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 30%;
+    padding: 30px 20px;
+    border-right: 2px solid #5c3095;
+    text-align: center;
+}
+
+.why-text .section-title-purple {
+    margin-bottom: 40px;
+}
+
+.why-text .body-text {
+    margin: 0;
+}
+
+
+.feature {
+    display: flex;
+    align-items: center;
+    width: 70%;
+}
+
+.card {
+    width: 33.33%;
+    padding: 30px 10px;
+    text-align: center;
+}
+
+.card img {
+    display: block;
+    width: 65px;
+    height: 65px;
+    margin: 0 auto 14px;
+}
+
+.card .section-subtitle {
+    margin-bottom: 40px;
+    margin-top: 40px;
+}
+
+.card .body-text {
+    width: 65%;
+    margin: 0 auto;
+}
 
 @media screen and (max-width: 850px) {
     .section-title-purple {
@@ -147,6 +206,51 @@
         width: 100%;
     }
 
+    .why-founded {
+        flex-direction: column;
+        padding: 50px 20px 50px;
+        margin-top: 40px;
+    }
+
+    .why-text {
+        width: 100%;
+        padding: 0 25px 40px;
+        border-right: none;
+    }
+
+    .why-text .section-title-purple {
+        margin-bottom: 40px;
+    }
+
+    .why-text .body-text {
+        width: 72%;
+        margin: 0 auto;
+    }
+
+    .feature {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .card {
+        width: 100%;
+        padding: 40px 40px;
+    }
+
+    .card img {
+        width: 90px;
+        height: 90px;
+        margin-bottom: 18px;
+    }
+
+    .card .section-subtitle {
+        margin-bottom: 40px;
+    }
+
+    .card .body-text {
+        width: 100%;
+    }
+
 }
 
 
@@ -197,4 +301,44 @@
         padding: 0 15px;
         text-align: center;
     }
+
+    .why-founded {
+        padding: 20px 0 30px;
+    }
+
+    .why-text {
+        margin: 0 auto;
+        padding: 0 0 20px;
+    }
+
+    .why-text .section-title-purple {
+        margin-bottom: 40px;
+        margin-top: 40px;
+    }
+
+    .why-text .body-text {
+        width: 90%;
+        border-bottom: 2px solid #593093;
+        padding-bottom: 40px;
+    }
+
+    .feature {
+        width: 100%;
+    }
+
+    .card {
+        width: 65%;
+        margin: 0 auto;
+        padding: 40px 0;
+        border-bottom: 2px solid #593093;
+    }
+
+    .card:last-child {
+        border-bottom: none;
+    }
+
+    .card .body-text {
+        width: 65%;
+    }
+
 }
