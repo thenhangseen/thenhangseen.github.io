@@ -237,7 +237,7 @@ a {
     }
 
 
-    .emailtext {
+    .enteremail input {
         color: var(--text-black);
         width: 60%;
         border: 1px solid #ececed;
@@ -265,6 +265,9 @@ a {
     }
 }
 
+form {
+    display: flex;
+}
 
 .footerleft {
     width: 60%;
@@ -328,7 +331,7 @@ a {
         .footerright {
             width: 100%;
 
-            .emailtext,
+            .enteremail input,
             .subscribe {
                 width: 100%;
                 margin: 0px 10px;
