@@ -1,7 +1,6 @@
 .promotion-banner{
     margin:10px auto 100px auto;
     position: relative;
-    margin:  10px auto 100px auto;
     width:100%;
     height: 620px;
     background-image: url('../images/promotionbanner.png');
@@ -20,7 +19,6 @@
     top: 30%;
     left: 15%;
 }
-
 
 .promotion-banner-text .body-text{
     max-width: 350px;
@@ -81,32 +79,114 @@
     border:0;
 }
 
+.current-deals{
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto 100px auto;
+    gap:40px;
+}
+
+.promotion-picture{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    max-width: 1760px;
+    max-height: 636px;
+    gap:100px;
+    overflow:hidden;
+}
+
+.circle-under-promotion-picture{
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    max-width: 40px;
+    max-height: 10px;
+}
+
+.promotion-list{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    align-self: center;
+    margin: 0 auto;
+    gap:60px;
+    max-width: 1500px;
+}
+
+.list{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap:40px;
+    width: 200px;
+    text-align: center;
+}
+
+.list img{
+    width: 80%;
+}
+
+
+.dont-miss-out{
+    background-color: var(--bg-purple);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    max-width: 1700px;
+    margin: 0 0 10px 0;
+    gap: 100px;
+}
+
+.missout-pic{
+    width: 850px;
+    height: 600px;
+    object-fit: cover;
+    display:block;
+}
+
+.missout-text{
+    max-width: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap:40px;
+}
+
 @media screen and (max-width: 850px) {
 
     .seasonal-promotion{
-    max-width: 810px;
-    min-height: 1500px;
-    padding: 10px;
+        max-width: 810px;
+        min-height: 1500px;
+        padding: 10px;
     }
 
     .body-text{
-    max-width: 500px;
-    max-height: none;
-    text-align: center;
-    display: flex;
-    align-self: center;
+        max-width: 500px;
+        max-height: none;
+        text-align: center;
+        display: flex;
+        align-self: center;
     }
 
     .container-seasonal-promotion-option{
-    max-width:809px;
-    max-height: 366px;
+        max-width:809px;
+        max-height: 366px;
     }
 
     .seasonal-box{
-    max-width: 240px;
-    max-height:366px;
-    gap:40px;
+        max-width: 240px;
+        max-height:366px;
+        gap:40px;
     }
+
+    .list img{
+        width: 70%;
+    }
+
 
 }
 
@@ -141,6 +221,19 @@
     .seasonal-box{
         max-width: 350px;
         max-height:450px;
+    }
+
+    .promotion-picture{
+        max-width: 800px;
+        max-height: 350px;
+    }
+
+    .promotion-list{
+        max-width: 500px;
+    }
+
+    .list img{
+        width: 60%;
     }
 
 }
