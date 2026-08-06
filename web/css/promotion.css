@@ -1,20 +1,13 @@
 .promotion-banner{
     margin:10px auto 100px auto;
-    width: 100%;
-    max-width: 1692px; 
-    height: 680px;
-    
+    position: relative;
+    margin:  10px auto 100px auto;
+    width:100%;
+    height: 620px;
+    background-image: url('../images/promotionbanner.png');
+    background-size: cover;
+    background-repeat: no-repeat;
 }
-
-.promotion-banner img{
-    width: 100%;
-    height: 100%;
-    display: block;
-    object-fit: cover;
-    object-position: left center;
-    display: block;
-}
-
 
 .promotion-banner-text{
     display: flex;
@@ -24,9 +17,10 @@
     max-height: 234px;
     gap:40px;
     position:absolute;
-    top: 38%;
-    left: 10%;
+    top: 30%;
+    left: 15%;
 }
+
 
 .promotion-banner-text .body-text{
     max-width: 350px;
@@ -88,15 +82,6 @@
 }
 
 @media screen and (max-width: 850px) {
-    .promotion-banner{
-        width: none; 
-        height: 400px;
-    }
-
-    .promotion-banner-text{
-        top:25%;
-        left: 25%;
-    }
 
     .seasonal-promotion{
     max-width: 810px;
@@ -126,6 +111,7 @@
 }
 
 @media screen and (max-width: 780px) {
+
     .seasonal-promotion{
         max-width: 1160px;
         min-height: 1500px;
@@ -159,14 +145,3 @@
 
 }
 
-@media screen and (max-width: 690px) {
-    .promotion-banner{
-        max-width: none; 
-        max-height: none;
-    }
-
-    .promotion-banner-text{
-        top: 25%;
-        left: 15%;
-    }
-}
