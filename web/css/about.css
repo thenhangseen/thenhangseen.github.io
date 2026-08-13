@@ -308,6 +308,12 @@
         letter-spacing: -1px;
     }
 
+    .section-subtitle {
+        font-size: 35px;
+        line-height: 44.9px;
+        letter-spacing: -1px;
+    }
+
     .body-text {
         width: 90%;
         margin-bottom: 24px;
@@ -326,9 +332,6 @@
     }
 
     .creating-title h1 {
-        font-size: 52px;
-        line-height: 65.3px;
-        letter-spacing: -1px;
         width: 100%;
 
     }
@@ -493,6 +496,12 @@
         width: 100%;
     }
 
+    .section-subtitle {
+        font-size: 28px;
+        line-height: 35.8px;
+        letter-spacing: -1px;
+    }
+
     .body-text {
         width: 90%;
         margin-bottom: 24px;
@@ -506,12 +515,7 @@
         margin-bottom: 40px;
     }
 
-    .creating-title h1 {
-        font-size: 40px;
-        line-height: 48.8px;
-        letter-spacing: -1px;
 
-    }
 
     .creating-title p {
         width: 100%;
