@@ -55,7 +55,7 @@
 }
 
 /*bakery highlights*/
-.highlight-title {
+.title {
     text-align: center;
     margin-top: 100px;
 }
@@ -119,7 +119,7 @@
         height: 563.29px;
     }
 
-    .highlight-title {
+    .title {
         .section-title-purple {
             margin: 44px 10px 0px 10px;
         }
