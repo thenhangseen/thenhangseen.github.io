@@ -132,7 +132,65 @@
     margin: 40px 0 40px;
 }
 
+.people-services {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 100px;
+}
 
+
+.people-header {
+    width: 100%;
+}
+
+.people-header .body-text {
+    width: 100%;
+    margin: 40px auto 40px;
+}
+
+.people-list {
+    width: 82%;
+    margin: 40px auto 0;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.people-card {
+    width: 20%;
+    height: 220px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 15px;
+}
+
+.purple-card {
+    background-color: #F0EDF5;
+}
+
+.pink-card {
+    background-color: #F9F1F2;
+}
+
+.people-number {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+
+.people-number img {
+    width: 30px;
+    height: 30px;
+}
+
+.people-card>.body-text {
+    margin: 40px 0 0;
+}
 
 
 
@@ -211,6 +269,26 @@
         margin-top: 40px;
     }
 
+    .people-header .section-title-purple {
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    .people-header .body-text {
+        width: 80%;
+    }
+
+    .people-list {
+        width: 86%;
+        flex-wrap: wrap;
+        row-gap: 40px;
+    }
+
+    .people-card {
+        width: 40%;
+        height: 220px;
+    }
+
 }
 
 
@@ -273,5 +351,26 @@
         width: 100%;
     }
 
+
+    .people-services {
+        margin-bottom: 60px;
+    }
+
+    .people-header .section-title-purple {
+        width: 70%;
+    }
+
+    .people-header .body-text {
+        width: 93%;
+    }
+
+    .people-list {
+        width: 65%;
+        row-gap: 40px;
+    }
+
+    .people-card {
+        width: 100%;
+    }
 
 }
