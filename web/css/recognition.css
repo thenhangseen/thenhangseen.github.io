@@ -6,7 +6,6 @@
     justify-content: center;
     margin: auto;
     width: 90%;
-    margin: 10px auto 100px auto;
 
 
     .small-description {
@@ -151,6 +150,33 @@
     display: block;
     object-fit: cover;
 }
+
+/*btb*/
+.btb {
+    .section-subtitle {
+        color: var(--bg-white);
+        font-weight: 700;
+    }
+}
+
+.btb-top {
+    width: 1588px;
+    height: 604.92px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin: auto;
+}
+
+.btb-top {
+    background-image:
+        linear-gradient(#e3bb7c5e, #86359456),
+        url("../images/btb1.png");
+}
+
+
+
+
 
 
 /* Media Queries */
