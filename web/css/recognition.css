@@ -62,7 +62,9 @@
 .section-title-purple {
     font-weight: 700;
     margin: 44px 0px 40px 0px;
+    padding: 0px 100px;
 }
+
 
 .highlight-content {
     display: flex;
@@ -157,26 +159,101 @@
         color: var(--bg-white);
         font-weight: 700;
     }
+
+    .btb-number {
+        color: var(--bg-white);
+        font-family: var(--font-regular);
+        font-size: 96px;
+        font-weight: 200;
+    }
 }
 
-.btb-top {
-    width: 1588px;
-    height: 604.92px;
+.btb-top,
+.btb-bottom,
+.btb-left {
+    width: 90%;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    margin: auto;
+    margin: 0 auto;
+    justify-content: space-between;
+    display: flex;
+    flex-direction: column;
+    background-size: cover;
 }
 
 .btb-top {
     background-image:
         linear-gradient(#e3bb7c5e, #86359456),
         url("../images/btb1.png");
+    height: 604.92px;
+}
+
+.btb-bottom {
+    background-image:
+        linear-gradient(#3cc87254, #6022666b),
+        url("../images/btb3.png");
+    margin-top: 48px;
+    height: 464.65px;
+}
+
+.btb-subtitle-top {
+    display: flex;
+    padding: 50px 70px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.btb-subtitle-bottom {
+    display: flex;
+    padding: 30px 70px 60px 70px;
+    align-items: flex-end;
+    flex-direction: column;
 }
 
 
+.btb-desc {
+    font-family: var(--font-regular);
+    font-size: 25px;
+    color: var(--bg-white);
+    font-weight: 200;
+    width: 45%;
+}
 
+.btb-center {
+    display: flex;
+    gap: 54px;
+    margin: auto;
+    width: 90%;
+    margin-top: 48px;
+}
 
+.btb-left,
+.btb-right {
+    width: 50%;
+
+}
+
+.btb-left {
+    background-image:
+        linear-gradient(#9494946c, #51375d77),
+        url("../images/btb2.png");
+
+    .btb-desc {
+        width: 100%;
+    }
+}
+
+.btb-right {
+    background-color: var(--bg-purple);
+    padding: 50px;
+
+    .section-title-purple {
+        margin: 30px 0px 30px 0px;
+        padding: 0px;
+    }
+
+}
 
 
 /* Media Queries */
@@ -246,6 +323,30 @@
     .reason-subtitle,
     .reason-img {
         width: 100%;
+    }
+
+    .btb-center {
+        flex-direction: column;
+    }
+
+    .btb-left,
+    .btb-right {
+        width: 100%;
+    }
+
+    .btb-desc {
+        width: 100%;
+    }
+
+    .btb-top,
+    .btb-left,
+    .btb-bottom {
+        height: 1121.6px;
+        background-position: center;
+    }
+
+    .btb-top {
+        margin-top: 40px;
     }
 
 }
