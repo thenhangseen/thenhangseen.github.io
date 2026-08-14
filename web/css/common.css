@@ -110,6 +110,10 @@ a {
 
 .menu {
     display: none;
+    font-size: 30px;
+    cursor: pointer;
+    color: var(--text-purple);
+    z-index: 1001;
 }
 
 .navigationtop {
@@ -200,10 +204,6 @@ a {
 .submenu a {
     display: block;
     padding: 15px 20px;
-}
-
-.has-submenu>a::after {
-    margin-left: 2px;
 }
 
 .has-submenu {
@@ -387,16 +387,74 @@ a {
         line-height: 44.9px;
     }
 
-    .navigationcontent {
-        display: none;
-    }
-
     .menu {
         display: block;
+        cursor: pointer;
     }
+
+    .navigation {
+        position: relative;
+        justify-content: space-between;
+    }
+
+    .navigationcontent {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background-color: var(--bg-white);
+        flex-direction: column;
+        gap: 0;
+        margin: 0;
+        padding: 0;
+        z-index: 1000;
+        padding: 10px 0px 10px 0px;
+        font-size: 12px;
+    }
+
+    .navigationcontent.active {
+        display: flex;
+    }
+
+    .menu-item {
+        padding: 20px;
+    }
+
+    .has-submenu>.menu-item>a::after {
+        content: "⌄";
+        float: right;
+        color: var(--text-black);
+    }
+
+    .submenu,
+    .menu-item:hover {
+        background-color: var(--bg-grey);
+    }
+
+    .navigationcontent a:hover {
+        text-decoration: none;
+    }
+
+    .submenu {
+        width: 100%;
+        z-index: 1002;
+        margin-top: 25px;
+    }
+
+    .submenu .menu-item {
+        padding: 8px 30px;
+    }
+
 }
 
-@media screen and (max-width: 899px) {}
+
+
+
+
+
+
+
 
 @media screen and (max-width: 771px) {
     .footer {
