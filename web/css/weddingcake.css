@@ -5,6 +5,12 @@
     padding: 40px 0px;
 }
 
+.middlesection {
+    text-align: center;
+    margin: 0 auto;
+    padding: 40px 0px;
+}
+
 .topsectiontitle {
     padding: 40px 0px;
 }
@@ -114,6 +120,52 @@
 
 }
 
+.popularspecialflavours {
+    justify-content: space-evenly;
+    display: flex;
+    flex-direction: row;
+    padding-bottom: 5%;
+}
+
+.flavourcards {
+    width: 20%;
+    min-width: 70px;
+    text-align: center;
+    align-items: center;
+}
+
+.flavourimages {
+    width: 100%;
+    margin-bottom: 7%;
+}
+
+.tiercards {
+    padding: 50px 0px;
+    background-color: #F0EDF5;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    width: 30%;
+}
+
+.differenttiers {
+    flex-direction: row;
+    justify-content: space-evenly;
+    display: flex;
+}
+
+tierimages {
+    width: 100%;
+}
+
+.tierdescriptions {
+    text-align: center;
+    width: 80%;
+    padding-top: 7%;
+    padding-bottom: 14%;
+}
+
 @media screen and (max-width: 1200px) {
     .row {
         display: block;
@@ -157,5 +209,16 @@
 
     .imageandcardhide {
         padding: 40px 0px;
+    }
+
+    .popularspecialflavours {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .flavourcards {
+        width: 30%;
+        margin-bottom: 7%;
     }
 }
