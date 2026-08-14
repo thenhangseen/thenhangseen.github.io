@@ -155,8 +155,8 @@
     display: flex;
 }
 
-tierimages {
-    width: 100%;
+.tierimages {
+    width: 65%;
 }
 
 .tierdescriptions {
@@ -164,6 +164,10 @@ tierimages {
     width: 80%;
     padding-top: 7%;
     padding-bottom: 14%;
+}
+
+.ratingstar {
+    width: 70px;
 }
 
 @media screen and (max-width: 1200px) {
@@ -195,6 +199,10 @@ tierimages {
     .imageandcardhide {
         display: block;
     }
+
+    .ratingstar {
+        width: 38px;
+    }
 }
 
 @media screen and (max-width: 500px) {
@@ -220,5 +228,21 @@ tierimages {
     .flavourcards {
         width: 30%;
         margin-bottom: 7%;
+    }
+
+    .differenttiers {
+        flex-direction: column;
+        justify-content: space-evenly;
+        display: flex;
+        align-items: center;
+    }
+
+    .tiercards {
+        width: 85%;
+        margin-bottom: 8%;
+    }
+
+    .ratingstar {
+        width: 70px;
     }
 }
