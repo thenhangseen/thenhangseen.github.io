@@ -11,54 +11,54 @@
 
 <body>
 
-     <div class="header">
+    <div class="header">
         <div class="navigationtop">
             <p>Free International Shipping - 10% OFF SITE</p>
         </div>
 
-        <div class="navigation">
+        <div class="navigation" id="mobile-menu">
             <img class="logo" src="images/logo.png" alt="Bakery logo">
 
-            <div class="navigationcontent">
-                <div><a href="index.html">HOME</a></div>
+            <div class="navigationcontent" id="navigationcontent">
+                <div class="menu-item"><a href="index.html">HOME</a></div>
                 <div class="has-submenu">
-                    <a href="about.html">ABOUT</a>
+                    <div class="menu-item"><a href="about.html">ABOUT</a></div>
 
                     <div class="submenu">
-                        <div><a href="#">HISTORY</a></div>
-                        <div><a href="#">OUR TEAM</a></div>
-                        <div><a href="#">RECOGNITION</a></div>
+                        <div class="menu-item"><a href="#">HISTORY</a></div>
+                        <div class="menu-item"><a href="#">OUR TEAM</a></div>
+                        <div class="menu-item"><a href="recognition.html">RECOGNITION</a></div>
                     </div>
                 </div>
                 <div class="has-submenu">
-                    <a href="#">MENU</a>
+                    <div class="menu-item"><a href="#">MENU</a></div>
 
                     <div class="submenu">
-                        <a href="#">ORDER PAGE</a>
-                        <a href="promotion.html">PROMOTION</a>
+                        <div class="menu-item"><a href="#">ORDER PAGE</a></div>
+                        <div class="menu-item"><a href="promotion.html">PROMOTION</a></div>
                     </div>
                 </div>
 
                 <div class="has-submenu">
-                    <a href="#">SERVICES</a>
+                    <div class="menu-item"><a href="#">SERVICES</a></div>
                     <div class="submenu">
-                        <a href="weddingcake.html">WEDDING CAKE</a>
-                        <a href="#">BIRTHDAY CAKE</a>
-                        <a href="#">OTHER PASTRIES</a>
+                        <div class="menu-item"><a href="weddingcake.html">WEDDING CAKE</a></div>
+                        <div class="menu-item"><a href="#">BIRTHDAY CAKE</a></div>
+                        <div class="menu-item"><a href="#">OTHER PASTRIES</a></div>
                     </div>
                 </div>
                 <div class="has-submenu">
-                    <a href="#">JOURNAL</a>
+                    <div class="menu-item"><a href="#">JOURNAL</a></div>
 
                     <div class="submenu">
-                        <a href="#">GALLERY</a>
+                        <div class="menu-item"><a href="#">GALLERY</a></div>
                     </div>
                 </div>
                 <div class="has-submenu">
-                    <a href="#">CONTACT</a>
+                    <div class="menu-item"><a href="#">CONTACT</a></div>
 
                     <div class="submenu">
-                        <a href="#">STORE LOCATION</a>
+                        <div class="menu-item"> <a href="#">STORE LOCATION</a></div>
                     </div>
                 </div>
 
@@ -67,13 +67,13 @@
             <div class="account">
                 <div>ACCOUNT</div>
                 <img class="cart" src="images/cart.png" alt="cart">
-                <img class="menu" src="images/menu.png" alt="hamburger">
+                <div class="menu" id="menu">&#9776</div>
             </div>
         </div>
     </div>
 
     <div class="promotion-banner">
-        <div ></div>
+        <div></div>
 
         <div class="promotion-banner-text">
             <h1 class="section-title-purple">Merry Christmas</h1>
@@ -85,7 +85,8 @@
     <div class="seasonal-promotion">
 
         <h1 class="section-title-purple">Seasonal Promotion</h1>
-        <p class="body-text">Enjoy our latest offers and special discounts on freshly baked favorites.Discover great deals available for a limited time and treat yourself to something delicious.</p>
+        <p class="body-text">Enjoy our latest offers and special discounts on freshly baked favorites.Discover great
+            deals available for a limited time and treat yourself to something delicious.</p>
 
         <div class="container-seasonal-promotion-option">
             <div class="seasonal-box">
@@ -109,9 +110,10 @@
     </div>
 
     <div class="current-deals">
-        
+
         <h1 class="section-title-purple">Current Deals</h1>
-        <p class="body-text">Enjoy our latest offers and special discounts on freshly baked favorites. Discover great deals available for a limited time and treat yourself to something delicious.</p>
+        <p class="body-text">Enjoy our latest offers and special discounts on freshly baked favorites. Discover great
+            deals available for a limited time and treat yourself to something delicious.</p>
 
         <div class="promotion-picture">
             <img src="images/currentdeal 2.png" width="50%" height="50%">
@@ -133,22 +135,22 @@
                 <img src="images/promotion-cake.png">
                 <p class="body-text">20% OFF Selected Cakes</p>
             </div>
-            
+
             <div class="list">
                 <img src="images/promotion-famibundle.png">
                 <p class="body-text">Family Bundle</p>
             </div>
-            
+
             <div class="list">
                 <img src="images/promotion-freedeli.png">
                 <p class="body-text">Free Delivery</p>
             </div>
-            
+
             <div class="list">
                 <img src="images/promotion-birthday.png">
                 <p class="body-text">Birthday Discount</p>
             </div>
-            
+
             <div class="list">
                 <img src="images/promotion-student.png">
                 <p class="body-text">Student Promotion</p>
@@ -164,12 +166,13 @@
 
         <div class="missout-text">
             <h1 class="section-title-purple">Don't Miss Out!</h1>
-            <p class="body-text">Freshly baked treats are waiting for you. Order today and enjoy our limited-time promotions before they're gone.</p>
+            <p class="body-text">Freshly baked treats are waiting for you. Order today and enjoy our limited-time
+                promotions before they're gone.</p>
             <button class="button-purple">Order Now</button>
         </div>
     </div>
 
-   <div class="footer">
+    <div class="footer">
         <div class="footertop">
             <div class="footerleft">
                 <img class="logo" src="images/logo.png" alt="Bakery logo">
@@ -246,7 +249,20 @@
             </div>
         </div>
     </div>
+    <script>
+        const toggleButton = document.getElementById("menu");
+        const menu = document.getElementById("navigationcontent");
 
+        toggleButton.addEventListener("click", () => {
+            menu.classList.toggle("active");
+            // Change icon
+            if (menu.classList.contains("active")) {
+                toggleButton.innerHTML = "&times;"; // × (cross)
+            } else {
+                toggleButton.innerHTML = "&#9776;"; // ☰ (hamburger)
+            }
+        });
+    </script>
 </body>
 
 </html>

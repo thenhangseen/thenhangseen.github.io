@@ -1,0 +1,466 @@
+.services {
+    width: 100%;
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 100px;
+}
+
+.services h1 {
+    margin-bottom: 40px;
+}
+
+.services-img {
+    width: 84%;
+    height: auto;
+    margin: 0 auto;
+}
+
+.services-big {
+    display: block;
+}
+
+.services-one,
+.services-two {
+    display: none;
+}
+
+.offer-services {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 100px;
+}
+
+.offer-header {
+    width: 100%;
+    margin: 0 auto;
+}
+
+.offer-header .we {
+    width: 84%;
+    margin: 40px auto 40px;
+}
+
+.offer-list {
+    width: 85%;
+    margin: 140px auto 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    row-gap: 170px;
+
+}
+
+.offer-card {
+    position: relative;
+    width: 40%;
+    padding-top: 172px;
+    background-color: #F0EDF5;
+
+}
+
+.offer-main-img {
+    position: absolute;
+    max-width: 35%;
+    max-height: 250px;
+    top: -100px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    margin-bottom: 40px;
+}
+
+.offer-card-title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.offer-card-title>img {
+    max-width: 30px;
+    max-height: 30px;
+
+}
+
+.offer-card>.body-text {
+    width: 65%;
+    margin: 40px auto 40px;
+}
+
+.service-rating {
+    width: 100%;
+    padding: 35px 0 45px;
+    text-align: center;
+    background-color: #F9F1F2;
+    margin-bottom: 100px;
+}
+
+
+.rating-header {
+    width: 100%;
+}
+
+.rating-header .section-title-purple {
+    margin-top: 40px;
+}
+
+.rating-header .body-text {
+    width: 83%;
+    margin: 40px auto 40px;
+}
+
+.rating-list {
+    width: 94%;
+    margin: 40px auto 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.rating-star {
+    width: 58px;
+    height: auto;
+}
+
+
+.rating-item .section-subtitle {
+    margin: 40px 0 40px;
+}
+
+
+.rating-item .body-text {
+    margin: 40px 0 40px;
+}
+
+.people-services {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 100px;
+}
+
+
+.people-header {
+    width: 100%;
+}
+
+.people-header .body-text {
+    width: 100%;
+    margin: 40px auto 40px;
+}
+
+.people-list {
+    width: 82%;
+    margin: 40px auto 0;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.people-card {
+    width: 20%;
+    height: 220px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 15px;
+}
+
+.purple-card {
+    background-color: #F0EDF5;
+}
+
+.pink-card {
+    background-color: #F9F1F2;
+}
+
+.people-number {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+
+.people-number img {
+    width: 30px;
+    height: 30px;
+}
+
+.people-card>.body-text {
+    margin: 40px 0 0;
+}
+
+.delivery {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 100px;
+}
+
+
+.delivery-picture {
+    width: 100%;
+    position: relative;
+}
+
+
+.delivery-img {
+    width: 100%;
+    display: block;
+}
+
+
+.delivery-850,
+.delivery-500 {
+    display: none;
+}
+
+
+
+.delivery-title {
+    position: absolute;
+    width: 100%;
+    top: 35px;
+    left: 0;
+    margin: 0;
+}
+
+
+
+.delivery-content {
+    width: 100%;
+}
+
+
+.delivery-content .body-text {
+    width: 70%;
+    margin: 40px auto 40px;
+}
+
+
+.delivery-content .button-purple {
+    border: 0;
+}
+
+
+
+@media screen and (max-width: 850px) {
+
+    .section-title-purple {
+        font-size: 52px;
+        line-height: 65.3px;
+        letter-spacing: -1px;
+    }
+
+    .section-subtitle {
+        font-size: 35px;
+        line-height: 44.9px;
+        letter-spacing: -1px;
+    }
+
+    .services-big,
+    .services-two {
+        display: none;
+    }
+
+    .services-one {
+        display: block;
+        width: 81%;
+        margin: 0 auto;
+    }
+
+
+    .offer-services {
+        padding-top: 20px;
+    }
+
+    .offer-header .we {
+        width: 84%;
+
+    }
+
+    .offer-list {
+        width: 74%;
+        margin: 140px auto 70px;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        row-gap: 160px;
+    }
+
+    .offer-card {
+        width: 100%;
+    }
+
+    .offer-card-title>img {
+        max-width: 25px;
+        max-height: 25px;
+    }
+
+    .offer-card>.body-text {
+        width: 55%;
+    }
+
+    .rating-header .body-text {
+        width: 68%;
+    }
+
+    .rating-list {
+        width: 88%;
+        margin-top: 40px;
+        flex-wrap: wrap;
+        row-gap: 40px;
+    }
+
+    .rating-item {
+        width: 45%;
+        margin-top: 40px;
+    }
+
+    .people-header .section-title-purple {
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    .people-header .body-text {
+        width: 80%;
+    }
+
+    .people-list {
+        width: 86%;
+        flex-wrap: wrap;
+        row-gap: 40px;
+    }
+
+    .people-card {
+        width: 40%;
+        height: 220px;
+    }
+
+    .delivery-big {
+        display: none;
+    }
+
+
+    .delivery-850 {
+        display: block;
+    }
+
+
+    .delivery-title {
+        top: 30px;
+    }
+
+    .delivery-content .body-text {
+        width: 75%;
+    }
+
+}
+
+
+@media screen and (max-width: 500px) {
+
+    .section-title-purple {
+        font-size: 40px;
+        line-height: 48.4px;
+        letter-spacing: -1px;
+    }
+
+    .section-subtitle {
+        font-size: 28px;
+        line-height: 35.8px;
+        letter-spacing: -1px;
+    }
+
+    .services-big,
+    .services-one {
+        display: none;
+    }
+
+    .services-two {
+        display: block;
+        width: 91%;
+        margin: 0 auto;
+    }
+
+    .offer-header .we {
+        width: 95%;
+        margin-top: 40px;
+        margin-bottom: 40px;
+    }
+
+    .offer-list {
+        width: 100%;
+        margin-top: 120px;
+        row-gap: 120px;
+    }
+
+    .offer-card {
+        padding-top: 170px;
+    }
+
+    .offer-main-img {
+        width: 55%;
+        top: -80px;
+    }
+
+    .offer-card>.body-text {
+        width: 68%;
+    }
+
+    .rating-header .body-text {
+        width: 90%;
+
+    }
+
+    .rating-item {
+        width: 100%;
+    }
+
+
+    .people-services {
+        margin-bottom: 60px;
+    }
+
+    .people-header .section-title-purple {
+        width: 70%;
+    }
+
+    .people-header .body-text {
+        width: 93%;
+    }
+
+    .people-list {
+        width: 60%;
+        row-gap: 40px;
+    }
+
+    .people-card {
+        width: 100%;
+        align-items: center;
+    }
+
+
+    .delivery-850 {
+        display: none;
+    }
+
+
+    .delivery-500 {
+        display: block;
+    }
+
+
+    .delivery-title {
+        width: 90%;
+        top: 20px;
+        left: 5%;
+    }
+
+    .delivery-content .body-text {
+        width: 95%;
+
+    }
+
+}
