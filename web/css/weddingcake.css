@@ -170,6 +170,37 @@
     width: 70px;
 }
 
+.bottomsection {
+    flex-direction: row;
+    display: flex;
+    background-image: url(../images/weddingcakepattern.png);
+    background-size: 50%;
+    background-position: 0% 0%;
+    background-repeat: no-repeat;
+    height: 200%;
+
+}
+
+.weddingcakeordernow {
+    background-image: url(../images/cakecutting.png);
+    background-size: cover;
+    background-position: 80% 20%;
+    text-align: center;
+    margin: 0 auto;
+    max-width: 750px;
+    max-height: 890px;
+    height: 100%;
+    width: 100%;
+    padding: 40px 0px;
+
+}
+
+.emptyspace {
+    width: 50%;
+    height: 100%;
+}
+
+
 @media screen and (max-width: 1200px) {
     .row {
         display: block;
