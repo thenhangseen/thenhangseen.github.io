@@ -64,7 +64,6 @@
 
 .productright {
     display: flex;
-    width: 50%;
     gap: 26px;
     justify-content: center;
 
@@ -110,13 +109,14 @@
     border: 0px;
     margin-top: 40px;
     margin-left: 0px;
+
 }
 
 
 .locationimage {
     display: flex;
     justify-content: center;
-    margin: 0px 100px 0px 100px;
+    margin: 0 40px 0 40px;
 
     .body-text {
         margin-bottom: 40px;
@@ -134,6 +134,7 @@
     align-items: center;
     justify-content: center;
     gap: 79px;
+    padding-bottom: 20px;
 
     .body-text {
         margin-bottom: 10px;
@@ -160,54 +161,65 @@
 
 /*Get in touch Section*/
 .sharing {
-    margin: 100px;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
 }
 
-.sharingtop {
-    display: flex;
-    gap: 40px;
-    justify-content: center;
-
-    .sharingcontent {
-        width: 737.14px;
-        height: 485.22px;
-        background-color: var(--bg-purple);
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        text-align: center;
-
-        .small-description {
-            margin-bottom: 44px;
-        }
-
-        .section-subtitle {
-            margin-bottom: 44px;
-            font-weight: 700;
-        }
-
-        .button-purple {
-            margin-top: 0px;
-        }
-
-        .button-purple img {
-            width: 30px;
-            vertical-align: middle;
-        }
-
-        .button-purple span {
-            vertical-align: middle;
-        }
-    }
-}
-
+.sharingtop,
 .sharingbottom {
     display: flex;
     gap: 40px;
-    margin-top: 40px;
-    justify-content: center;
+    width: 100%;
 }
+
+
+.sharingbottom {
+    margin-top: 40px;
+}
+
+.sharingbottom img {
+    flex: 1;
+    width: 0;
+    height: auto;
+}
+
+
+.sharingcontent {
+    flex: 1;
+    background-color: var(--bg-purple);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 100px;
+
+    .small-description {
+        margin-bottom: 44px;
+    }
+
+    .section-subtitle {
+        margin-bottom: 44px;
+        font-weight: 700;
+    }
+
+    .button-purple {
+        margin-top: 0px;
+    }
+
+    .button-purple img {
+        width: 30px;
+        vertical-align: middle;
+    }
+
+    .button-purple span {
+        vertical-align: middle;
+    }
+}
+
 
 .banner {
     background-image: linear-gradient(rgba(0, 0, 0, 0.5)), url(../images/indexbanner.png);
@@ -260,8 +272,7 @@
     }
 
     .productright {
-        flex-direction: column;
-        align-items: center;
+        flex-wrap: wrap;
     }
 
     .locationimage {
@@ -299,6 +310,12 @@
 
     .sharingbottom {
         flex-direction: column;
+    }
+
+    .sharingbottom img {
+        width: 100%;
+        height: auto;
+        flex: none;
     }
 }
 
