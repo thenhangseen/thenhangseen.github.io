@@ -61,13 +61,18 @@
     color: var(--text-black);
 }
 
+.small-description-white {
+    font-family: var(--font-regular);
+    color: var(--bg-white);
+}
+
 .body-text {
     font-size: 16px;
     line-height: 28.8px;
     letter-spacing: 0;
 }
 
-.small-description {
+.small-description, .small-description-white {
     font-size: 14px;
     line-height: 18px;
     letter-spacing: 1px;

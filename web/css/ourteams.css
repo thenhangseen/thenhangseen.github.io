@@ -1,39 +1,40 @@
 .herobanner {
+    margin:10px auto 100px auto;
     position: relative;
-    width: 100%;
-    margin-top: 20px;
-}
-
-.herobanner img {
-    display: block;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    object-position: center;
-}
-
-.hero-text {
-    width: 100%;
-    text-align: center;
-    margin-bottom: 100px;
-}
-
-
-.herobanner .section-title-purple {
-    position: absolute;
-    top: 0;
-    left: 0;
+    width:100%;
+    height: 550px;
+    background-image: url('../images/ourteambanner.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    overflow:hidden;
     display: flex;
-    align-items: center;
     justify-content: center;
-    width: 100%;
-    height: 90%;
-    margin: 0;
+    align-items: center;
 }
 
-
-.herobanner .body-text {
-    margin: 0;
+.hero-text{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 260px;
+    max-height: 115px;
     text-align: center;
-    margin-top: 24px;
+    gap:24px;
+}
+
+@media screen and (max-width: 850px) {
+
+    .herobanner{
+        max-height: 388px;
+    }
+
+}
+
+@media screen and (max-width: 700px) {
+    .herobanner{
+        max-height: 278px;
+    }
+
 }
