@@ -37,6 +37,7 @@
     color: var(--bg-white);
 }
 
+.section-subtitle-black,
 .section-title-black {
     font-family: var(--font-bold);
     color: var(--text-black);
@@ -55,7 +56,8 @@
     line-height: 1.36px;
 }
 
-.section-subtitle {
+.section-subtitle,
+.section-subtitle-black {
     font-size: 36px;
     line-height: 46.1px;
     letter-spacing: -1px;
@@ -394,7 +396,8 @@ a {
         line-height: 65.3px;
     }
 
-    .section-subtitle {
+    .section-subtitle,
+    .section-subtitle-black {
         font-size: 35px;
         line-height: 44.9px;
     }
@@ -495,7 +498,8 @@ a {
         line-height: 48.4px;
     }
 
-    .section-subtitle {
+    .section-subtitle,
+    .section-subtitle-black {
         font-size: 28px;
         line-height: 35.8px;
     }
