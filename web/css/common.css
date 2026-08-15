@@ -37,8 +37,14 @@
     color: var(--bg-white);
 }
 
+.section-title-black {
+    font-family: var(--font-bold);
+    color: var(--text-black);
+}
+
 .section-title-purple,
-.section-title-white {
+.section-title-white,
+.section-title-black {
     font-size: 56px;
     line-height: 67.8px;
     letter-spacing: -1px;
@@ -382,7 +388,8 @@ a {
 @media screen and (max-width: 850px) {
 
     .section-title-purple,
-    .section-title-white {
+    .section-title-white,
+    .section-title-black {
         font-size: 52px;
         line-height: 65.3px;
     }
@@ -482,7 +489,8 @@ a {
 @media screen and (max-width: 500px) {
 
     .section-title-purple,
-    .section-title-white {
+    .section-title-white,
+    .section-title-black {
         font-size: 40px;
         line-height: 48.4px;
     }
