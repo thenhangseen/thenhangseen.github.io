@@ -134,26 +134,36 @@
     background-color: var(--bg-purple);
     display: flex;
     flex-direction: row;
-    align-items: center;
+    align-items: stretch;
     max-width: 1700px;
     margin: 0 0 10px 0;
-    gap: 100px;
+    gap: 40px;
 }
 
 .missout-pic{
-    width: 850px;
+    width:40%;
     height: 600px;
+    overflow: hidden;
+}
+
+.missout-pic img{
+    width: 100%;
+    height: 100%;
     object-fit: cover;
-    display:block;
+    object-position: center;
+    display: block;
 }
 
 .missout-text{
-    max-width: 500px;
+    width:55%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     gap:40px;
+    padding:20px 40px;
+    text-align: center;
+    box-sizing: border-box;
 }
 
 @media screen and (max-width: 850px) {
@@ -186,6 +196,8 @@
     .list img{
         width: 70%;
     }
+
+
 
 
 }
@@ -234,6 +246,23 @@
 
     .list img{
         width: 60%;
+    }
+
+    .dont-miss-out{
+        flex-direction: column;
+        gap: 0px;
+    }
+
+    .missout-pic{
+        width: 100%;
+        max-height: 480px;
+    }
+
+    .missout-text{
+        width: 100%;
+        max-height:400px;
+        padding: 40px 20px;
+        gap: 15px;
     }
 
 }
