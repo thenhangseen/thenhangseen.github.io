@@ -29,7 +29,7 @@
     justify-content:center;
     align-items: center;
     max-width: 1087px;
-    margin: 100px auto;
+    margin: 0px auto;
     gap:72px;
 }
 
@@ -126,7 +126,7 @@
     flex-direction: column;
     justify-content: center;
     align-self: center;
-    margin: 100px auto;
+    margin: 0 auto;
     gap:40px
 }
 
@@ -248,6 +248,16 @@
 
     .manager-detail{
         min-height: auto;
+    }
+
+    .global-ambassadors-image{
+        margin: 0 auto;
+        width: 100%;
+        max-height:860px;
+    }
+
+    .global-ambassadors-image img{
+        border-radius: 0;
     }
 
 }
