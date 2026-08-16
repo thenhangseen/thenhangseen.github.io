@@ -1,8 +1,9 @@
-.topsection {
+.sectionheadline {
     text-align: left;
     margin: 0 auto;
     padding: 3% 5%;
 }
+
 
 .newscards {
     width: 100%;
@@ -101,7 +102,51 @@
     text-align: center;
 }
 
-@media screen and (max-width: 1200px) {}
+.othernews {
+    background-color: #F0EDF5;
+}
+
+.othernewssection {
+    justify-content: flex-start;
+    gap: 3%;
+    padding: 3%;
+    flex-direction: row;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.othernewscards {
+    background-color: #FFFFFF;
+    width: 30%;
+    max-width: 475px;
+    min-width: 350px;
+    align-items: center;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+
+}
+
+.othercardsdescriptions {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    gap: 40px;
+    padding: 7% 10%;
+}
+
+.othernewsimage {
+    width: 100%;
+}
+
+
+@media screen and (max-width: 850px) {
+    .othernewsheadline {
+        background-color: #F0EDF5;
+    }
+}
 
 
 @media screen and (max-width: 500px) {
