@@ -1,17 +1,24 @@
 .topsection {
     text-align: left;
     margin: 0 auto;
-    padding: 80px 80px;
+    padding: 3% 5%;
 }
 
 .newscards {
     border: 1px solid #F0EDF5;
-    padding: 2% 7%;
-    width: 60%;
+    padding: 4% 7%;
+    width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     gap: 35px;
+}
+
+.newscardssection {
+    display: flex;
+    flex-direction: column;
+    width: 65%;
+    gap: 40px;
 }
 
 .chips {
@@ -34,8 +41,8 @@
 
 }
 
-.dividerverticalwithchips {
-    gap: 15px;
+.chipsgroup {
+    gap: 30px;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -55,7 +62,7 @@
     display: flex;
     flex-direction: row;
     gap: 40px;
-    align-items: center;
+    align-items: top;
     justify-content: space-between;
     margin: 0px 40px;
 }
@@ -67,13 +74,13 @@
 
 .recipes {
     background-color: #F0EDF5;
-    width: 40%;
+    width: 35%;
     padding: 2% 2%;
-    align-items: center;
+    align-items: top;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
     gap: 40px;
+    height: fit-content;
 }
 
 .recipescards {
@@ -83,9 +90,28 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    gap: 20px;
+    gap: 15px;
+}
+
+.recipescardstitle {
+    padding-bottom: 5%;
 }
 
 .popularecipestitle {
     text-align: center;
+}
+
+@media screen and (max-width: 1200px) {}
+
+
+@media screen and (max-width: 500px) {
+    .newsandrecipes {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        gap: 40px;
+        align-items: top;
+        justify-content: space-between;
+        margin: 0px 40px;
+    }
 }
