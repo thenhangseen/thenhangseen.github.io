@@ -1,0 +1,263 @@
+.herobanner {
+    margin:10px auto 100px auto;
+    position: relative;
+    width:100%;
+    height: 550px;
+    background-image: url('../images/ourteambanner.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    overflow:hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-text{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 260px;
+    max-height: 115px;
+    text-align: center;
+    gap:24px;
+}
+
+.founder{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    max-width: 1087px;
+    margin: 0px auto;
+    gap:72px;
+}
+
+.founder-image{
+    width: 80%;
+}
+
+.founder-image img{
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.founder-content{
+    max-width: 480px;
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    gap:40px;
+}
+
+.small-size-founder-img{
+    display:none;
+}
+
+.our-managers{
+    display: flex;
+    flex-direction: column;
+    margin:100px auto;
+    gap:40px;
+    max-width: 1600px;
+}
+
+.managers-introduction,
+.global-ambassadors-intro{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap:40px;
+    width: 100%;
+}
+
+.managers{
+    display: flex;
+    width:100%;
+    gap:40px;
+}
+
+.manager-box-purple,
+.manager-box-pink{
+    display: flex;
+    flex-direction: column;
+    width: calc((100%-80px) / 3);
+}
+
+.manager-box-purple{
+    background-color: var(--bg-purple);
+}
+
+.manager-box-pink{
+    background-color: var(--bg-pink);
+}
+
+.manager-pic{
+    width:100%;
+    height: 70%;
+}
+
+.manager-pic img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    display: block;
+}
+
+.manager-detail{
+    width:100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap:16px;
+    padding:32px 40px;
+    text-align: center;
+    box-sizing: border-box;
+    min-height: 220px;
+}
+
+.global-ambassadors{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-self: center;
+    margin: 0 auto;
+    gap:40px
+}
+
+.global-ambassadors-image{
+    margin: 0 auto;
+    width: 80%;
+    max-height:860px;
+}
+
+.global-ambassadors-image img{
+    width:100%;
+    height:50%;
+    border-radius: 67px;
+}
+
+@media screen and (max-width: 1110px) {
+    .founder{
+        gap:10px;
+
+    }
+
+    .founder-image{
+        width: 45%;
+    }
+
+    .founder-image img{
+        width: 90%;
+    }
+
+    .founder-content{
+        max-width: 400px;
+    }
+}
+
+@media screen and (max-width: 850px) {
+
+    .herobanner{
+        max-height: 388px;
+    }
+
+    .founder{
+        gap:30px;
+    }
+
+    .founder-content{
+        max-width: 320px;
+        display: flex;
+        flex-direction: column;
+        justify-content: left;
+        gap:40px;
+    }
+
+    .managers{
+        gap:24px;
+    }
+
+    .manager-box-pink,
+    .manager-box-purple{
+        width:calc((100%-48px) / 3);
+    }
+
+    .manaager-pic{
+        height: 50%;
+    }
+
+    .manager-detail{
+        padding:20px 16px;
+        min-height: 200px;
+    }
+
+}
+
+@media screen and (max-width: 700px) {
+    .herobanner{
+        max-height: 278px;
+    }
+
+    .founder{
+        flex-direction: column;
+        gap: 40px;
+        max-width: 370px;
+    }
+
+    .founder-image{
+        display:none;
+    }
+
+    .small-size-founder-img{
+        display:block;
+        width: 70%;
+    }
+
+    .founder-content{
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .managers-introduction{
+        margin: 0 auto;
+        width: 50%;
+    }
+
+    .managers{
+        flex-direction:column;
+        align-items: center;
+        justify-content: center;
+        gap:40px;
+    }
+
+    .manager-box-purple,
+    .manager-box-pink{
+        width: 80%;
+    }
+
+    .manager-pic{
+        height: 40%;
+    }
+
+    .manager-detail{
+        min-height: auto;
+    }
+
+    .global-ambassadors-image{
+        margin: 0 auto;
+        width: 100%;
+        max-height:860px;
+    }
+
+    .global-ambassadors-image img{
+        border-radius: 0;
+    }
+
+}

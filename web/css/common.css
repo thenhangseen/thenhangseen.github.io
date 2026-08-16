@@ -37,8 +37,15 @@
     color: var(--bg-white);
 }
 
+.section-subtitle-black,
+.section-title-black {
+    font-family: var(--font-bold);
+    color: var(--text-black);
+}
+
 .section-title-purple,
-.section-title-white {
+.section-title-white,
+.section-title-black {
     font-size: 56px;
     line-height: 67.8px;
     letter-spacing: -1px;
@@ -49,7 +56,8 @@
     line-height: 1.36px;
 }
 
-.section-subtitle {
+.section-subtitle,
+.section-subtitle-black {
     font-size: 36px;
     line-height: 46.1px;
     letter-spacing: -1px;
@@ -61,13 +69,18 @@
     color: var(--text-black);
 }
 
+.small-description-white {
+    font-family: var(--font-regular);
+    color: var(--bg-white);
+}
+
 .body-text {
     font-size: 16px;
     line-height: 28.8px;
     letter-spacing: 0;
 }
 
-.small-description {
+.small-description, .small-description-white {
     font-size: 14px;
     line-height: 18px;
     letter-spacing: 1px;
@@ -377,12 +390,14 @@ a {
 @media screen and (max-width: 850px) {
 
     .section-title-purple,
-    .section-title-white {
+    .section-title-white,
+    .section-title-black {
         font-size: 52px;
         line-height: 65.3px;
     }
 
-    .section-subtitle {
+    .section-subtitle,
+    .section-subtitle-black {
         font-size: 35px;
         line-height: 44.9px;
     }
@@ -477,12 +492,14 @@ a {
 @media screen and (max-width: 500px) {
 
     .section-title-purple,
-    .section-title-white {
+    .section-title-white,
+    .section-title-black {
         font-size: 40px;
         line-height: 48.4px;
     }
 
-    .section-subtitle {
+    .section-subtitle,
+    .section-subtitle-black {
         font-size: 28px;
         line-height: 35.8px;
     }
