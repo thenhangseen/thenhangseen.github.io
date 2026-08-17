@@ -1,0 +1,240 @@
+.sectionheadline {
+    text-align: left;
+    margin: 0 auto;
+    padding: 3% 5%;
+}
+
+
+.newscards {
+    width: 100%;
+    border: 1px solid #F0EDF5;
+    padding: 4% 7%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 35px;
+}
+
+.newscardssection {
+    min-width: 60%;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.chips {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 8%;
+}
+
+.dividervertical {
+    background-color: #F0EDF5;
+    height: 40px;
+    width: 1px;
+}
+
+.dividerhorizontal {
+    border: none;
+    background-color: #F0EDF5;
+    height: 1px;
+
+}
+
+.chipsgroup {
+    gap: 5px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.categories {
+    color: #55328B;
+
+}
+
+.newsimage {
+    width: 100%;
+    height: auto;
+}
+
+.newsandrecipes {
+    display: flex;
+    flex-direction: row;
+    align-items: top;
+    justify-content: flex-start;
+    gap: 3%;
+    padding: 3%;
+}
+
+.recipeimage {
+    width: 100%;
+    height: auto;
+}
+
+.recipes {
+    width: fit-content;
+    background-color: #F0EDF5;
+    padding: 0% 2%;
+    padding-top: 2%;
+    padding-bottom: 4%;
+    align-items: top;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    height: fit-content;
+}
+
+.recipescards {
+
+    padding: 7% 7%;
+    background-color: #FFFFFF;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 15px;
+}
+
+.recipescardstitle {
+    padding-bottom: 5%;
+}
+
+.popularecipestitle {
+    text-align: center;
+}
+
+.othernews {
+    background-color: #F0EDF5;
+}
+
+.othernewssection {
+    justify-content: flex-start;
+    gap: 3%;
+    padding: 3%;
+    flex-direction: row;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    row-gap: 40px;
+}
+
+.othernewscards {
+    background-color: #FFFFFF;
+    width: 30%;
+    max-width: 475px;
+    min-width: 350px;
+    align-items: center;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+
+}
+
+.othercardsdescriptions {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 40px;
+    padding: 7% 10%;
+}
+
+.othernewsimage {
+    width: 100%;
+}
+
+.othernewsbuttonandheadline {
+    display: flex;
+    padding: 0% 5%;
+    padding-top: 3%;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+
+}
+
+.upcomingeventscards {
+    width: 30%;
+    max-width: 500px;
+    min-width: 365px;
+    height: 550px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    align-items: center;
+    text-align: center;
+    color: #FFFFFF;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    flex-wrap: wrap;
+
+
+}
+
+.upcomingeventscard1 {
+    background-image: url(../images/upcomingevents1.png);
+}
+
+.upcomingeventscard2 {
+    background-image: url(../images/upcomingevents2.png);
+}
+
+.upcomingeventscard3 {
+    background-image: url(../images/upcomingevents3.png);
+}
+
+.upcomingeventssection {
+    justify-content: flex-start;
+    gap: 3%;
+    padding: 3%;
+    flex-direction: row;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    row-gap: 40px;
+}
+
+.section-subtitle-white {
+    color: var(--bg-white);
+    font-weight: 700;
+    margin: 0px 30px 0px 30px;
+}
+
+.small-description-white {
+    color: var(--bg-white);
+    text-decoration: underline;
+}
+
+@media screen and (max-width: 850px) {
+    .upcomingeventscards {
+        width: 30%;
+        max-width: 500px;
+        min-width: 365px;
+        height: 570px;
+    }
+}
+
+
+@media screen and (max-width: 500px) {
+    .newsandrecipes {
+        flex-wrap: wrap;
+        gap: 40px;
+    }
+
+    .othernewsbuttonandheadline {
+        flex-direction: column;
+        gap: 15px;
+        text-align: left;
+        padding: 5%;
+    }
+
+    .upcomingeventscards {
+        width: 30%;
+        max-width: 500px;
+        min-width: 365px;
+        height: 420px;
+    }
+}
