@@ -154,17 +154,13 @@
     background-repeat: no-repeat;
     overflow:hidden;
     max-width: 1698px;
-    margin:100px auto;
+    margin:100px auto 0 auto;
 }
 
 .job{
-    display:flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
     border:1px solid var(--border-grey);
     border-radius: 10px;
-    max-width:1483px;
+    width:80%;
     margin:40px auto;
     gap:40px;
 }
@@ -172,11 +168,11 @@
 .job-box{
     display: flex;
     justify-content: space-between;
-    align-items: center;
     border-bottom:1px solid var(--border-grey);
-    gap:260px;
+    gap:160px;
     margin:0 auto;
-    padding: 10px;
+    padding: 35px;
+    max-width: 1226px;
 }
 
 .job-describe,.job-name{
@@ -192,27 +188,27 @@
 .job-required{
     display: flex;
     align-items: center;
-    justify-content: space-between;
     text-align: center;
     gap:35px;
     width: 100%;
 }
 
 .job-required span{
+    display: flex;
     align-items: center;
     justify-content: center;
     text-align: center;
     background-color: var(--bg-white);
     border:1px solid var(--border-grey);
     border-radius: 10px;
-    max-width: 130px;
-    max-height: 36px;
+    padding: 10px;
+    width: 30%;
 }
 
 .apply-job{
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: flex-end;
     text-align: center;
     gap:75px;
     width: 100%;
