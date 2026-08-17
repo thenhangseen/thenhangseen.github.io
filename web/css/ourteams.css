@@ -28,23 +28,18 @@
     display: flex;
     justify-content:center;
     align-items: center;
-    max-width: 1087px;
+    width: 70%;
     margin: 0px auto;
     gap:72px;
 }
 
 .founder-image{
-    width: 80%;
-}
-
-.founder-image img{
-    width: 100%;
-    height: auto;
-    display: block;
+    width: 45%;
+    height:550px;
 }
 
 .founder-content{
-    max-width: 480px;
+    max-width: 45%;
     display: flex;
     flex-direction: column;
     justify-content: left;
@@ -54,6 +49,7 @@
 .small-size-founder-img{
     display:none;
 }
+
 
 .our-managers{
     display: flex;
@@ -101,7 +97,7 @@
     height: 70%;
 }
 
-.manager-pic img{
+.manager-pic img,.founder-image img{
     width: 100%;
     height: 100%;
     object-fit: cover;
@@ -202,7 +198,7 @@
     border:1px solid var(--border-grey);
     border-radius: 10px;
     padding: 10px;
-    width: 30%;
+    width: 35%;
 }
 
 .apply-job{
@@ -228,42 +224,49 @@
 
 
 
-@media screen and (max-width: 1110px) {
+@media screen and (max-width: 1110px) { 
     .founder{
-        gap:10px;
-
+        width:90%;
+        gap:30px;
     }
 
     .founder-image{
-        width: 45%;
-    }
-
-    .founder-image img{
-        width: 90%;
+        width: 48%;
+        height:450px;
     }
 
     .founder-content{
-        max-width: 400px;
+        width: 45%;
+    }
+
+
+    .job-box{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        max-width: 500px;
+        gap:40px
+    }
+
+    .job-describe,.job-name,.job-required, .apply-job{
+        align-items: center;
+        justify-content: center;
+        text-align: center;
     }
 }
 
-@media screen and (max-width: 850px) {
+@media screen and (max-width: 900px) {
 
     .herobanner{
         max-height: 388px;
     }
 
-    .founder{
-        gap:30px;
+    .founder-image{
+        height:400px;
     }
 
-    .founder-content{
-        max-width: 320px;
-        display: flex;
-        flex-direction: column;
-        justify-content: left;
-        gap:40px;
-    }
+
 
     .managers{
         gap:24px;
@@ -293,7 +296,10 @@
     .founder{
         flex-direction: column;
         gap: 40px;
-        max-width: 370px;
+        width: 100%;
+        max-width: 670px;
+        margin:0 auto;
+        align-items: center;
     }
 
     .founder-image{
@@ -303,17 +309,21 @@
     .small-size-founder-img{
         display:block;
         width: 70%;
+        height: auto;
     }
 
     .founder-content{
+        width: 90%;
+        max-width: none;
         text-align: center;
         justify-content: center;
         align-items: center;
+        gap:30px;
     }
 
     .managers-introduction{
         margin: 0 auto;
-        width: 50%;
+        width: 80%;
     }
 
     .managers{
@@ -345,5 +355,7 @@
     .global-ambassadors-image img{
         border-radius: 0;
     }
+
+
 
 }
