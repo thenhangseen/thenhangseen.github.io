@@ -64,7 +64,8 @@
 }
 
 .managers-introduction,
-.global-ambassadors-intro{
+.global-ambassadors-intro,
+.join-team-intro{
     display: flex;
     flex-direction: column;
     align-items: center;
