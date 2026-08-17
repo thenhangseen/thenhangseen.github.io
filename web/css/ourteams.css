@@ -143,6 +143,95 @@
     border-radius: 67px;
 }
 
+.join-team{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url('../images/teambackground.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    overflow:hidden;
+    max-width: 1698px;
+    margin:100px auto;
+}
+
+.job{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border:1px solid var(--border-grey);
+    border-radius: 10px;
+    max-width:1483px;
+    margin:40px auto;
+    gap:40px;
+}
+
+.job-box{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom:1px solid var(--border-grey);
+    gap:260px;
+    margin:0 auto;
+    padding: 10px;
+}
+
+.job-describe,.job-name{
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: left;
+    text-align: left;
+    gap:40px;
+    width: 100%;
+}
+
+.job-required{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+    gap:35px;
+    width: 100%;
+}
+
+.job-required span{
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-color: var(--bg-white);
+    border:1px solid var(--border-grey);
+    border-radius: 10px;
+    max-width: 130px;
+    max-height: 36px;
+}
+
+.apply-job{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+    gap:75px;
+    width: 100%;
+}
+
+.apply-job span{
+    text-decoration: underline;
+}
+
+.apply-job button{
+    max-width: 161px;
+    max-height: 53px;
+    border:0;
+    text-align: center;
+}
+
+
+
+
 @media screen and (max-width: 1110px) {
     .founder{
         gap:10px;
