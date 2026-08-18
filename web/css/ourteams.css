@@ -209,10 +209,6 @@
     width: 100%;
 }
 
-.apply-job span{
-    text-decoration: underline;
-}
-
 .apply-job button{
     max-width: 161px;
     max-height: 53px;

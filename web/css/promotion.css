@@ -14,12 +14,13 @@
     max-width: 458px;
     gap:40px;
     position:absolute;
-    top: 30%;
+    top: 40%;
     left: 15%;
 }
 
 .promotion-banner-text .body-text{
     max-width: 350px;
+    
 }
 
 .seasonal-promotion{
@@ -104,13 +105,12 @@
 
 .promotion-list{
     display: flex;
-    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
     align-self: center;
     margin: 0 auto;
-    gap:60px;
-    max-width: 1500px;
+    gap:40px;
+    width: 100%;
 }
 
 .list{
@@ -124,7 +124,7 @@
 }
 
 .list img{
-    width: 80%;
+    width: 70%;
 }
 
 
