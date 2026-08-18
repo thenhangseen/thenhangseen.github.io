@@ -254,18 +254,6 @@
 }
 
 @media screen and (max-width: 850px) {
-    .section-title-purple {
-        font-size: 52px;
-        line-height: 65.3px;
-        letter-spacing: -1px;
-
-    }
-
-    .section-subtitle {
-        font-size: 35px;
-        line-height: 44.9px;
-        letter-spacing: -1px;
-    }
 
     .hero-text {
         width: 100%;
@@ -462,18 +450,6 @@
 
     .herobanner .section-title-purple {
         margin-top: 70px;
-    }
-
-    .section-title-purple {
-        font-size: 40px;
-        line-height: 48.4px;
-        letter-spacing: -1px;
-    }
-
-    .section-subtitle {
-        font-size: 28px;
-        line-height: 35.8px;
-        letter-spacing: -1px;
     }
 
     .herobanner .small-description-white {
