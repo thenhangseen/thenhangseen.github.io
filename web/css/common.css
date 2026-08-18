@@ -20,7 +20,7 @@
     --bg-yellow: #F3E7D7;
     --bg-grey: #F9F9FB;
     --bg-drakblue: #212934;
-    --border-grey:#D9D9D9;
+    --border-grey: #D9D9D9;
     --font-bold: "Source Serif 4", serif;
     --font-regular: "Work Sans", sans-serif;
 }
@@ -81,7 +81,8 @@
     letter-spacing: 0;
 }
 
-.small-description, .small-description-white {
+.small-description,
+.small-description-white {
     font-size: 14px;
     line-height: 18px;
     letter-spacing: 1px;
@@ -102,6 +103,7 @@
     border-radius: 6px;
     background-color: var(--bg-white);
     color: var(--text-purple);
+    border: none;
 }
 
 .button-purple {
@@ -110,6 +112,7 @@
     border-radius: 6px;
     background-color: var(--text-purple);
     color: var(--bg-white);
+    border: none;
 }
 
 a {

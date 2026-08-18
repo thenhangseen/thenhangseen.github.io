@@ -40,7 +40,7 @@
                 </div>
 
                 <div class="has-submenu">
-                    <div class="menu-item"><a href="#">SERVICES</a></div>
+                    <div class="menu-item"><a href="services.html">SERVICES</a></div>
                     <div class="submenu">
                         <div class="menu-item"><a href="weddingcake.html">WEDDING CAKE</a></div>
                         <div class="menu-item"><a href="#">BIRTHDAY CAKE</a></div>
@@ -48,7 +48,7 @@
                     </div>
                 </div>
                 <div class="has-submenu">
-                    <div class="menu-item"><a href="#">JOURNAL</a></div>
+                    <div class="menu-item"><a href="journal.html">JOURNAL</a></div>
 
                     <div class="submenu">
                         <div class="menu-item"><a href="#">GALLERY</a></div>
@@ -272,9 +272,9 @@
                         <a href="about.html">ABOUT</a>
 
                         <div class="submenu">
-                            <div><a href="#">HISTORY</a></div>
+                            <div><a href="history.html">HISTORY</a></div>
                             <div><a href="ourteams.html">OUR TEAM</a></div>
-                            <div><a href="#">RECOGNITION</a></div>
+                            <div><a href="recognition.html">RECOGNITION</a></div>
                         </div>
                     </div>
                     <div class="has-submenu">
@@ -287,7 +287,7 @@
                     </div>
 
                     <div class="has-submenu">
-                        <a href="#">SERVICES</a>
+                        <a href="services.html">SERVICES</a>
                         <div class="submenu">
                             <a href="weddingcake.html">WEDDING CAKE</a>
                             <a href="#">BIRTHDAY CAKE</a>
@@ -295,7 +295,7 @@
                         </div>
                     </div>
                     <div class="has-submenu">
-                        <a href="#">JOURNAL</a>
+                        <a href="journal.html">JOURNAL</a>
                         <div class="submenu">
                             <a href="#">GALLERY</a>
                         </div>
@@ -339,20 +339,7 @@
             </div>
         </div>
     </div>
-    <script>
-        const toggleButton = document.getElementById("menu");
-        const menu = document.getElementById("navigationcontent");
-
-        toggleButton.addEventListener("click", () => {
-            menu.classList.toggle("active");
-            // Change icon
-            if (menu.classList.contains("active")) {
-                toggleButton.innerHTML = "&times;"; // × (cross)
-            } else {
-                toggleButton.innerHTML = "&#9776;"; // ☰ (hamburger)
-            }
-        });
-    </script>
+    <script src="js/common.js"></script>
 </body>
 
 </html>
