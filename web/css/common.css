@@ -310,6 +310,12 @@ a {
         color: var(--bg-white);
     }
 
+    .subscribe input:hover {
+        color: var(--text-purple);
+        background-color: var(--bg-purple);
+        border: none;
+    }
+
     form {
         display: flex;
         gap: 3%;
