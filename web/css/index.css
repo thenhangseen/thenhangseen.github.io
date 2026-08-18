@@ -23,7 +23,6 @@
 
     .button-white {
         font-family: "Work Sans", sans-serif;
-        border: 0;
     }
 }
 
@@ -57,9 +56,6 @@
         margin-bottom: 232px;
     }
 
-    .button-purple {
-        border: 0px;
-    }
 }
 
 .productright {
@@ -106,7 +102,6 @@
 
 
 .button-purple {
-    border: 0px;
     margin-top: 40px;
     margin-left: 0px;
 
@@ -138,10 +133,6 @@
 
     .body-text {
         margin-bottom: 10px;
-    }
-
-    .button-white {
-        border: 0px;
     }
 }
 
@@ -243,10 +234,6 @@
         color: var(--bg-white);
         font-weight: 700;
         width: 70%;
-    }
-
-    .button-white {
-        border: none;
     }
 }
 
