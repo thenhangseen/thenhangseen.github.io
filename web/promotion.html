@@ -89,7 +89,7 @@
             deals available for a limited time and treat yourself to something delicious.</p>
 
         <div class="container-seasonal-promotion-option">
-            <div class="seasonal-box">
+            <div class="seasonal-box ">
                 <img class="container-seasonal-promotion-img" src="images/cake.png" width="100%">
                 <h3 class="section-subtitle">Cake</h3>
             </div>
@@ -255,8 +255,8 @@
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.15/dist/SplitText.min.js"></script>
     <script>
         gsap.from(".fade-in", { 
-            x: 200, 
-            opacity: 0.5, 
+            x: 100, 
+            opacity: 0, 
             scrollTrigger: {
                 trigger: ".fade-in",
                 start: "top center",
@@ -264,6 +264,17 @@
             },
 
         });  
+
+        gsap.from(".seasonal-box",{
+            y:100,
+            opacity:0,
+            duration:1.5,
+            scrollTrigger:{
+                trigger:".seasonal-box",
+                start:"top center",
+            },
+            stagger:0.5
+        })
 
 
     </script>
