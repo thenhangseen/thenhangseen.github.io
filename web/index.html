@@ -79,7 +79,7 @@
                 <div>FRESH & TASTE EVERYDAY</div>
             </div>
             <div class="section-title-purple">
-                <div>Freshly Baked Goodness </div>
+                <div class="hero-title">Freshly Baked Goodness </div>
             </div>
             <div class="body-text">
                 <div>Enjoy the taste of freshly baked bread crafted daily with care, delivering freshness and
@@ -108,7 +108,7 @@
             </div>
         </div>
         <div class="productright">
-            <div class="product1">
+            <div class="product1 pro">
                 <img class="productimg" src="images/chococookies.png" alt="product image">
                 <div class="box-subtitle">
                     <div>Choco Chip Cookies</div>
@@ -117,7 +117,7 @@
                     <div>RM 18.00 - RM32.00</div>
                 </div>
             </div>
-            <div class="product2">
+            <div class="product2 pro">
                 <img class="productimg" src="images/strawberrycookies.png" alt="product image">
                 <div class="box-subtitle">
                     <div>Strawberry Jam Cookies</div>
@@ -298,6 +298,27 @@
             </div>
         </div>
     </div>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.15/dist/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.15/dist/ScrollTrigger.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.15/dist/SplitText.min.js"></script>
+    <script>
+        gsap.from(".pro", {
+            scrollTrigger: {
+                trigger: ".product",
+                start: "top 80%" /* target, screen*/,
+                markers: 1
+            },
+            y: 200, // move 200px to the right
+            opacity: 0, // fade to 50% opacity
+            duration: .5, // 1.5 seconds
+            ease: "power2.out",
+            stagger: .5
+        });
+    </script>
+
+
+
+
     <script src="js/common.js"></script>
 </body>
 
