@@ -458,6 +458,27 @@
         </div>
     </div>
     <script src="js/common.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.15/dist/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.15/dist/ScrollTrigger.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.15/dist/SplitText.min.js"></script>
+    <script src="js/common.js"></script>
+
+    <script>
+
+        gsap.from(".offer-header .section-title-purple", {
+            x: 50,
+            opacity: 0,
+            scrollTrigger: {
+                trigger: ".offer-header .section-title-purple",
+                star: "top.center",
+                scrub: true
+            }
+        });
+
+
+    </script>
+
 </body>
 
 </html>
