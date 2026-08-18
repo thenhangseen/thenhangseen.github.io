@@ -4,12 +4,12 @@
     justify-content: center;
     background-color: #f0edf5;
     margin-top: 25px;
-    gap: 20px;
+    gap: 100px;
     overflow: hidden;
 }
 
 .heroleft {
-    width: 40%;
+    width: 30%;
 
     .section-title-purple {
         margin-bottom: 24px;
@@ -20,18 +20,13 @@
     .body-text {
         margin-bottom: 24px;
     }
-
-    .button-white {
-        font-family: "Work Sans", sans-serif;
-    }
 }
 
 .heroright {
-    width: 50%;
+    width: 40%;
 
     img {
-        object-fit: cover;
-        width: 857px;
+        width: 759px;
         height: auto;
     }
 }
@@ -44,8 +39,8 @@
 }
 
 .productleft {
-    width: 40%;
-    padding: 0px 80px 0px 80px;
+    width: 30%;
+    padding: 0px 50px 0px 50px;
 
     .small-description {
         margin-bottom: 40px;
@@ -53,7 +48,7 @@
 
     .section-subtitle {
         font-weight: 600;
-        margin-bottom: 232px;
+        margin-bottom: 5px;
     }
 
 }
@@ -62,6 +57,7 @@
     display: flex;
     gap: 26px;
     justify-content: center;
+    margin: 0px 12px 0px 12px;
 
     .box-subtitle {
         font-weight: 600;
@@ -78,7 +74,7 @@
     }
 
     .productimg {
-        height: 539px;
+        height: 500px;
         width: auto;
     }
 }
@@ -154,7 +150,7 @@
 .sharing {
     margin-top: 100px;
     margin-bottom: 100px;
-    width: 80%;
+    width: 90%;
     margin-left: auto;
     margin-right: auto;
 }
@@ -162,7 +158,7 @@
 .sharingtop,
 .sharingbottom {
     display: flex;
-    gap: 40px;
+    gap: 30px;
     width: 100%;
 }
 
@@ -171,7 +167,7 @@
     margin-top: 40px;
 }
 
-.sharingbottom img {
+.sharingimg {
     flex: 1;
     width: 0;
     height: auto;
@@ -186,7 +182,8 @@
     justify-content: center;
     align-items: center;
     text-align: center;
-    padding: 100px;
+    padding: 80px 10px 80px 10px;
+
 
     .small-description {
         margin-bottom: 44px;
@@ -239,7 +236,7 @@
 
 /* Media Queries */
 
-@media (max-width: 1450px) {
+@media (max-width: 1200px) {
     .product {
         flex-direction: column;
         align-items: center;
@@ -299,7 +296,7 @@
         flex-direction: column;
     }
 
-    .sharingbottom img {
+    .sharingimg {
         width: 100%;
         height: auto;
         flex: none;
