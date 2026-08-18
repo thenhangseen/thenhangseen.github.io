@@ -17,7 +17,9 @@
         </div>
 
         <div class="navigation" id="mobile-menu">
-            <img class="logo" src="images/logo.png" alt="Bakery logo">
+            <a href="index.html">
+                <img class="logo" src="images/logo.png" alt="Bakery logo">
+            </a>
 
             <div class="navigationcontent" id="navigationcontent">
                 <div class="menu-item"><a href="index.html">HOME</a></div>
@@ -254,26 +256,26 @@
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.15/dist/ScrollTrigger.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.15/dist/SplitText.min.js"></script>
     <script>
-        gsap.from(".fade-in", { 
-            x: 100, 
-            opacity: 0, 
+        gsap.from(".fade-in", {
+            x: 100,
+            opacity: 0,
             scrollTrigger: {
                 trigger: ".fade-in",
                 start: "top center",
                 scrub: true
             },
 
-        });  
+        });
 
-        gsap.from(".seasonal-box",{
-            y:100,
-            opacity:0,
-            duration:1.5,
-            scrollTrigger:{
-                trigger:".seasonal-box",
-                start:"top center",
+        gsap.from(".seasonal-box", {
+            y: 100,
+            opacity: 0,
+            duration: 1.5,
+            scrollTrigger: {
+                trigger: ".seasonal-box",
+                start: "top center",
             },
-            stagger:0.5
+            stagger: 0.5
         })
 
 
