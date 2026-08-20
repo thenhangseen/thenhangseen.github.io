@@ -1,13 +1,14 @@
+.section-subtitle {
+    font-weight: 600;
+}
+
 /*seasonal specials*/
 .seasonal {
     display: flex;
-    margin-left: auto;
-    margin-right: auto;
     margin-top: 20px;
 
     .section-subtitle {
         margin: 24px 0px 24px 0px;
-        font-weight: 700;
     }
 }
 
@@ -42,4 +43,35 @@
 
 .tart {
     margin-top: 90px;
+}
+
+/*categories*/
+.categories {
+    display: flex;
+    margin-top: 100px;
+    justify-content: center;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    gap: 35px;
+}
+
+.categoriesleft {
+    text-align: center;
+    width: 20%;
+
+    .body-text {
+        margin: 25px 0px 24px 5px;
+    }
+}
+
+.categoriesright {
+    display: flex;
+    gap: 30px;
+    width: 80%;
+    text-align: center;
+}
+
+.categoriesimg {
+    width: 100%;
 }
