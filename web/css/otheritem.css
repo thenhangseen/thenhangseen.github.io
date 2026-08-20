@@ -1,0 +1,19 @@
+.section-intro-first,
+.section-intro{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap:40px;
+    width: 100%;
+}
+
+.section-intro-first{
+    margin:0 auto 100px auto;
+    background-image: url('../images/backgroundotheritem.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    overflow:hidden;
+}
