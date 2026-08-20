@@ -1,0 +1,45 @@
+/*seasonal specials*/
+.seasonal {
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+
+    .section-subtitle {
+        margin: 24px 0px 24px 0px;
+        font-weight: 700;
+    }
+}
+
+
+.seasonalleft,
+.seasonalright {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    min-height: 800px;
+
+    .section-subtitle {
+        margin: 24px 0px 24px 0px;
+        font-weight: 700;
+    }
+}
+
+.seasonalleft {
+    background-color: var(--bg-purple);
+}
+
+.seasonalright {
+    background-color: var(--bg-pink);
+}
+
+.pumpkin,
+.tart {
+    width: 70%;
+}
+
+.tart {
+    margin-top: 90px;
+}
