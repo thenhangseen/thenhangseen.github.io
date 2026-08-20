@@ -1,5 +1,5 @@
 .section-subtitle {
-    font-weight: 600;
+    font-weight: 700;
 }
 
 /*seasonal specials*/
@@ -70,8 +70,15 @@
     gap: 30px;
     width: 80%;
     text-align: center;
+
+    .box-subtitle {
+        margin: 10px 0px 10px 0px;
+        width: 700;
+    }
 }
 
 .categoriesimg {
     width: 100%;
 }
+
+/*best sellers*/
