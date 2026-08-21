@@ -16,9 +16,11 @@
     background-position: center;
     background-repeat: no-repeat;
     overflow:hidden;
+    margin: 0 auto;
+    padding: 20px;
 }
 
-.headsection{
+.headsection-box{
     display: flex;
     gap:0;
     margin: 0 0 100px 0;
@@ -33,10 +35,13 @@
     background-position: center;
     background-repeat: no-repeat;
     overflow:hidden;
-    padding:120px 120px;
+    width:30%;
+    height:300px;
+    padding:20px;
     display: flex;
     justify-content: center;
     align-items: center;
+    text-align: center;
 }
 
 .bakery-tool-head{
@@ -45,7 +50,6 @@
 
 .merch-head{
     background-image: url('../images/merch.png');
-    padding:143px 120px;
 }
 
 .birthday-item-head{
@@ -56,12 +60,23 @@
     background-image: url('../images/giftcard.png');
 }
 
-@media screen and (max-width: 950px) { 
-    .headsection{
-        display: flex;
-        flex-direction: column;
+@media screen and (max-width: 850px) { 
+    .headsection-box{
+        flex-wrap: wrap;
+        gap:16px;
+        max-width: 100%;
+        padding: 0 15px;
+    }
 
-}
+    .bakery-tool-head,
+    .merch-head,
+    .birthday-item-head,
+    .gift-card-head{
+        width: calc(50% - 8px);
+        height:300px;
+        padding:0;
+    }
+
 }
 
 
