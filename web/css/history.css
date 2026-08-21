@@ -25,7 +25,7 @@
 }
 
 
-.herobanner .section-title-purple {
+.herobanner .section-title-white {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -87,7 +87,7 @@
     width: 100%;
     background-color: #F0EDF5;
     margin-bottom: 100px;
-    padding: 35px;
+    padding: 50px 20px;
     margin-top: 140px;
 
 }
@@ -97,8 +97,8 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    width: 30%;
-    padding: 30px 20px;
+    width: 40%;
+    padding: 35px 35px;
     border-right: 2px solid #5c3095;
     text-align: center;
 }
@@ -115,12 +115,11 @@
 .feature {
     display: flex;
     align-items: center;
-    width: 70%;
 }
 
 .card {
     width: 33.33%;
-    padding: 30px 10px;
+    padding: 10px 20px;
     text-align: center;
 }
 
@@ -134,10 +133,11 @@
 .card .section-subtitle {
     margin-bottom: 40px;
     margin-top: 40px;
+    width: 100%;
 }
 
 .card .body-text {
-    width: 65%;
+    width: 100%;
     margin: 0 auto;
 }
 
@@ -207,14 +207,15 @@
 .timeline-container {
     display: flex;
     justify-content: space-between;
-    gap: 28px;
+    gap: 48px;
     width: 100%;
+    flex-wrap: wrap;
 }
 
+
 .timeline-card {
-    width: 25%;
-    min-height: 340px;
-    padding: 38px 28px;
+    width: calc((100% - 144px) / 4);
+    padding: 25px 40px;
     background-color: #F0EDF5;
     text-align: center;
 }
@@ -241,17 +242,26 @@
 .statistics {
     display: flex;
     justify-content: space-around;
-    padding: 0px 40px 40px;
+    padding: 0 0 40px;
     text-align: center;
 }
 
 .stat {
-    width: 25%;
+    width: 100%;
 }
 
 .stat .section-subtitle {
     margin: 0 0 24px;
 }
+
+
+@media (max-width: 1100px) {
+    .timeline-card {
+        width: calc((100% - 48px) / 2);
+    }
+}
+
+
 
 @media screen and (max-width: 850px) {
 
