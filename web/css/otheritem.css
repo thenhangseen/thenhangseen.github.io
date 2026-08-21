@@ -97,6 +97,81 @@
     gap:20px;
 }
 
+.merch{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 100px auto;
+    padding: 0 20px;
+    gap:40px;
+    max-width:1100px;
+}
+
+.merch-box-left,
+.merch-box-right{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position:relative;
+    width:90%;
+    margin:0 auto;
+    gap:40px;
+}
+
+.merch-box-left{
+    align-items: flex-start;
+}
+
+.merch-box-right{
+    align-items: flex-end;
+}
+
+.merch-img{
+    width:50%;
+}
+
+.merch-img img{
+    width:90%;
+    margin-left: auto;
+    display:block;
+}
+
+.merch-info-purple,
+.merch-info-pink{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    box-sizing: border-box;
+    width:55%;
+    max-width: 780px;
+    padding: 70px;
+    position: absolute;
+    gap:40px
+
+}
+
+.merch-info-purple{
+    background-color: var(--bg-purple);
+    top:18%;
+    left:45%;
+}
+
+.merch-info-pink{
+    background-color: var(--bg-pink);
+    top: 15%;
+    right:40%;
+}
+
+@media screen and (max-width: 980px) {
+    .merch-info-purple,
+    .merch-info-pink{
+        padding:40px;
+    }
+}
+
 @media screen and (max-width: 850px) { 
     .headsection-box{
         flex-wrap: wrap;
@@ -114,16 +189,70 @@
         padding:0;
     }
 
+    .bakery-tools{
+        padding: 0 40px;
+    }
+
     .tools{
         display: flex;
         flex-direction: column;
         gap:40px;
+        max-width: 750px;
+    }
+
+    .merch-info-purple{
+        background-color: var(--bg-purple);
+        top:15%;
+        left:45%;
+    }
+
+    .merch-info-pink{
+        background-color: var(--bg-pink);
+        top: 10%;
+        right:40%;
+    }
+
+    .merch-info-purple,
+    .merch-info-pink{
+        padding:20px;
+    }
+
 }
 
+@media screen and (max-width: 700px){
+    .bakery-tools{
+        padding: 0 60px;
+    }
 
+    .merch-box-left,.merch-box-right{
+        display: flex;
+        flex-direction: row;
+        align-items: stretch;
+        width: 100%;
+        gap:0;
+    }
 
-}
+    .merch-img{
+        width: 45%;
+    }
 
-@media screen and (max-width: 550px){
+    .merch-img img{
+        width:100%;
+        height: 100%;
+        object-fit: cover;
+        display:block;
+    }
+
+    .merch-info-pink,.merch-info-purple{
+        position:static;
+        margin:0;
+        width:55%;
+        max-width: none;
+        padding: 20px;
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
 
 }
