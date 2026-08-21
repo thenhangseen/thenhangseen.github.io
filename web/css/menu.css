@@ -107,7 +107,7 @@
 .best3 {
     position: relative;
     width: 40%;
-    padding: 100px 10px 70px 10px;
+    padding: 190px 50px 70px 50px;
 
 
     .box-subtitle {
@@ -119,8 +119,8 @@
 
 .bestsellerimg {
     position: absolute;
-    max-width: 50%;
-    top: -100px;
+    max-width: 300px;
+    top: -130px;
     left: 0;
     right: 0;
     margin: 0 auto;
