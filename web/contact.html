@@ -4,13 +4,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Seasonal Promotion : Our Bakery</title>
+    <title>Contact : Our Bakery</title>
     <link rel="stylesheet" href="css/common.css">
-    <link rel="stylesheet" href="css/promotion.css">
+    <link rel="stylesheet" href="css/contact.css">
 </head>
 
 <body>
-
     <div class="header">
         <div class="navigationtop">
             <p>Free International Shipping - 10% OFF SITE</p>
@@ -71,106 +70,6 @@
                 <img class="cart" src="images/cart.png" alt="cart">
                 <div class="menu" id="menu">&#9776</div>
             </div>
-        </div>
-    </div>
-
-    <div class="promotion-banner">
-        <div></div>
-
-        <div class="promotion-banner-text">
-            <h1 class="section-title-purple">Merry Christmas</h1>
-            <p class="body-text">Celebrate this Christmas with our handcrafted cakes and sweet treats.</p>
-            <button class="button-purple">Order Now</button>
-        </div>
-    </div>
-
-    <div class="seasonal-promotion">
-
-        <h1 class="section-title-purple fade-in">Seasonal Promotion</h1>
-        <p class="body-text">Enjoy our latest offers and special discounts on freshly baked favorites.Discover great
-            deals available for a limited time and treat yourself to something delicious.</p>
-
-        <div class="container-seasonal-promotion-option">
-            <div class="seasonal-box ">
-                <img class="container-seasonal-promotion-img" src="images/cake.png" width="100%">
-                <h3 class="section-subtitle">Cake</h3>
-            </div>
-
-            <div class="seasonal-box">
-                <img class="container-seasonal-promotion-img" src="images/cupcake.png" width="100%">
-                <h3 class="section-subtitle">Cupcake</h3>
-            </div>
-
-            <div class="seasonal-box">
-                <img class="container-seasonal-promotion-img" src="images/cookie.png" width="100%">
-                <h3 class="section-subtitle">Cookie</h3>
-            </div>
-        </div>
-
-        <button class="button-purple">View All</button>
-
-    </div>
-
-    <div class="current-deals">
-
-        <h1 class="section-title-purple">Current Deals</h1>
-        <p class="body-text">Enjoy our latest offers and special discounts on freshly baked favorites. Discover great
-            deals available for a limited time and treat yourself to something delicious.</p>
-
-        <div class="promotion-picture" id="promotion-picture">
-            <img src="images/currentdeal 3.png" width="50%" height="50%">
-            <img src="images/currentdeal 1.png" width="100%">
-            <img src="images/currentdeal 2.png" width="50%" height="50%">
-        </div>
-
-        <div class="circle-under-promotion-picture">
-            <img src="images/currentdeal down.png" width="100%">
-        </div>
-
-        <div class="promotion-list">
-            <div class="list">
-                <img src="images/promotion-b1f1.png">
-                <p class="body-text">Buy 1 Free 1</p>
-            </div>
-
-            <div class="list">
-                <img src="images/promotion-cake.png">
-                <p class="body-text">20% OFF Cakes</p>
-            </div>
-
-            <div class="list">
-                <img src="images/promotion-famibundle.png">
-                <p class="body-text">Family Bundle</p>
-            </div>
-
-            <div class="list">
-                <img src="images/promotion-freedeli.png">
-                <p class="body-text">Free Delivery</p>
-            </div>
-
-            <div class="list">
-                <img src="images/promotion-birthday.png">
-                <p class="body-text">Birthday Discount</p>
-            </div>
-
-            <div class="list">
-                <img src="images/promotion-student.png">
-                <p class="body-text">Student Promotion</p>
-            </div>
-        </div>
-
-    </div>
-
-    <div class="dont-miss-out">
-        <div class="missout-pic">
-            <img src="images/promotiondontmissout.png">
-        </div>
-
-        <div class="missout-text">
-            <h1 class="section-title-purple">Don't Miss Out!</h1>
-            <p class="body-text">Freshly baked treats are waiting for you. Order today and enjoy our limited-time
-                promotions before they're gone.</p>
-            <button class="button-purple">Order Now</button>
         </div>
     </div>
 
@@ -253,63 +152,6 @@
             </div>
         </div>
     </div>
-
-    <script src="https://cdn.jsdelivr.net/npm/gsap@3.15/dist/gsap.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/gsap@3.15/dist/ScrollTrigger.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/gsap@3.15/dist/SplitText.min.js"></script>
-    <script>
-        gsap.from(".fade-in", {
-            x: 100,
-            opacity: 0,
-            scrollTrigger: {
-                trigger: ".fade-in",
-                start: "top center",
-                scrub: true
-            },
-
-        });
-
-        gsap.from(".seasonal-box", {
-            y: 100,
-            opacity: 0,
-            duration: 1.5,
-            scrollTrigger: {
-                trigger: ".seasonal-box",
-                start: "top center",
-            },
-            stagger: 0.5
-        })
-
-        const slides = document.querySelector("#promotion-picture");
-        const totalSlides = document.querySelectorAll(".promotion-picture").length;
-
-        let index = 0;
-
-        function goToSlide(i) {
-            index = (i + totalSlides) % totalSlides;
-            const slideWidth = document.querySelector(".carousel").offsetWidth;
-            gsap.to(slides, {
-                x: -index * slideWidth,
-                duration: 0.8,
-                ease: "power2.inOut"
-            });
-        }
-
-        function nextSlide() {
-            goToSlide(index + 1);
-        }
-
-        function prevSlide() {
-            goToSlide(index - 1);
-        }
-
-        // Optional autoplay
-        setInterval(() => {
-            nextSlide();
-        }, 1000);
-
-    </script>
-
 
     <script src="js/common.js"></script>
 

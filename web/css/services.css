@@ -38,7 +38,7 @@
 
 .offer-header .we {
     width: 84%;
-    margin: 40px auto 40px;
+    margin: 30px auto 30px;
 }
 
 .offer-list {
@@ -47,7 +47,7 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    row-gap: 170px;
+    row-gap: 200px;
 
 }
 
@@ -61,9 +61,8 @@
 
 .offer-main-img {
     position: absolute;
-    max-width: 35%;
-    max-height: 250px;
-    top: -100px;
+    max-height: 230px;
+    bottom: 200px;
     left: 0;
     right: 0;
     margin: 0 auto;
@@ -85,7 +84,7 @@
 
 .offer-card>.body-text {
     width: 65%;
-    margin: 40px auto 40px;
+    margin: 30px auto 30px;
 }
 
 .service-rating {
@@ -114,6 +113,7 @@
     width: 94%;
     margin: 40px auto 0;
     display: flex;
+    gap: 50px;
     justify-content: space-between;
 }
 
@@ -145,24 +145,29 @@
 }
 
 .people-header .body-text {
-    width: 100%;
-    margin: 40px auto 40px;
+    width: 80%;
+    margin: 40px auto;
 }
 
 .people-list {
-    width: 82%;
-    margin: 40px auto 0;
+    width: calc(100% - 50px);
+    max-width: 1150px;
+    height: 220px;
+    margin: 0 auto;
     display: flex;
     justify-content: space-between;
+    gap: 25px;
+
 
 }
 
 .people-card {
-    width: 20%;
-    height: 220px;
+    width: calc((100% - 75px) / 4);
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
+    padding: 0 25px;
     border-radius: 15px;
 }
 
@@ -175,12 +180,12 @@
 }
 
 .people-number {
+    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 10px;
-    margin-left: 10px;
-    margin-right: 10px;
+    margin: 0;
 }
 
 
@@ -196,7 +201,7 @@
 .delivery {
     width: 100%;
     text-align: center;
-    margin-bottom: 100px;
+    margin-bottom: 40px;
 }
 
 
@@ -258,14 +263,22 @@
         padding-top: 20px;
     }
 
+    .offer-services h1 {
+        width: 100%;
+    }
+
     .offer-header .we {
         width: 84%;
 
     }
 
+    .offer-main-img {
+        margin-bottom: 30px;
+    }
+
     .offer-list {
-        width: 74%;
-        margin: 140px auto 70px;
+        width: 70%;
+        margin: 140px auto 40px;
         display: flex;
         flex-direction: column;
         flex-wrap: nowrap;
@@ -291,15 +304,20 @@
 
     .rating-list {
         width: 88%;
-        margin-top: 40px;
+        margin: 40px auto 0;
+        display: flex;
         flex-wrap: wrap;
+        justify-content: center;
+        column-gap: 20px;
         row-gap: 40px;
     }
 
     .rating-item {
-        width: 45%;
+        width: calc((100% - 20px) / 2);
         margin-top: 40px;
+
     }
+
 
     .people-header .section-title-purple {
         width: 80%;
@@ -313,13 +331,17 @@
     .people-list {
         width: 86%;
         flex-wrap: wrap;
-        row-gap: 40px;
+        row-gap: 50px;
+        height: auto;
+        margin: 0 auto;
+        column-gap: 50px;
     }
 
     .people-card {
-        width: 40%;
+        width: calc((100% - 50px) / 2);
         height: 220px;
     }
+
 
     .delivery-big {
         display: none;
@@ -372,7 +394,6 @@
     }
 
     .offer-main-img {
-        width: 55%;
         top: -80px;
     }
 
