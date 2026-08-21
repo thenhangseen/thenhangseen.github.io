@@ -165,6 +165,51 @@
     right:40%;
 }
 
+.birthday-item{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin:0 auto;
+    padding:20px;
+    max-width: 1100px;
+    gap:40px;
+}
+
+.birthday-gallery{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    gap:40px;
+    width:100%;
+}
+
+.birthday-item-box-up,
+.birthday-item-box-down{
+    position: relative;
+}
+
+.birthday-item-box-up img,
+.birthday-item-box-down img{
+    display:block;
+    object-fit:cover;
+    border-radius: 20px;
+    width: 100%;
+}
+
+.birthday-item-box-down{
+    margin-top:100px;
+}
+
+.birthday-item-box-up h1,
+.birthday-item-box-down h1{
+    position:absolute;
+    width: 50%;
+    bottom:10%;
+    left:15%
+}
+
 @media screen and (max-width: 980px) {
     .merch-info-purple,
     .merch-info-pink{
@@ -201,13 +246,11 @@
     }
 
     .merch-info-purple{
-        background-color: var(--bg-purple);
         top:15%;
         left:45%;
     }
 
     .merch-info-pink{
-        background-color: var(--bg-pink);
         top: 10%;
         right:40%;
     }
@@ -215,6 +258,20 @@
     .merch-info-purple,
     .merch-info-pink{
         padding:20px;
+    }
+
+    .birthday-gallery{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .birthday-item-box-up,.birthday-item-box-down{
+        width:60%;
+        margin-top:0;
+    }
+
+    .birthday-item-box-up img,.birthday-item-box-down img{
+        width:100%;
     }
 
 }
