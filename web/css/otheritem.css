@@ -9,7 +9,7 @@
     width: 100%;
 }
 
-.section-intro-first{
+.headsection{
     background-image: url('../images/backgroundotheritem.png');
     width: 100%;
     background-size: cover;
@@ -17,7 +17,10 @@
     background-repeat: no-repeat;
     overflow:hidden;
     margin: 0 auto;
-    padding: 20px;
+}
+
+.section-intro-first{
+    padding: 30px;
 }
 
 .headsection-box{
@@ -60,6 +63,40 @@
     background-image: url('../images/giftcard.png');
 }
 
+.bakery-tools{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    padding: 0 20px;
+    gap:40px;
+}
+
+.tools{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    max-width: 1000px;
+    gap: 80px;
+}
+
+.tool-box{
+    background-color: var(--bg-purple);
+    border-radius:35px;
+    margin:0 auto;
+    padding:20px;
+    width:100%;
+    max-width: 450px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap:20px;
+}
+
 @media screen and (max-width: 850px) { 
     .headsection-box{
         flex-wrap: wrap;
@@ -77,6 +114,16 @@
         padding:0;
     }
 
+    .tools{
+        display: flex;
+        flex-direction: column;
+        gap:40px;
 }
 
 
+
+}
+
+@media screen and (max-width: 550px){
+
+}
