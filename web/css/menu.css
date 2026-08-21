@@ -10,7 +10,7 @@
 .topsection {
     text-align: center;
     margin: 0 auto;
-    padding: 10px 0px;
+    padding: 20px;
 }
 
 
@@ -18,6 +18,7 @@
 .seasonal {
     display: flex;
     margin-top: 20px;
+
 
     .section-subtitle {
         margin: 24px 0px 24px 0px;
@@ -34,6 +35,7 @@
     align-items: center;
     text-align: center;
     min-height: 800px;
+    padding: 20px;
 
     .section-subtitle {
         margin: 24px 0px 24px 0px;
@@ -47,15 +49,19 @@
 
 .seasonalright {
     background-color: var(--bg-pink);
+
+    .body-text {
+        margin-bottom: 42px;
+    }
 }
 
 .pumpkin,
 .tart {
-    width: 70%;
+    width: 400px;
 }
 
 .tart {
-    margin-top: 90px;
+    margin-top: 100px;
 }
 
 /*categories*/
@@ -134,6 +140,7 @@
     right: 0;
     margin: 0 auto;
     margin-bottom: 40px;
+    width: 80%;
 }
 
 .best1,
@@ -191,5 +198,55 @@
 }
 
 .menufoodimg {
-    width: 350px;
+    width: 100%;
+}
+
+
+
+
+@media screen and (max-width: 1050px) {
+    .bestcontent {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        .best1,
+        .best2,
+        .best3 {
+            width: 70%;
+            margin-bottom: 120px;
+        }
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .seasonal {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .categories {
+        display: flex;
+        flex-direction: column;
+
+        .categoriesleft {
+            width: 100%;
+        }
+
+        .categoriesright {
+            width: 100%;
+        }
+    }
+
+
+
+}
+
+
+@media screen and (max-width: 800px) {
+    .ourmenufood {
+        display: flex;
+        flex-direction: column;
+    }
 }
