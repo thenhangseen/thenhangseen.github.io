@@ -5,11 +5,12 @@
     justify-content: center;
     align-items: center;
     padding: 45px 0;
+    overflow: hidden;
 
 }
 
 .top-image {
-    width: 60%;
+    width: 55%;
     display: flex;
     justify-content: flex-end;
 }
@@ -21,7 +22,6 @@
 
 .top-text {
     width: 40%;
-    padding-left: 50px;
     padding-left: 73px;
 }
 
@@ -30,19 +30,14 @@
 .section-title-purple {
     margin-bottom: 24px;
     margin-top: 24px;
-    width: 50%;
+    width: 80%;
 
 }
 
 
 .body-text {
-    width: 50%;
+    width: 80%;
     margin-bottom: 24px;
-}
-
-
-.button-white {
-    font-family: "Work Sans", sans-serif;
 }
 
 .creating {
@@ -118,13 +113,13 @@
 }
 
 .product-one-title {
-    width: 55%;
+    width: 70%;
     margin-top: 0;
     margin-bottom: 24px;
 }
 
 .product-one-body {
-    width: 70%;
+    width: 85%;
     margin-bottom: 24px;
 }
 
@@ -138,7 +133,7 @@
 
 .product-two-text {
     width: 50%;
-    padding: 100px 30px;
+    padding: 50px 50px;
     margin-left: 80px;
 }
 
@@ -147,25 +142,24 @@
 }
 
 .product-two-title {
-    width: 50%;
+    width: 80%;
     margin-top: 0;
     margin-bottom: 24px;
 }
 
 .product-two-body {
-    width: 61%;
+    width: 70%;
     margin-bottom: 24px;
 }
 
 .product-button {
     margin-top: 0;
-    font-family: "Work Sans", sans-serif;
 }
 
 .message {
     background-color: #f0edf5;
     text-align: center;
-    padding: 100px 20px 100px;
+    padding: 100px 20px 80px;
     margin-top: 100px;
 }
 
@@ -220,14 +214,15 @@
 }
 
 .years {
-    padding: 100px 20px;
+    padding: 100px 40px;
     margin-left: 80px;
 }
 
 .years-text {
     position: relative;
-    width: 65%;
+    width: 80%;
     margin-left: 10%;
+
 }
 
 .years-circle {
@@ -236,8 +231,8 @@
     height: 460px;
     background-color: #f0edf5;
     border-radius: 50%;
-    left: 30%;
-    top: 12%;
+    left: 20%;
+    top: 10%;
 }
 
 .years-small {
@@ -264,6 +259,7 @@
 .downimages img {
     display: block;
     width: 100%;
+    margin-top: 50px;
 }
 
 
@@ -272,24 +268,23 @@
     .top {
         display: block;
         width: 100%;
-        padding: 52px 20px;
+        padding: 50px 40px;
     }
 
     .top-image {
         width: 100%;
-        margin: 0;
     }
 
     .top-image img {
         display: block;
-        width: 100%;
-        height: auto;
+        width: 95%;
+        margin-right: 20px;
     }
 
     .top-text {
         width: 100%;
         margin: 0;
-        padding: 0;
+        padding: 40px 20px;
 
     }
 
@@ -326,7 +321,7 @@
     }
 
     .creating-title p {
-        width: 78%;
+        width: 90%;
         margin-bottom: 40px;
     }
 
@@ -398,7 +393,7 @@
     }
 
     .message .section-title-purple {
-        width: 80%;
+        width: 90%;
     }
 
     .ingredient-text {
@@ -426,12 +421,13 @@
     }
 
     .years {
-        padding: 60px 0;
+        padding: 60px 20px;
     }
+
 
     .years-text {
         width: 100%;
-        margin-left: 5px;
+        margin-left: 0px;
     }
 
     .years-small {
@@ -462,25 +458,30 @@
 @media (max-width: 500px) {
 
     .top {
-        padding: 50px 30px;
+        padding: 50px 0px;
+        margin: 0;
+
     }
 
+    .top-text {
+        padding: 0px 35px;
+    }
 
     .top-image img {
-        width: 100%;
+        width: 90%;
         height: auto;
-        margin-left: 0;
         margin-top: 0;
+
 
     }
 
     .section-title-purple {
         margin-bottom: 24px;
-        width: 100%;
+        width: 90%;
     }
 
     .body-text {
-        width: 90%;
+        width: 100%;
         margin-bottom: 24px;
     }
 
@@ -518,6 +519,14 @@
     .icon-box img {
         width: 65px;
         height: 65px;
+
+    }
+
+    .product-image {
+        width: 100%;
+
+
+
     }
 
     .product-one-text,
@@ -527,10 +536,12 @@
 
     .product-one-title {
         width: 100%;
+
     }
 
     .product-two-title {
         width: 85%;
+
     }
 
     .product-one-body,
@@ -563,6 +574,8 @@
     .ingredient-image .ingredient-mobile {
         display: block;
         width: 100%;
+
+
     }
 
     .ingredient-text {
@@ -579,9 +592,13 @@
 
     }
 
+    .years {
+        padding: 60px 0;
+    }
+
     .years-text {
         width: 100%;
-        margin-left: -50px;
+
     }
 
     .years-small {
@@ -602,6 +619,7 @@
     }
 
     .downimages img {
-        height: 210px;
+        height: 200px;
+
     }
 }
