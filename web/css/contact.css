@@ -42,6 +42,40 @@
     padding: 10px;
 }
 
+.looking-help{
+    margin:0 auto;
+    padding:0 20px;
+    max-width:1000px;
+    gap:40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.looking-help-form{
+    max-width:1000px;
+    display: flex;
+    flex-direction: column;
+    gap:40px;
+    justify-content: space-between; 
+    
+
+}
+
+.name,
+.email-phone-box{
+    display: flex;
+    flex-direction: row;
+    gap:10px
+}
+
+.form-box{
+    display: flex;
+    flex-direction: column;
+    gap:24px;
+}
+
 @media screen and (max-width: 850px) {
 }
 
