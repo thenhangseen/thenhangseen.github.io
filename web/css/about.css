@@ -5,7 +5,6 @@
     justify-content: center;
     align-items: center;
     padding: 45px 0;
-    overflow: hidden;
 
 }
 
@@ -43,6 +42,7 @@
 
 .creating {
     padding: 100px 40px;
+
 }
 
 .creating-title {
@@ -84,6 +84,7 @@
 .product {
     display: flex;
     align-items: center;
+
 }
 
 .product-image {
@@ -125,12 +126,9 @@
     margin-bottom: 24px;
 }
 
-.product-one {
-    display: flex;
-}
-
 .product-two {
     display: flex;
+
 }
 
 .product-two-text {
@@ -259,6 +257,13 @@
     display: block;
     width: 100%;
     margin-top: 50px;
+}
+
+.top-text,
+.creating.creating-title,
+.message .section-title-purple,
+.years {
+    overflow-x: clip;
 }
 
 
