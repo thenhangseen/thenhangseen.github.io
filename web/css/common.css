@@ -514,9 +514,6 @@ a {
         flex-wrap: wrap;
     }
 
-    .box-subtitle {
-        font-size: 22px;
-    }
 }
 
 @media screen and (max-width: 500px) {
