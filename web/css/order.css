@@ -1,0 +1,29 @@
+.topsection {
+    text-align: center;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.banner {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5)), url(../images/ordermenu.png);
+    width: 80%;
+    height: 453px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    justify-content: center;
+    margin: 0 auto;
+
+    .small-description {
+        color: var(--bg-white)
+    }
+
+    .section-title-white {
+        font-weight: 700;
+        width: 70%;
+    }
+
+    .body-text {
+        color: var(--bg-white);
+    }
+}
