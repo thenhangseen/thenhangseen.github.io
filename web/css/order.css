@@ -76,8 +76,10 @@
 
 .choosecategories {
     display: flex;
-    gap: 20px;
+    gap: 12px;
 }
+
+
 
 .choosecategories button {
     width: 160px;
@@ -85,7 +87,14 @@
     background-color: var(--bg-white);
     border: 1px solid var(--text-purple);
     padding: 2px 10px 2px 10px;
+
 }
+
+.choosecategories .dessert {
+    background-color: var(--text-purple);
+    color: var(--bg-white);
+}
+
 
 .sorting {
     .body-text {
@@ -295,4 +304,58 @@
 
 .reminderimg {
     width: 30%;
+}
+
+/*media screen*/
+@media screen and (max-width: 1160px) {
+    .ordertop {
+        flex-direction: column;
+    }
+
+    .sorting {
+        .body-text {
+            text-align: center;
+            margin: 24px 0px 24px 0px;
+        }
+    }
+}
+
+@media screen and (max-width: 850px) {
+    .bannercontent {
+        flex-direction: column;
+
+        .bannerleft,
+        .bannerright {
+            width: 90%;
+        }
+    }
+
+    .orderbottom {
+        flex-direction: column;
+        width: 80%;
+        margin: auto;
+    }
+
+    .information {
+        flex-direction: column;
+    }
+
+    .informationright,
+    .informationleft {
+        width: 100%;
+    }
+
+    .informationleft {
+        .section-subtitle {
+            margin: 24px;
+        }
+    }
+
+    .reminder {
+        flex-direction: column;
+    }
+
+    .orders {
+        width: 100%;
+    }
 }
