@@ -157,9 +157,72 @@
         </div>
     </div>
 
+    <div class="information">
+        <div class="informationleft">
+            <div class="section-subtitle">Customer Information</div>
+            <div class="body-text">Please enter your details to complete your order.</div>
+        </div>
 
+        <div class="informationright">
+            <div class="informationchoose">
+                <div class="delivery">
+                    <div class="body-text">Delivery</div>
+                </div>
+                <div class="pickup">
+                    <div class="body-text">Pick Up</div>
+                </div>
+            </div>
+            <form action="/form_page.php">
+                <div class="name">
+                    <div class="f_lname">
+                        <input type="text" id="fname" name="fname" placeholder="First Name" value="">
+                    </div>
+                    <div class="f_lname">
+                        <input type="text" id="lname" name="lname" placeholder="Last Name" value="">
+                    </div>
+                </div>
+                <div class="phonenumber">
+                    <input type="tel" name="pnumber" placeholder="Phone Number" value="">
+                </div>
+                <div class="email">
+                    <input type="email" name="emailaddress" placeholder="Email Address" value="">
+                </div>
+                <div class="deliveryaddress">
+                    <textarea id="address" name="address" rows="4" cols="50" placeholder="Delivery Address"></textarea>
+                </div>
+                <div class="remarksbox">
 
+                    <textarea id="remarks" name="remarks" rows="4" cols="50" placeholder="Remarks"></textarea>
+                </div>
+                <div class="submit">
+                    <input type="submit" value="Submit">
+                </div>
 
+            </form>
+
+        </div>
+    </div>
+
+    <div class="footerbanner">
+        <div class="small-description">
+            ORDER REMINDER
+        </div>
+        <div class="section-subtitle">Please review these details before confirming your order.</div>
+        <div class="reminder">
+            <div class="orders">
+                <img class="reminderimg" src="images/orderpurchase.png">
+                <div class="body-text">Orders should be placed in advance.</div>
+            </div>
+            <div class="orders">
+                <img class="reminderimg" src="images/orderwallet.png">
+                <div class="body-text">Confirm your order details before payment.</div>
+            </div>
+            <div class="orders">
+                <img class="reminderimg" src="images/ordercall.png">
+                <div class="body-text">Contact us for any changes.</div>
+            </div>
+        </div>
+    </div>
 
 
 
