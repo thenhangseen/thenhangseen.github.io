@@ -1,88 +1,88 @@
-.section-intro{
+.section-intro {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     text-align: center;
-    gap:40px;
+    gap: 40px;
     width: 100%;
 }
 
-.contact{
-    margin:0 auto 100px auto;
-    padding:30px 40px 0 40px;
-    gap:40px;
-    width:100%;
+.contact {
+    margin: 0 auto 100px auto;
+    padding: 30px 40px 0 40px;
+    gap: 40px;
+    width: 100%;
     background-image: url('../images/contact_bg.png');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    overflow:hidden;
+    overflow: hidden;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 
-.contact-box{
+.contact-box {
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    gap:110px;
+    gap: 110px;
 }
 
-.email-call-box{
-    display:flex;
+.email-call-box {
+    display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     text-align: center;
-    gap:24px;
+    gap: 24px;
     padding: 10px;
 }
 
-.looking-help{
-    margin:0 auto;
-    padding:0 40px;
-    max-width:1000px;
-    gap:40px;
+.looking-help {
+    margin: 0 auto;
+    padding: 0 40px;
+    max-width: 1000px;
+    gap: 40px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 
-.looking-help-form{
-    margin:0 auto;
-    min-width:600px;
+.looking-help-form {
+    margin: 0 auto;
+    min-width: 600px;
     max-width: 1000px;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    gap:40px;
+    gap: 40px;
 }
 
 .name,
-.email-phone-box{
+.email-phone-box {
     display: flex;
     flex-direction: row;
-    gap:24px;
+    gap: 24px;
 }
 
-.form-box{
+.form-box {
     width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    gap:8px;
+    gap: 8px;
 }
 
 .form-box input,
-.form-box textarea{
+.form-box textarea {
     border: 1px solid var(--border-grey);
     border-radius: 5px;
-    padding:15px 20px;
+    padding: 15px 20px;
     box-sizing: border-box;
 }
 
@@ -106,24 +106,24 @@
     border: none;
 }
 
-.location-info{
+.location-info {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding:20px;
-    gap:40px;
+    padding: 20px;
+    gap: 40px;
 }
 
-.location{
+.location {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     max-width: 1100px;
-    margin:100px auto;
+    margin: 100px auto;
     padding: 0 40px;
-    gap:40px;
+    gap: 40px;
 }
 
 .location-box {
@@ -131,21 +131,21 @@
     justify-content: center;
     align-items: center;
     margin: 0 40px 0 40px;
-    gap:20px;
+    gap: 20px;
 }
 
-.location-content{
+.location-content {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
     text-align: center;
-    gap:40px;
+    gap: 40px;
 }
 
 .bukit-bintang,
-.kepong{
-    width:100%;
+.kepong {
+    width: 100%;
     max-width: 550px;
 }
 
@@ -163,16 +163,16 @@
     background-color: var(--bg-pink);
 }
 
-.faq{
+.faq {
     display: flex;
     align-items: center;
     max-width: 1280px;
 }
 
-.read-faq{
-    width:43%;
+.read-faq {
+    width: 43%;
     max-width: 550px;
-    padding:120px 30px;
+    padding: 120px 30px;
     background-color: var(--bg-purple);
     display: flex;
     flex-direction: column;
@@ -180,15 +180,15 @@
     align-items: center;
 }
 
-.faq-section{
-    display:flex;
+.faq-section {
+    display: flex;
     flex-direction: column;
     justify-content: center;
-    padding:0 40px;
+    padding: 0 40px;
     width: 57%;
 }
 
-.faq-box{
+.faq-box {
     border-bottom: 1px solid var(--border-grey);
     display: flex;
     justify-content: space-between;
@@ -197,13 +197,13 @@
 }
 
 .sharing {
-    margin:100px auto;
+    margin: 100px auto;
     width: 90%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    gap:40px;
+    gap: 40px;
 }
 
 .sharing-top,
@@ -213,28 +213,29 @@
     width: 100%;
 }
 
-.sharing-photo-left,.sharing-photo-right{
-    width:25%;
-    object-fit:cover;
+.sharing-photo-left,
+.sharing-photo-right {
+    width: 25%;
+    object-fit: cover;
     display: block;
 }
 
 .sharing-content {
-    width:50%;
+    width: 50%;
     background-color: var(--bg-purple);
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     text-align: center;
-    gap:40px;
+    gap: 40px;
     padding: 80px 10px 80px 10px;
     box-sizing: border-box;
 }
 
-.sharing-bottom img{
-    width:calc((100% - 90px) / 4);
-    object-fit:cover;
+.sharing-bottom img {
+    width: calc((100% - 90px) / 4);
+    object-fit: cover;
     display: block;
 }
 
@@ -267,62 +268,66 @@
 
 
 @media screen and (max-width: 1130px) {
-    .location-box{
+    .location-box {
         flex-direction: column;
         align-items: center;
     }
 
-    .bukit-bintang,.kepong{
-        width:100%;
+    .bukit-bintang,
+    .kepong {
+        width: 100%;
         max-width: 550px;
     }
 
-    .location-content{
+    .location-content {
         flex-wrap: wrap;
-        gap:20px;
+        gap: 20px;
     }
 
-    .read-faq{
-        width:50%;
+    .read-faq {
+        width: 50%;
         max-width: 550px;
-        padding:120px 30px;
+        padding: 120px 30px;
     }
 
-    .faq-section{
-        padding:0 20px;
+    .faq-section {
+        padding: 0 20px;
     }
 
 }
 
 @media screen and (max-width: 880px) {
 
-    .looking-help-form{
-        min-width:0px;
-        width:100%;
-    }
-
-    .name,
-    .email-phone-box{
-        flex-direction: column;
-        gap:40px;
-    }
-
-    .form-box{
+    .looking-help-form {
+        min-width: 0px;
         width: 100%;
     }
 
-    .sharing{
-        width:100%;
+    .name,
+    .email-phone-box {
+        flex-direction: column;
+        gap: 40px;
+    }
+
+    .form-box {
+        width: 100%;
+    }
+
+    .sharing {
+        width: 100%;
 
     }
 
-    .sharing-top,.sharing-bottom {
+    .sharing-top,
+    .sharing-bottom {
         flex-direction: column;
         align-items: center;
-        gap:40px;
+        gap: 40px;
     }
 
-    .sharing-content,.sharing-photo-left,.sharing-photo-right {
+    .sharing-content,
+    .sharing-photo-left,
+    .sharing-photo-right {
         width: 50%;
     }
 
@@ -333,32 +338,32 @@
 }
 
 @media screen and (max-width: 630px) {
-    .contact-box{
+    .contact-box {
         flex-direction: column;
-        gap:40px;
+        gap: 40px;
     }
 
-    .faq{
+    .faq {
         flex-direction: column;
         max-width: 100%;
     }
 
-    .read-faq{
-        width:100%;
-        max-width:100%;
-        padding:40px 30px 20px 30px;
+    .read-faq {
+        width: 100%;
+        max-width: 100%;
+        padding: 40px 30px 20px 30px;
         text-align: center;
     }
 
-    .faq-section{
-        width:100%;
+    .faq-section {
+        width: 100%;
         max-width: 100%;
         padding: 0 30px;
         background-color: var(--bg-purple);
-        gap:40px;
+        gap: 40px;
     }
 
-    .faq-box{
+    .faq-box {
         justify-content: center;
         align-items: center;
         text-align: center;

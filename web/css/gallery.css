@@ -1,0 +1,146 @@
+.sectionheadline {
+    text-align: left;
+    margin: 0 auto;
+    padding: 3% 5%;
+}
+
+.pastriesgallery {
+    margin: 0 3% auto;
+    margin-bottom: 5vw;
+    width: 95%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    row-gap: 3vw;
+}
+
+.pastriesgallerytop {
+    display: flex;
+    gap: 3%;
+    width: 100%;
+}
+
+.pastriesgallerycolumn {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 3vw;
+    width: 40%;
+    height: 40%;
+}
+
+.pastriesgalleryhide {
+    gap: 3%;
+    width: 100%;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 3vw;
+    display: none;
+}
+
+.pastriesgallerytop img,
+.pastriesgallerybottom img {
+    width: 100% auto;
+    height: auto;
+    object-fit: cover;
+    display: block;
+    overflow: hidden;
+}
+
+.customerscreationscards {
+    width: 30%;
+    max-width: 500px;
+    height: 500px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    align-items: flex-start;
+    text-align: left;
+    color: #FFFFFF;
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: column;
+    flex-wrap: wrap;
+    padding: 30px;
+
+
+}
+
+.card1 {
+    background-image: url(../images/customerscreations6.png);
+}
+
+.card2 {
+    background-image: url(../images/customerscreations7.png);
+}
+
+.card3 {
+    background-image: url(../images/customerscreations8.png);
+}
+
+.customerscreations {
+    justify-content: flex-start;
+    gap: 3%;
+    padding: 3%;
+    flex-direction: row;
+    display: flex;
+    justify-content: space-evenly;
+    row-gap: 40px;
+}
+
+.locationgallery {
+    margin: 0 3% auto;
+    margin-bottom: 5vw;
+    width: 95%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    row-gap: 3vw;
+}
+
+.locationgalleryrow {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+
+.location {
+    width: calc((100%) / 3);
+    height: 300px;
+    background-color: blue;
+    justify-content: center;
+    padding: 3%;
+    text-align: center;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.locationbackground1 {
+    background-image: url(../images/locationgallery1.png);
+}
+
+.section-subtitle-white {
+    color: var(--bg-white);
+    font-weight: 700;
+}
+
+.small-description-white {
+    color: var(--bg-white);
+}
+
+@media screen and (max-width: 850px) {
+    body {
+        background-color: rgb(255, 127, 200);
+    }
+}
+
+@media screen and (max-width: 550px) {
+    body {
+        background-color: rgb(172, 3, 99);
+    }
+
+    .pastriesgalleryhide {
+        display: flex;
+    }
