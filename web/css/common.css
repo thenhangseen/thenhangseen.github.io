@@ -73,12 +73,17 @@
     color: var(--text-black);
 }
 
+.body-text-purple{
+    font-family: var(--font-regular);
+    color: var(--text-purple);
+}
+
 .small-description-white {
     font-family: var(--font-regular);
     color: var(--bg-white);
 }
 
-.body-text {
+.body-text,.body-text-purple {
     font-size: 16px;
     line-height: 28.8px;
     letter-spacing: 0;
@@ -509,9 +514,6 @@ a {
         flex-wrap: wrap;
     }
 
-    .box-subtitle {
-        font-size: 22px;
-    }
 }
 
 @media screen and (max-width: 500px) {

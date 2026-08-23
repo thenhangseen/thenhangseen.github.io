@@ -10,7 +10,7 @@
 
 .contact{
     margin:0 auto 100px auto;
-    padding:30px 20px 0 20px;
+    padding:30px 40px 0 40px;
     gap:40px;
     width:100%;
     background-image: url('../images/contact_bg.png');
@@ -42,12 +42,239 @@
     padding: 10px;
 }
 
-@media screen and (max-width: 850px) {
+.looking-help{
+    margin:0 auto;
+    padding:0 40px;
+    max-width:1000px;
+    gap:40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
-@media screen and (max-width: 550px) {
+.looking-help-form{
+    margin:0 auto;
+    min-width:600px;
+    max-width: 1000px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap:40px;
+}
+
+.name,
+.email-phone-box{
+    display: flex;
+    flex-direction: row;
+    gap:24px;
+}
+
+.form-box{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap:8px;
+}
+
+.form-box input,
+.form-box textarea{
+    border: 1px solid var(--border-grey);
+    border-radius: 5px;
+    padding:15px 20px;
+    box-sizing: border-box;
+}
+
+.submit {
+    width: 40%;
+    height: 48px;
+    width: 100%;
+    height: 48px;
+    border-radius: 6px;
+    padding: 0px 16px;
+    font-size: 14px;
+    font-family: var(--font-regular);
+    border: 1px solid var(--text-purple);
+    background-color: var(--text-purple);
+    color: var(--bg-white);
+}
+
+.submit:hover {
+    color: var(--text-purple);
+    background-color: var(--bg-purple);
+    border: none;
+}
+
+.location-info{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding:20px;
+    gap:40px;
+}
+
+.location{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 1100px;
+    margin:100px auto;
+    padding: 0 40px;
+    gap:40px;
+}
+
+.location-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 40px 0 40px;
+    gap:20px;
+}
+
+.location-content{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap:40px;
+}
+
+.bukit-bintang,
+.kepong{
+    width:100%;
+    max-width: 550px;
+}
+
+.bukit-bintang img,
+.kepong img {
+    width: 100%;
+    object-fit: cover;
+}
+
+.bukit-bintang {
+    background-color: var(--bg-purple);
+}
+
+.kepong {
+    background-color: var(--bg-pink);
+}
+
+.faq{
+    display: flex;
+    align-items: center;
+    max-width: 1280px;
+}
+
+.read-faq{
+    width:43%;
+    max-width: 550px;
+    padding:120px 30px;
+    background-color: var(--bg-purple);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.faq-section{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    padding:0 40px;
+    width: 57%;
+}
+
+.faq-box{
+    border-bottom: 1px solid var(--border-grey);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+}
+
+@media screen and (max-width: 1130px) {
+    .location-box{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .bukit-bintang,.kepong{
+        width:100%;
+        max-width: 550px;
+    }
+
+    .location-content{
+        flex-wrap: wrap;
+        gap:20px;
+    }
+
+    .read-faq{
+        width:50%;
+        max-width: 550px;
+        padding:120px 30px;
+    }
+
+    .faq-section{
+        padding:0 20px;
+    }
+
+}
+
+@media screen and (max-width: 700px) {
+
+    .looking-help-form{
+        min-width:0px;
+        width:100%;
+    }
+
+    .name,
+    .email-phone-box{
+        flex-direction: column;
+        gap:40px;
+    }
+
+    .form-box{
+        width: 100%;
+    }
+
+}
+
+@media screen and (max-width: 630px) {
     .contact-box{
         flex-direction: column;
         gap:40px;
     }
+
+    .faq{
+        flex-direction: column;
+        max-width: 100%;
+    }
+
+    .read-faq{
+        width:100%;
+        max-width:100%;
+        padding:40px 30px 20px 30px;
+        text-align: center;
+    }
+
+    .faq-section{
+        width:100%;
+        max-width: 100%;
+        padding: 0 30px;
+        background-color: var(--bg-purple);
+        gap:40px;
+    }
+
+    .faq-box{
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        padding: 20px 40px;
+    }
+
+
 }

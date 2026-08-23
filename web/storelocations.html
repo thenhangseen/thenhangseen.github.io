@@ -38,7 +38,7 @@
                     <div class="menu-item"><a href="menu.html">MENU</a></div>
 
                     <div class="submenu">
-                        <div class="menu-item"><a href="#">ORDER PAGE</a></div>
+                        <div class="menu-item"><a href="order.html">ORDER PAGE</a></div>
                         <div class="menu-item"><a href="promotion.html">PROMOTION</a></div>
                     </div>
                 </div>
@@ -338,7 +338,7 @@
                         <a href="menu.html">MENU</a>
 
                         <div class="submenu">
-                            <a href="#">ORDER PAGE</a>
+                            <a href="order.html">ORDER PAGE</a>
                             <a href="promotion.html">PROMOTION</a>
                         </div>
                     </div>
@@ -361,7 +361,7 @@
                         <a href="contact.html">CONTACT</a>
 
                         <div class="submenu">
-                            <a href="#">STORE LOCATION</a>
+                            <a href="storelocations.html">STORE LOCATION</a>
                         </div>
                     </div>
                 </div>
@@ -396,7 +396,138 @@
             </div>
         </div>
     </div>
+
     <script src="js/common.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.15/dist/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.15/dist/ScrollTrigger.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.15/dist/SplitText.min.js"></script>
+
+    <script>
+
+        gsap.from(".page-title", {
+            x: -100,
+            opacity: 0,
+            duration: 1,
+            ease: "power2.out",
+            scrollTrigger: {
+                trigger: ".page-title",
+                start: "top 100%",
+            }
+        });
+
+        gsap.from(".bakery-section", {
+            y: 100,
+            opacity: 0,
+            duration: 1,
+            scrollTrigger: {
+                trigger: ".bakery-section",
+                start: "top center",
+
+            },
+            stagger: 0.5,
+        });
+
+
+        gsap.from(".locations-heading", {
+            x: -80,
+            opacity: 0,
+            duration: 1,
+            ease: "power2.out",
+            scrollTrigger: {
+                trigger: ".locations-heading",
+                start: "top 100%",
+            }
+        });
+
+        gsap.from(".locations-list", {
+            y: 50,
+            opacity: 0,
+            duration: 1,
+            scrollTrigger: {
+                trigger: ".locations-list",
+                start: "top center",
+
+            },
+            stagger: 0.5,
+        });
+
+
+        gsap.from(".map-section", {
+            x: -60,
+            opacity: 0,
+            duration: 2,
+            scrollTrigger: {
+                trigger: ".map-section",
+                start: "top center",
+
+            },
+            stagger: 0.5,
+        });
+
+        gsap.from(".opening-hours-section h1", {
+            x: -80,
+            opacity: 0,
+            duration: 2,
+            scrollTrigger: {
+                trigger: ".opening-hours-section h1 ",
+                start: "top center",
+
+            },
+            stagger: 0.5,
+        });
+
+        gsap.from(".opening-hours-box ", {
+            y: 40,
+            opacity: 0,
+            duration: 1,
+            scrollTrigger: {
+                trigger: ".opening-hours-box ",
+                start: "top center",
+
+            },
+            stagger: 0.5,
+        });
+
+        gsap.from(".opening-hours-note", {
+            y: 80,
+            opacity: 0,
+            duration: 1,
+            scrollTrigger: {
+                trigger: ".opening-hours-note",
+                start: "top center",
+
+            },
+            stagger: 0.5,
+        });
+
+
+        gsap.from(".contact-section ", {
+            y: 100,
+            opacity: 0,
+            duration: 1,
+            scrollTrigger: {
+                trigger: ".contact-section",
+                start: "top center",
+
+            },
+            stagger: 0.5,
+        });
+
+        gsap.from(".welcome-section", {
+            y: 100,
+            opacity: 0,
+            duration: 1,
+            scrollTrigger: {
+                trigger: ".welcome-section",
+                start: "top center",
+
+            },
+            stagger: 0.5,
+        });
+
+
+    </script>
 
 </body>
 
