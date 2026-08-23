@@ -106,6 +106,79 @@
     border: none;
 }
 
+.location-info{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding:20px;
+    gap:40px;
+}
+
+.location{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 1100px;
+    margin:100px auto;
+    padding: 0 40px;
+    gap:40px;
+}
+
+.location-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 40px 0 40px;
+    gap:20px;
+}
+
+.location-content{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap:40px;
+}
+
+.bukit-bintang,
+.kepong{
+    width:100%;
+    max-width: 550px;
+}
+
+.bukit-bintang img,
+.kepong img {
+    width: 100%;
+    object-fit: cover;
+}
+
+.bukit-bintang {
+    background-color: var(--bg-purple);
+}
+
+.kepong {
+    background-color: var(--bg-pink);
+}
+
+@media screen and (max-width: 1130px) {
+    .location-box{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .bukit-bintang,.kepong{
+        width:100%;
+        max-width: 550px;
+    }
+
+    .location-content{
+        flex-wrap: wrap;
+        gap:20px;
+    }
+}
 
 @media screen and (max-width: 700px) {
 
