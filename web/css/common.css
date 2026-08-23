@@ -51,7 +51,7 @@
     font-size: 46px;
     line-height: 55px;
     letter-spacing: -1px;
-    width: 700;
+    font-weight: 700;
 }
 
 .box-subtitle {
@@ -73,7 +73,7 @@
     color: var(--text-black);
 }
 
-.body-text-purple{
+.body-text-purple {
     font-family: var(--font-regular);
     color: var(--text-purple);
 }
@@ -83,7 +83,8 @@
     color: var(--bg-white);
 }
 
-.body-text,.body-text-purple {
+.body-text,
+.body-text-purple {
     font-size: 16px;
     line-height: 28.8px;
     letter-spacing: 0;
@@ -156,7 +157,6 @@ a {
     text-align: center;
     padding: 10px;
     font-size: 12px;
-    display: block;
     line-height: 20px;
 }
 
@@ -183,7 +183,6 @@ a {
     gap: 38px;
     padding: 8px 0px 10px;
     font-size: 14px;
-    justify-content: flex-end;
     margin: 0px 30px;
     flex-wrap: wrap;
     justify-content: center;
@@ -452,9 +451,8 @@ a {
         flex-direction: column;
         gap: 0;
         margin: 0;
-        padding: 0;
+        padding: 10px 0;
         z-index: 1000;
-        padding: 10px 0px 10px 0px;
         font-size: 12px;
     }
 
@@ -462,8 +460,10 @@ a {
         display: flex;
     }
 
-    .menu-item {
+    .navigationcontent>.menu-item,
+    .navigationcontent>.has-submenu>.menu-item {
         padding: 20px;
+        background-color: var(--bg-grey);
     }
 
     .has-submenu>.menu-item>a::after {
@@ -472,26 +472,54 @@ a {
         color: var(--text-black);
     }
 
-    .submenu,
-    .menu-item:hover {
-        background-color: var(--bg-grey);
-    }
-
-    .navigationcontent a:hover {
-        text-decoration: none;
-    }
-
-    .submenu {
+    .header .submenu {
+        display: none;
+        position: static;
         width: 100%;
-        z-index: 1002;
-        margin-top: 25px;
+        min-width: 0;
+        margin: 0;
     }
 
-    .submenu .menu-item {
-        padding: 8px 30px;
+    .header .submenu.active {
+        display: block;
     }
 
+    .header .has-submenu:hover>.submenu {
+        display: none;
+    }
+
+    .header .has-submenu .submenu.active {
+        display: block;
+    }
+
+
+    .header .submenu .menu-item {
+        padding: 15px 20px;
+        background-color: var(--bg-white);
+    }
+
+
+    /* footer*/
+
+    .footercontent {
+        gap: 20px;
+    }
+
+    .footer .submenu {
+        position: static;
+        width: 100%;
+        min-width: 0;
+        margin-top: 10px;
+        text-align: left;
+    }
+
+    .footer .submenu a {
+        display: block;
+        width: 100%;
+        padding: 8px 20px;
+    }
 }
+
 
 
 
@@ -509,11 +537,6 @@ a {
     .footerleft {
         margin: 0px 9.89583px;
     }
-
-    .footercontent {
-        flex-wrap: wrap;
-    }
-
 }
 
 @media screen and (max-width: 500px) {
@@ -530,10 +553,6 @@ a {
     .section-subtitle-black {
         font-size: 28px;
         line-height: 35.8px;
-    }
-
-    .footer-text {
-        font-size: 22px;
     }
 
 }

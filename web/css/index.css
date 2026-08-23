@@ -14,7 +14,6 @@
     .section-title-purple {
         margin-bottom: 24px;
         margin-top: 24px;
-        font-weight: 700;
     }
 
     .body-text {
@@ -91,7 +90,6 @@
     .section-title-purple {
         margin-bottom: 40px;
         margin-bottom: 40px;
-        font-weight: 700;
     }
 
 }
@@ -116,7 +114,6 @@
     .section-subtitle {
         margin-top: 38px;
         margin-bottom: 40px;
-        font-weight: 700;
     }
 }
 
@@ -148,65 +145,59 @@
 
 /*Get in touch Section*/
 .sharing {
-    margin-top: 100px;
-    margin-bottom: 100px;
+    margin: 100px auto;
     width: 90%;
-    margin-left: auto;
-    margin-right: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 40px;
 }
 
-.sharingtop,
-.sharingbottom {
+.sharing-top,
+.sharing-bottom {
     display: flex;
     gap: 30px;
     width: 100%;
 }
 
-
-.sharingbottom {
-    margin-top: 40px;
+.sharing-photo-left,
+.sharing-photo-right {
+    width: 25%;
+    object-fit: cover;
+    display: block;
 }
 
-.sharingimg {
-    flex: 1;
-    width: 0;
-    height: auto;
-}
-
-
-.sharingcontent {
+.sharing-content {
+    width: 50%;
     background-color: var(--bg-purple);
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     text-align: center;
-    padding: 70px 50px 70px 50px;
-
-
-    .small-description {
-        margin-bottom: 44px;
-    }
-
-    .section-subtitle {
-        margin-bottom: 44px;
-        font-weight: 700;
-    }
-
-    .button-purple {
-        margin-top: 0px;
-    }
-
-    .button-purple img {
-        width: 30px;
-        vertical-align: middle;
-    }
-
-    .button-purple span {
-        vertical-align: middle;
-    }
+    gap: 40px;
+    padding: 80px 10px 80px 10px;
+    box-sizing: border-box;
 }
 
+.sharing-bottom img {
+    width: calc((100% - 90px) / 4);
+    object-fit: cover;
+    display: block;
+}
+
+.social-icon {
+    width: 30px;
+}
+
+.button-purple {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+
+}
 
 .banner {
     background-image: linear-gradient(rgba(0, 0, 0, 0.5)), url(../images/indexbanner.png);
@@ -283,23 +274,32 @@
         margin-bottom: 33px;
     }
 
-    .sharingtop {
-        flex-direction: column;
 
-        .sharingcontent {
-            width: 100%;
-        }
-    }
+}
 
-    .sharingbottom {
-        flex-direction: column;
-    }
-
-    .sharingimg {
+@media screen and (max-width: 880px) {
+    .sharing {
         width: 100%;
-        height: auto;
-        flex: none;
+
     }
+
+    .sharing-top,
+    .sharing-bottom {
+        flex-direction: column;
+        align-items: center;
+        gap: 40px;
+    }
+
+    .sharing-content,
+    .sharing-photo-left,
+    .sharing-photo-right {
+        width: 50%;
+    }
+
+    .sharing-bottom img {
+        width: 50%;
+    }
+
 }
 
 @media (max-width: 850px) {
