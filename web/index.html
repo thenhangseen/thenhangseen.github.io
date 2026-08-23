@@ -34,7 +34,7 @@
                     <div class="menu-item"><a href="menu.html">MENU</a></div>
 
                     <div class="submenu">
-                        <div class="menu-item"><a href="#">ORDER PAGE</a></div>
+                        <div class="menu-item"><a href="order.html">ORDER PAGE</a></div>
                         <div class="menu-item"><a href="promotion.html">PROMOTION</a></div>
                     </div>
                 </div>
@@ -72,8 +72,6 @@
         </div>
     </div>
 
-
-
     <div class="hero">
         <div class="heroleft">
             <div class="small-description">
@@ -87,7 +85,10 @@
                     deliciousness in every bite.</div>
             </div>
             <div class="exploreourproducts">
-                <button class="button-white">Explore our products</button>
+                <a href="order.html">
+                    <button class="button-purple">Explore our products</button>
+                </a>
+
             </div>
         </div>
         <div class="heroright">
@@ -103,9 +104,6 @@
             <div class="section-subtitle ">
                 <div>All our delectable pastries are backed fresh in our Kitchen very morning, and are made with
                     all-natural, all organic ingredients.</div>
-            </div>
-            <div class="exploreourproducts">
-                <button class="button-purple">Explore our products</button>
             </div>
         </div>
         <div class="productright">
@@ -139,7 +137,7 @@
         </div>
         <div class="locationimage">
             <div class="bukitbintang">
-                <img class="bintangimg" src="images/bukitbintang.png" alt="bukit bintang image">
+                <img src="images/bukitbintang.png" width="100%">
                 <div class="locationbottom">
                     <div class="section-subtitle">
                         <div>Bukit Bintang</div>
@@ -160,7 +158,7 @@
                 </div>
             </div>
             <div class="kepong">
-                <img class="bintangimg" src="images/kepong.png" alt="kepong image">
+                <img src="images/kepong.png" width="100%">
                 <div class="locationbottom">
                     <div class="section-subtitle">
                         <div>Kepong</div>
@@ -182,39 +180,47 @@
             </div>
         </div>
         <div class="viewalllocation">
-            <button class="button-purple">View More</button>
+            <a href="storelocations.html">
+                <button class="button-purple">View More</button>
+            </a>
         </div>
     </div>
 
     <div class="sharing">
-        <div class="sharingtop">
-            <img class="sharingimg" src="images/sharing1.png" alt="sharing image">
-            <div class="sharingcontent">
-                <div class="small-description">
-                    <div>MADE FOR SHARING</div>
+
+        <div class="sharing-top">
+            <img class="sharing-photo-left" src="images/sharing1.png">
+
+            <div class="sharing-content">
+                <div class="section-intro">
+                    <p class="small-description">MADE FOR SHARING</p>
+                    <h1 class="section-title-purple">Let's stay in touch</h1>
                 </div>
-                <div class="section-subtitle">
-                    <div>Let's stay in touch</div>
-                </div>
+
                 <button class="button-purple">
                     <img class="social-icon" src="images/whiteinstragram.png" width="30" alt="Instagram">
                     <span>Follow Us</span>
                 </button>
+
             </div>
-            <img class="sharingimg" src="images/sharing2.png" alt="sharing image">
+
+            <img class="sharing-photo-right" src="images/sharing2.png">
         </div>
-        <div class="sharingbottom">
-            <img class="sharingimg" src="images/sharing3.png" alt="sharing image">
-            <img class="sharingimg" src="images/sharing4.png" alt="sharing image">
-            <img class="sharingimg" src="images/sharing5.png" alt="sharing image">
-            <img class="sharingimg" src="images/sharing6.png" alt="sharing image">
+
+        <div class="sharing-bottom">
+            <img src="images/sharing3.png">
+            <img src="images/sharing4.png">
+            <img src="images/sharing5.png">
+            <img src="images/sharing6.png">
         </div>
+
     </div>
     <div class="banner">
         <div class="small-description">TRY OUR SEASONAL PRODUCTS</div>
         <div class="section-title-purple">Order for pick-up or delivery to your home</div>
-        <button class="button-white">Shop Now</button>
-
+        <a href="order.html">
+            <button class="button-white">Shop Now</button>
+        </a>
     </div>
 
 
@@ -301,23 +307,6 @@
             </div>
         </div>
     </div>
-    <script src="https://cdn.jsdelivr.net/npm/gsap@3.15/dist/gsap.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/gsap@3.15/dist/ScrollTrigger.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/gsap@3.15/dist/SplitText.min.js"></script>
-    <script>
-        gsap.from(".pro", {
-            scrollTrigger: {
-                trigger: ".product",
-                start: "top 80%" /* target, screen*/
-            },
-            y: 200, // move 200px to the right
-            opacity: 0, // fade to 50% opacity
-            duration: .5, // 1.5 seconds
-            ease: "power2.out",
-            stagger: .5
-        });
-    </script>
-
 
 
 

@@ -11,3 +11,21 @@ toggleButton.addEventListener("click", () => {
         toggleButton.innerHTML = "&#9776;"; // ☰ (hamburger)
     }
 });
+
+const submenus = document.querySelectorAll(".has-submenu");
+
+submenus.forEach((item) => {
+
+    const link = item.querySelector(".menu-item a");
+    const submenu = item.querySelector(".submenu");
+
+    link.addEventListener("click", (e) => {
+
+        if (window.innerWidth <= 850) {
+            e.preventDefault();
+            submenu.classList.toggle("active");
+        }
+
+    });
+
+});
