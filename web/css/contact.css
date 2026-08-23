@@ -196,6 +196,76 @@
     padding: 20px 0;
 }
 
+.sharing {
+    margin:100px auto;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap:40px;
+}
+
+.sharing-top,
+.sharing-bottom {
+    display: flex;
+    gap: 30px;
+    width: 100%;
+}
+
+.sharing-photo-left,.sharing-photo-right{
+    width:25%;
+    object-fit:cover;
+    display: block;
+}
+
+.sharing-content {
+    width:50%;
+    background-color: var(--bg-purple);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap:40px;
+    padding: 80px 10px 80px 10px;
+    box-sizing: border-box;
+}
+
+.sharing-bottom img{
+    width:calc((100% - 90px) / 4);
+    object-fit:cover;
+    display: block;
+}
+
+.social-icon {
+    width: 30px;
+}
+
+.button-purple {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+
+}
+
+.banner {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5)), url(../images/indexbanner.png);
+    width: 100%;
+    padding: 180px 20px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+
 @media screen and (max-width: 1130px) {
     .location-box{
         flex-direction: column;
@@ -224,7 +294,7 @@
 
 }
 
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 880px) {
 
     .looking-help-form{
         min-width:0px;
@@ -239,6 +309,25 @@
 
     .form-box{
         width: 100%;
+    }
+
+    .sharing{
+        width:100%;
+
+    }
+
+    .sharing-top,.sharing-bottom {
+        flex-direction: column;
+        align-items: center;
+        gap:40px;
+    }
+
+    .sharing-content,.sharing-photo-left,.sharing-photo-right {
+        width: 50%;
+    }
+
+    .sharing-bottom img {
+        width: 50%;
     }
 
 }
@@ -275,6 +364,5 @@
         text-align: center;
         padding: 20px 40px;
     }
-
 
 }
