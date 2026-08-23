@@ -23,7 +23,6 @@ submenus.forEach((item) => {
 
         if (window.innerWidth <= 850) {
             e.preventDefault();
-
             submenu.classList.toggle("active");
         }
 
