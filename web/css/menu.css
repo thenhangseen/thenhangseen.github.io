@@ -74,8 +74,12 @@
         font-weight: 700;
     }
 
+    .box-subtitle {
+        margin-top: 24px;
+    }
+
     .body-text {
-        margin: 24px 0px 24px 0px;
+        margin: 10px 0px;
     }
 }
 
@@ -99,10 +103,7 @@
     width: 50%;
 }
 
-.categories1,
-.categories2,
-.categories3,
-.categories4 {
+.categoriesitem {
     width: 50%;
 }
 

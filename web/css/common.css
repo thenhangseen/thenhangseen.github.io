@@ -345,7 +345,7 @@ a {
         display: flex;
         flex-wrap: wrap;
         margin-top: 30px;
-        gap: 40px;
+        gap: 19px;
 
     }
 }
@@ -377,7 +377,7 @@ a {
     }
 }
 
-@media screen and (max-width: 1250px) {
+@media screen and (max-width: 1240px) {
     .footertop {
         flex-direction: column;
 
