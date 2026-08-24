@@ -2,7 +2,7 @@
 
 
 
-/* === RESET / NORMALIZE === */
+
 * {
     margin: 0;
     padding: 0;
@@ -187,8 +187,7 @@ a {
     color: var(--text-purple);
 }
 
-.navigationcontent a,
-.footercontent a {
+.navigationcontent a {
     padding: 2px 0px 10px;
 }
 
@@ -198,20 +197,18 @@ a {
     color: var(--bg-drakblue);
 }
 
-.navigationcontent a:hover,
-.footercontent a:hover {
+.navigationcontent a:hover {
     text-decoration: underline;
     text-decoration-thickness: 2px;
     text-underline-offset: 10px;
 }
 
-.footer .submenu a:hover,
+
 .header .submenu a:hover {
     text-decoration: none;
 }
 
-.header .submenu,
-.footer .submenu {
+.header .submenu {
     display: none;
     position: absolute;
     background-color: var(--bg-white);
@@ -223,13 +220,6 @@ a {
     left: -28px;
     min-width: 140px;
 }
-
-.footer .submenu {
-    top: 29px;
-    left: -35px;
-    min-width: 155px;
-}
-
 
 .submenu a {
     display: block;
@@ -245,30 +235,20 @@ a {
     display: block;
 }
 
-.footercontent .has-submenu:hover>.submenu {
-    display: block;
-}
 
 /*footer*/
 .footer {
     font-family: var(--font-regular);
     color: var(--text-purple);
-    padding: 40px 84.3924px;
+    padding: 40px 10px 5px 10px;
     align-items: center;
     margin: 0px 38.75px;
 }
 
 
-.footertop {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
 
-
-.footerright {
-    width: 40%;
-
+.footercontent {
+    width: 100%;
 
     h3 {
         font-family: var(--font-bold);
@@ -279,12 +259,12 @@ a {
     }
 
     .enteremail {
-        width: 60%;
+        width: 70%;
         height: 48px;
     }
 
     .subscribe {
-        width: 40%;
+        width: 30%;
         height: 48px;
     }
 
@@ -317,63 +297,34 @@ a {
 
     form {
         display: flex;
-        gap: 3%;
+        gap: 25px;
         margin-top: 30px;
     }
 }
 
 
-
-.footerleft {
-    width: 60%;
-    margin-right: 20px;
-
-
-    .footercontent {
-        display: flex;
-        flex-wrap: wrap;
-        margin-top: 30px;
-        gap: 19px;
-
-    }
-}
-
-.footerbottom {
-    display: flex;
-    margin: 20px 0px;
+.copyright {
+    width: 100%;
+    margin: 30px 0px;
     font-size: 12px;
     color: var(--text-black);
-    align-items: center;
-    justify-content: space-between;
-
-
-    .copyright {
-        width: 50%;
-        margin: 20px 0px;
-    }
-
-
-    .socialmedia {
-        width: 40%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        gap: 15px;
-        margin: 5px;
-        padding: 8px;
-
-    }
+    text-align: center;
 }
 
+
+.socialmedia {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    margin: 40px 5px 5px 5px;
+    padding: 8px;
+}
+
+
 @media screen and (max-width: 1240px) {
-    .footertop {
-        flex-direction: column;
-
-        .footercontent {
-            justify-content: center;
-            text-align: center;
-        }
-
+    .footercontent {
         form {
             flex-direction: column;
             align-items: center;
@@ -384,29 +335,17 @@ a {
             display: none;
         }
 
-        .footerright {
+        .enteremail,
+        .subscribe {
             width: 100%;
+            margin: 0px 10px;
 
-            .enteremail,
-            .subscribe {
-                width: 100%;
-                margin: 0px 10px;
-            }
-
-        }
-
-    }
-
-    .footerbottom {
-        flex-direction: column;
-
-        .copyright {
-            width: 100%;
-            justify-content: center;
-            text-align: center;
+            height: 48px;
         }
     }
 }
+
+
 
 @media screen and (max-width: 960px) {
     #desktop-menu {
@@ -430,7 +369,7 @@ a {
     #mobile-navigationcontent {
         display: none;
         position: absolute;
-        top: 110%;
+        top: 100%;
         left: 0;
         width: 100%;
         flex-direction: column;
@@ -510,21 +449,6 @@ a {
 
 
 
-
-
-
-
-
-
-@media screen and (max-width: 771px) {
-    .footer {
-        padding: 40px 21.5451px;
-    }
-
-    .footerleft {
-        margin: 0px 9.89583px;
-    }
-}
 
 @media screen and (max-width: 500px) {
 
