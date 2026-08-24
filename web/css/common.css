@@ -144,6 +144,10 @@ a {
     font-family: var(--font-regular);
 }
 
+.logo {
+    margin-top: 5px;
+}
+
 .menu {
     display: none;
     font-size: 30px;
@@ -164,12 +168,12 @@ a {
 .navigation {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    max-width: 1700px;
     margin: 0 auto;
     margin-top: 16px;
     padding: 0px 30px;
-    max-width: 1700px;
     font-size: 14px;
+    justify-content: space-between;
 }
 
 .menu-item.active a {
@@ -184,17 +188,14 @@ a {
 .navigationcontent {
     display: flex;
     gap: 38px;
-    padding: 8px 0px 10px;
+    padding: 5px 0px 5px;
     font-size: 14px;
-    margin: 0px 30px;
-    flex-wrap: wrap;
-    justify-content: center;
     color: var(--text-purple);
 }
 
 .navigationcontent a,
 .footercontent a {
-    padding: 8px 0px 10px;
+    padding: 2px 0px 10px;
 }
 
 .submenu a:hover {
@@ -240,7 +241,7 @@ a {
 
 .submenu a {
     display: block;
-    padding: 15px 20px;
+    padding: 15px;
 }
 
 .has-submenu {
