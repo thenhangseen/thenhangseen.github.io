@@ -172,6 +172,9 @@ a {
     font-size: 14px;
 }
 
+.menu-item.active a {
+    font-weight: 700;
+}
 
 .logo {
     width: 150px;
