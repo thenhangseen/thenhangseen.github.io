@@ -107,7 +107,7 @@
     padding: 0 10px;
 }
 
-button{
+.control button{
     background: var(--bg-purple);
     border:none;
     font-size: 24px;
@@ -118,7 +118,7 @@ button{
     transition: 0.3 ease;
 }
 
-button:hover{
+.control button:hover{
     background: var(--bg-white);
 }
 
