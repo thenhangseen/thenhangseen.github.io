@@ -11,13 +11,16 @@
 .heroleft {
     width: 30%;
 
+
     .section-title-purple {
         margin-bottom: 24px;
         margin-top: 24px;
+
     }
 
     .body-text {
         margin-bottom: 24px;
+
     }
 }
 
@@ -163,8 +166,12 @@
     align-items: center;
     text-align: center;
     gap: 40px;
-    padding: 80px 10px 80px 10px;
+    padding: 80px 20px;
     box-sizing: border-box;
+
+    .body-text {
+        color: var(--bg-white);
+    }
 }
 
 .sharing-bottom img {
@@ -173,17 +180,7 @@
     display: block;
 }
 
-.social-icon {
-    width: 30px;
-}
 
-.button-purple {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 8px;
-
-}
 
 .banner {
     background-image: linear-gradient(rgba(0, 0, 0, 0.5)), url(../images/indexbanner.png);
@@ -285,6 +282,11 @@
         position: absolute;
         margin: 0px 80px 0px 0px;
         width: 70%;
+
+        background-color: var(--bg-white);
+        padding: 50px;
+        border-radius: 20px;
+        box-shadow: 0px 4px 20px #67637125;
     }
 
     .heroimg {
