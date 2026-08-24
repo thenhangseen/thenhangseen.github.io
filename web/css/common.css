@@ -168,12 +168,9 @@ a {
 .navigation {
     display: flex;
     align-items: center;
-    max-width: 1700px;
-    margin: 0 auto;
     margin-top: 16px;
-    padding: 0px 30px;
     font-size: 14px;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 
 .menu-item.active a {
@@ -222,10 +219,10 @@ a {
     display: none;
     position: absolute;
     top: 25px;
-    left: 0;
+    left: -28px;
     background-color: var(--bg-white);
     border-radius: 6px;
-    min-width: 180px;
+    min-width: 140px;
 }
 
 .footer .submenu {
@@ -241,6 +238,7 @@ a {
 
 .submenu a {
     display: block;
+    padding: 7px;
     padding: 15px;
 }
 
@@ -420,7 +418,7 @@ a {
     }
 }
 
-@media screen and (max-width: 930px) {
+@media screen and (max-width: 960px) {
     .menu {
         display: block;
         cursor: pointer;
@@ -456,11 +454,7 @@ a {
         background-color: var(--bg-grey);
     }
 
-    .has-submenu>.menu-item>a::after {
-        content: "⌄";
-        float: right;
-        color: var(--text-black);
-    }
+
 
     .header .submenu {
         display: none;
