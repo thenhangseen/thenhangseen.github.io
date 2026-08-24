@@ -5,7 +5,7 @@
 }
 
 .pastriesgallery {
-    margin: 0 3% auto;
+    margin: 0% 3% auto;
     margin-bottom: 5vw;
     width: 95%;
     display: flex;
@@ -92,11 +92,11 @@
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    align-items: center;
+    align-items: flex-start;
     text-align: left;
     color: #FFFFFF;
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-end;
     flex-direction: column;
     flex-wrap: wrap;
     padding: 30px;
@@ -168,8 +168,19 @@
     row-gap: 40px;
 }
 
+.customerscreationsexpose {
+    display: none;
+    justify-content: flex-start;
+    gap: 3%;
+    padding: 3%;
+    flex-direction: row;
+    justify-content: space-evenly;
+    row-gap: 40px;
+
+}
+
 .locationgallery {
-    margin: 0 3% auto;
+    margin: 0% 3% auto;
     margin-bottom: 5vw;
     width: 95%;
     display: flex;
@@ -223,6 +234,8 @@
     color: var(--bg-white);
 }
 
+
+
 @media screen and (max-width: 850px) {
 
     .locationbackground2 {
@@ -237,14 +250,25 @@
         width: calc((100%) / 2);
     }
 
-    .customerscreations {
-        flex-wrap: wrap;
-        flex-direction: column;
-    }
-
     .customerscreationscards {
         width: 50%;
 
+    }
+
+    .locationname1 {
+        background-image: url(../images/locationgallery2.png);
+    }
+
+    .locationname2 {
+        background-image: url(../images/locationgallery3.png);
+    }
+
+    .hidecreations {
+        display: none;
+    }
+
+    .customerscreationsexpose {
+        display: flex;
     }
 }
 
