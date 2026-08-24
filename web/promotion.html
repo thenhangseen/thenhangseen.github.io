@@ -111,16 +111,20 @@
         <div class="section-intro">
             <h1 class="section-title-purple">Current Deals</h1>
             <p class="body-text">Enjoy our latest offers and special discounts on freshly baked favorites. Discover great deals available for a limited time and treat yourself to something delicious.</p>
-        </div>        
+        </div> 
+        
+        <div class="view">
 
-        <div class="promotion-picture" id="promotion-picture">
-            <img src="images/currentdeal 3.png" width="50%" height="50%">
-            <img src="images/currentdeal 1.png" width="100%">
-            <img src="images/currentdeal 2.png" width="50%" height="50%">
-        </div>
+            <div class="promotion-picture" id="promotion-picture">
 
-        <div class="circle-under-promotion-picture">
-            <img src="images/currentdeal down.png" width="100%">
+                <div class="pic-wrap"><img src="images/currentdeal 3.png"></div>
+
+                <div class="pic-wrap"><img src="images/currentdeal 1.png"></div>
+
+                <div class="pic-wrap"><img src="images/currentdeal 2.png"></div>
+
+            </div>
+
         </div>
 
         <div class="promotion-list">
@@ -280,33 +284,42 @@
             stagger: 0.5
         })
 
-        const slides = document.querySelector("#promotion-picture");
-        const totalSlides = document.querySelectorAll(".promotion-picture").length;
+        const viewport = document.querySelector(".view");
+        const track = document.querySelector("#promotion-picture");
+        const slides = document.querySelectorAll(".pic-wrap");
+        const totalSlides = slides.length;
 
         let index = 0;
 
         function goToSlide(i) {
             index = (i + totalSlides) % totalSlides;
-            const slideWidth = document.querySelector(".carousel").offsetWidth;
-            gsap.to(slides, {
-                x: -index * slideWidth,
+
+            const style = getComputedStyle(track);
+            const gap = parseFloat(style.getPropertyValue("--slide-gap")) || 0;
+            const slideWidth = slides[0].offsetWidth;
+            const step = slideWidth + gap;
+
+            const viewportWidth = viewport.offsetWidth;
+            const centerOffset = (viewportWidth - slideWidth) / 2;
+            const x = -index * step + centerOffset;
+
+            gsap.to(track, {
+                x: x,
                 duration: 0.8,
                 ease: "power2.inOut"
             });
         }
 
-        function nextSlide() {
-            goToSlide(index + 1);
-        }
+        function nextSlide() { goToSlide(index + 1); }
+        function prevSlide() { goToSlide(index - 1); }
 
-        function prevSlide() {
-            goToSlide(index - 1);
-        }
+        goToSlide(0);
 
-        // Optional autoplay
-        setInterval(() => {
-            nextSlide();
-        }, 1000);
+        setInterval(() => { nextSlide(); }, 3000);
+
+        window.addEventListener("resize", () => goToSlide(index));
+
+    
 
     </script>
 
