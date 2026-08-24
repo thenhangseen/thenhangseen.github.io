@@ -16,13 +16,15 @@
         </div>
 
         <div class="navigation" id="mobile-menu">
-            <img class="logo" src="images/logo.png" alt="Bakery logo">
+            <a href="index.html">
+                <img class="logo" src="images/logo.png" alt="Bakery logo">
+            </a>
 
 
             <div class="navigationcontent" id="navigationcontent">
-                <div class="menu-item"><a href="index.html">HOME</a></div>
+                <div class="menu-item"><a href="index.html">HOME ▼</a></div>
                 <div class="has-submenu">
-                    <div class="menu-item"><a href="about.html">ABOUT</a></div>
+                    <div class="menu-item"><a href="about.html">ABOUT ▼</a></div>
 
                     <div class="submenu">
                         <div class="menu-item"><a href="history.html">HISTORY</a></div>
@@ -31,7 +33,7 @@
                     </div>
                 </div>
                 <div class="has-submenu">
-                    <div class="menu-item"><a href="menu.html">MENU</a></div>
+                    <div class="menu-item active"><a href="menu.html">MENU ▼</a></div>
 
                     <div class="submenu">
                         <div class="menu-item"><a href="order.html">ORDER PAGE</a></div>
@@ -40,7 +42,7 @@
                 </div>
 
                 <div class="has-submenu">
-                    <div class="menu-item"><a href="services.html">SERVICES</a></div>
+                    <div class="menu-item"><a href="services.html">SERVICES ▼</a></div>
                     <div class="submenu">
                         <div class="menu-item"><a href="weddingcake.html">WEDDING CAKE</a></div>
                         <div class="menu-item"><a href="birthdaycake.html">BIRTHDAY CAKE</a></div>
@@ -48,27 +50,25 @@
                     </div>
                 </div>
                 <div class="has-submenu">
-                    <div class="menu-item"><a href="journal.html">JOURNAL</a></div>
+                    <div class="menu-item"><a href="journal.html">JOURNAL ▼</a></div>
 
                     <div class="submenu">
-                        <div class="menu-item"><a href="#">GALLERY</a></div>
+                        <div class="menu-item"><a href="gallery.html">GALLERY</a></div>
                     </div>
                 </div>
                 <div class="has-submenu">
-                    <div class="menu-item"><a href="contact.html">CONTACT</a></div>
+                    <div class="menu-item"><a href="contact.html">CONTACT ▼</a></div>
 
                     <div class="submenu">
-                        <div class="menu-item"> <a href="storelocations.html">STORE LOCATION</a></div>
+                        <div class="menu-item"> <a href="storelocations.html">STORE LOCATIONS</a></div>
                     </div>
                 </div>
 
             </div>
 
-            <div class="account">
-                <div>ACCOUNT</div>
-                <img class="cart" src="images/cart.png" alt="cart">
-                <div class="menu" id="menu">&#9776</div>
-            </div>
+            <div class="menu" id="menu">&#9776</div>
+
+
         </div>
     </div>
 
@@ -88,10 +88,7 @@
             <div class="bannerleft">
                 <div class="section-subtitle">Search for freshly baked breads, cakes, cookies and more.</div>
             </div>
-            <div class="bannerright">
-                <img class="search" src="images/search.png">
-                <div class="body-text">Search</div>
-            </div>
+
         </div>
     </div>
 
@@ -176,20 +173,21 @@
             <form action="/form_page.php">
                 <div class="name">
                     <div class="f_lname">
-                        <input type="text" id="fname" name="fname" placeholder="First Name*" value="">
+                        <input type="text" id="fname" name="fname" placeholder="First Name*" required>
                     </div>
                     <div class="f_lname">
-                        <input type="text" id="lname" name="lname" placeholder="Last Name*" value="">
+                        <input type="text" id="lname" name="lname" placeholder="Last Name*" required>
                     </div>
                 </div>
                 <div class="phonenumber">
-                    <input type="tel" name="pnumber" placeholder="Phone Number*" value="">
+                    <input type="tel" name="pnumber" placeholder="Phone Number*" required>
                 </div>
                 <div class="email">
-                    <input type="email" name="emailaddress" placeholder="Email Address*" value="">
+                    <input type="email" name="emailaddress" placeholder="Email Address*" required>
                 </div>
                 <div class="deliveryaddress">
-                    <textarea id="address" name="address" rows="4" cols="50" placeholder="Delivery Address*"></textarea>
+                    <textarea id="address" name="address" rows="4" cols="50" placeholder="Delivery Address*"
+                        required></textarea>
                 </div>
                 <div class="remarksbox">
 
@@ -226,7 +224,6 @@
     </div>
 
 
-
     <div class="footer">
         <div class="footertop">
             <div class="footerleft">
@@ -234,47 +231,51 @@
                     <img class="logo" src="images/logo.png" alt="Bakery logo">
                 </a>
                 <div class="footercontent">
-                    <div><a href="index.html">HOME</a></div>
+                    <div class="menu-item"><a href="index.html">HOME</a></div>
                     <div class="has-submenu">
-                        <a href="about.html">ABOUT</a>
+                        <div class="menu-item"><a href="about.html">ABOUT ▼</a></div>
 
                         <div class="submenu">
-                            <div><a href="history.html">HISTORY</a></div>
-                            <div><a href="ourteams.html">OUR TEAM</a></div>
-                            <div><a href="recognition.html">RECOGNITION</a></div>
+                            <div class="menu-item"><a href="history.html">HISTORY</a></div>
+                            <div class="menu-item"><a href="ourteams.html">OUR TEAM</a></div>
+                            <div class="menu-item"><a href="recognition.html">RECOGNITION</a></div>
                         </div>
                     </div>
                     <div class="has-submenu">
-                        <a href="menu.html">MENU</a>
+                        <div class="menu-item active"><a href="menu.html">MENU ▼</a></div>
 
                         <div class="submenu">
-                            <a href="order.html">ORDER PAGE</a>
-                            <a href="promotion.html">PROMOTION</a>
+                            <div class="menu-item"><a href="order.html">ORDER PAGE</a></div>
+                            <div class="menu-item"><a href="promotion.html">PROMOTION</a></div>
                         </div>
                     </div>
 
                     <div class="has-submenu">
-                        <a href="services.html">SERVICES</a>
+                        <div class="menu-item"><a href="services.html">SERVICES ▼</a></div>
                         <div class="submenu">
-                            <a href="weddingcake.html">WEDDING CAKE</a>
-                            <a href="#">BIRTHDAY CAKE</a>
-                            <a href="otheritem.html">OTHER ITEM</a>
+                            <div class="menu-item"><a href="weddingcake.html">WEDDING CAKE</a></div>
+                            <div class="menu-item"><a href="birthdaycake.html">BIRTHDAY CAKE</a></div>
+                            <div class="menu-item"><a href="otheritem.html">OTHER ITEM</a></div>
                         </div>
                     </div>
                     <div class="has-submenu">
-                        <a href="journal.html">JOURNAL</a>
-                        <div class="submenu">
-                            <a href="#">GALLERY</a>
-                        </div>
-                    </div>
-                    <div class="has-submenu">
-                        <a href="contact.html">CONTACT</a>
+                        <div class="menu-item"><a href="journal.html">JOURNAL ▼</a></div>
 
                         <div class="submenu">
-                            <a href="storelocations.html">STORE LOCATION</a>
+                            <div class="menu-item"><a href="gallery.html">GALLERY</a></div>
                         </div>
                     </div>
+                    <div class="has-submenu">
+                        <div class="menu-item"><a href="contact.html">CONTACT ▼</a></div>
+
+                        <div class="submenu">
+                            <div class="menu-item"> <a href="locations.html">LOCATIONS</a></div>
+                        </div>
+                    </div>
+
                 </div>
+
+
             </div>
             <div class="footerright">
                 <div class="newsletterheadline">
@@ -283,7 +284,7 @@
 
                 <form>
                     <div class="enteremail">
-                        <input type="text" id="email" name="email" placeholder="Enter email address*">
+                        <input type="text" id="email" name="email" placeholder="Enter email address*" required>
                     </div>
                     <div class="subscribe">
                         <input class="submit" type="submit" value="Subscribe">
@@ -293,21 +294,28 @@
         </div>
         <div class="footerbottom">
             <div class="copyright">
-                <p>© 2012 - 2019 • Avada is a Website Builder for WordPress and eCommerce • All Rights Reserved
+                <p>© 2012 - 2026 • Our Bakery is a Website Builder for WordPress and eCommerce • All Rights Reserved
                     •
-                    Developed by ThemeFusion</p>
+                    Developed by Our Bakery</p>
             </div>
             <div class="socialmedia">
-                <img src="images/instagram.png">
-                <img src="images/x.png">
-                <img src="images/facebook.png">
-                <img src="images/pinterest.png">
-                <img src="images/youtube.png">
+                <a href="https://www.dasein.edu.my/" target=" _blank">
+                    <img src="images/instagram.png">
+                </a>
+                <a href="https://www.dasein.edu.my/" target=" _blank">
+                    <img src="images/x.png">
+                </a> <a href="https://www.dasein.edu.my/" target=" _blank">
+                    <img src="images/facebook.png">
+                </a> <a href="https://www.dasein.edu.my/" target=" _blank">
+                    <img src="images/pinterest.png">
+                </a>
+                <a href="https://www.dasein.edu.my/" target=" _blank">
+                    <img src="images/youtube.png">
+                </a>
+
             </div>
         </div>
     </div>
-
-
 
     <script src="js/common.js"></script>
 

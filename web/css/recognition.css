@@ -2,7 +2,7 @@
     background-color: #F0EDF5;
     text-align: center;
     margin: 10px 0px 50px 0px;
-    padding: 30px 15px;
+    padding: 50px 15px;
 }
 
 
@@ -316,6 +316,7 @@
             width: 499px;
             height: auto;
             margin-top: 99px;
+            width: 100%;
         }
     }
 
