@@ -164,7 +164,7 @@ a {
 .navigation {
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-between;
     margin: 0 auto;
     margin-top: 16px;
     padding: 0px 30px;
@@ -334,6 +334,7 @@ a {
 
 .footerleft {
     width: 60%;
+    margin-right: 20px;
 
 
     .footercontent {
@@ -341,6 +342,7 @@ a {
         flex-wrap: wrap;
         margin-top: 30px;
         gap: 40px;
+
     }
 }
 
@@ -371,7 +373,7 @@ a {
     }
 }
 
-@media screen and (max-width: 1176px) {
+@media screen and (max-width: 1250px) {
     .footertop {
         flex-direction: column;
 
@@ -387,8 +389,7 @@ a {
         }
 
         .footerleft {
-            width: 100%;
-            text-align: center;
+            display: none;
         }
 
         .footerright {
@@ -415,22 +416,7 @@ a {
     }
 }
 
-@media screen and (max-width: 850px) {
-
-    .section-title-purple,
-    .section-title-white,
-    .section-title-black {
-        font-size: 52px;
-        line-height: 65.3px;
-    }
-
-    .section-subtitle,
-    .section-subtitle-white,
-    .section-subtitle-black {
-        font-size: 35px;
-        line-height: 44.9px;
-    }
-
+@media screen and (max-width: 930px) {
     .menu {
         display: block;
         cursor: pointer;
@@ -497,27 +483,25 @@ a {
         padding: 15px 20px;
         background-color: var(--bg-white);
     }
-
-    /* footer*/
-    .footercontent {
-        gap: 20px;
-    }
-
-    .footer .submenu {
-        position: static;
-        width: 100%;
-        min-width: 0;
-        margin-top: 10px;
-        text-align: left;
-    }
-
-    .footer .submenu a {
-        display: block;
-        width: 100%;
-        padding: 8px 20px;
-    }
 }
 
+@media screen and (max-width: 850px) {
+
+    .section-title-purple,
+    .section-title-white,
+    .section-title-black {
+        font-size: 52px;
+        line-height: 65.3px;
+    }
+
+    .section-subtitle,
+    .section-subtitle-white,
+    .section-subtitle-black {
+        font-size: 35px;
+        line-height: 44.9px;
+    }
+
+}
 
 
 
