@@ -251,7 +251,7 @@
             </div>
             <div class="best2">
                 <img class="bestsellerimg" src="images/betsellerstrawberrycreamcake.png" alt=" strawberry cake image">
-                <div class="box-subtitle">0 Strawberry Cream Cake</div>
+                <div class="box-subtitle">02 Strawberry Cream Cake</div>
                 <div class="body-text">Soft sponge cake layered with fresh cream and strawberries.</div>
             </div>
             <div class="best3">
@@ -387,7 +387,46 @@
 
         </div>
     </div>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.15/dist/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.15/dist/ScrollTrigger.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.15/dist/SplitText.min.js"></script>
 
+    <script>
+        gsap.from(".pumpkin,.tart", {
+            y: 30,
+            opacity: 0,
+            duration: 0.3,
+            scrollTrigger: {
+                trigger: ".pumpkin,.tart",
+                start: "top center",
+
+            },
+            stagger: 0.5,
+        });
+        gsap.from(".categoriesitem", {
+            y: 30,
+            opacity: 0,
+            duration: 0.3,
+            scrollTrigger: {
+                trigger: ".categoriesitem",
+                start: "top center",
+
+            },
+            stagger: 0.5,
+        });
+
+        gsap.from(".best1,.best2,.best3", {
+            y: 60,
+            opacity: 0,
+            duration: 0.3,
+            scrollTrigger: {
+                trigger: ".best1,.best2,.best3",
+                start: "top center",
+
+            },
+            stagger: 0.5,
+        });
+    </script>
     <script src="js/common.js"></script>
 </body>
 

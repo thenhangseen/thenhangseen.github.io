@@ -187,7 +187,7 @@
             </div>
         </div>
         <div class="productright">
-            <div class="product1 pro">
+            <div class="product1">
                 <img class="productimg" src="images/chococookies.png" alt="product image">
                 <div class="box-subtitle">
                     <div>Choco Chip Cookies</div>
@@ -196,7 +196,7 @@
                     <div>RM 18.00 - RM32.00</div>
                 </div>
             </div>
-            <div class="product2 pro">
+            <div class="product2">
                 <img class="productimg" src="images/strawberrycookies.png" alt="product image">
                 <div class="box-subtitle">
                     <div>Strawberry Jam Cookies</div>
@@ -354,24 +354,35 @@
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.15/dist/SplitText.min.js"></script>
 
     <script>
-        gsap.from(".product1.pro", {
+        gsap.from(".product1", {
             y: 30,
             opacity: 0,
             duration: 0.3,
             scrollTrigger: {
-                trigger: ".product1.pro",
+                trigger: ".product1",
                 start: "top center",
 
             },
             stagger: 0.5,
         });
 
-        gsap.from(".product2.pro", {
+        gsap.from(".product2", {
             y: 60,
             opacity: 0,
             duration: 0.6,
             scrollTrigger: {
-                trigger: ".product2.pro",
+                trigger: ".product2",
+                start: "top center",
+
+            },
+            stagger: 0.5,
+        });
+        gsap.from(".sharing-top,.sharing-bottom", {
+            y: 60,
+            opacity: 0,
+            duration: 0.6,
+            scrollTrigger: {
+                trigger: ".sharing-top,.sharing-bottom",
                 start: "top center",
 
             },

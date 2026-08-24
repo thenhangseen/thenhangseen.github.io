@@ -68,7 +68,9 @@
     display: flex;
     width: 90%;
     margin: 100px auto;
-    gap: 35px;
+    justify-content: space-between;
+    gap: 30px;
+
 
     .section-subtitle {
         font-weight: 700;
@@ -85,12 +87,12 @@
 
 .categoriesleft {
     text-align: center;
-    width: 20%;
+    width: 25%;
 }
 
 .categoriesright {
     display: flex;
-    width: 80%;
+    width: 70%;
     gap: 30px;
 }
 
@@ -105,6 +107,7 @@
 
 .categoriesitem {
     width: 50%;
+    min-height: 350px;
 }
 
 .categoriesimg {
@@ -213,7 +216,8 @@
 }
 
 
-@media screen and (max-width: 1175px) {
+
+@media screen and (max-width: 1130px) {
 
     .categories {
         flex-direction: column;
@@ -225,7 +229,7 @@
     }
 
     .categoriesright {
-        width: 90%;
+        width: 60%;
         flex-direction: column;
         margin: auto;
     }
@@ -259,10 +263,6 @@
         flex-direction: column;
     }
 
-
-
-
-
 }
 
 
@@ -270,5 +270,9 @@
     .ourmenufood {
         display: flex;
         flex-direction: column;
+    }
+
+    .categoriesright {
+        width: 90%;
     }
 }
