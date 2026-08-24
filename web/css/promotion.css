@@ -20,35 +20,26 @@
 }
 
 .section-intro-promotion{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
     max-width: 400px;
-    gap:40px;
+    gap: 24px;
     position:absolute;
     top: 32%;
     left: 8%;
 }
 
-
 .seasonal-promotion{
     display: flex;
     flex-direction: column;
     max-width: 1100px;
-    margin: 0 auto 100px auto;
+    margin: 0 auto;
+    padding: 0 20px;
     gap:40px;
-}
-
-.section-title-purple{
-    display: flex;
-    justify-content: center;
 }
 
 .container-seasonal-promotion-option{
     display:flex;
     justify-content: space-between;
-    max-width: 1160px;
-    max-height: 450px;
+    max-width: 1100px;
     gap:60px;
 }
 
@@ -56,61 +47,91 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    max-width: 350px;
-    max-height:450px;
+    align-items: center;
     gap:40px;
 }
 
 .container-seasonal-promotion-img{
     max-width: 350px;
-    max-height: 350px;
-}
-
-.section-subtitle,.button{
-    display: flex;
-    justify-content: center;
-}
-
-.button-purple{
-    margin: 0 auto;
-    max-width: 210px;
-    max-height: 60px;
-    border:0;
 }
 
 .current-deals{
     display: flex;
     flex-direction: column;
-    margin: 0 auto 100px auto;
+    justify-content: center;
+    align-items: center;
+    margin: 100px auto;
+    height: 100%;
+    width:100%;
+    max-width: 1100px;
+    padding: 0 20px;
     gap:40px;
 }
 
-.promotion-picture{
-    display: flex;
-    justify-content:center;
-    align-items: center;
-    width: 100%;
-    max-height: 636px;
-    gap:100px;
-    overflow:hidden;
+.carousel{
+    position:relative;
+    width:100%;
+    height:400px;
+    overflow: hidden;
+    border-radius: 20px;
 }
 
-.circle-under-promotion-picture{
-    margin: 0 auto;
+.slides{
+    position: absolute;
+    top:0;
+    left:0;
+    width: 100%;
+    display:flex;
+    height:100%;
+}
+
+.slide{
+    width:100%;
+    min-width: 100%;
+    height:100%
+}
+
+.slide img{
+    width:100%;
+    height:100%;
+    object-fit: cover;
+}
+
+.control{
+    position: absolute;
+    width: 100%;
+    top:50%;
+    transform: translateY(-50%);
     display: flex;
-    justify-content: center;
-    max-width: 40px;
-    max-height: 10px;
+    justify-content: space-between;
+    padding: 0 10px;
+}
+
+button{
+    background: var(--bg-purple);
+    border:none;
+    font-size: 24px;
+    cursor: pointer;
+    border-radius: 50%;
+    width:40px;
+    height:40px;
+    transition: 0.3 ease;
+}
+
+button:hover{
+    background: var(--bg-white);
 }
 
 .promotion-list{
     display: flex;
+    flex-wrap:wrap;
     justify-content: center;
-    align-items: center;
-    align-self: center;
-    margin: 0 auto;
     gap:40px;
+    max-width:1000px;
+    align-items: center;
+    gap:20px;
     width: 100%;
+    margin: 0 auto;
 }
 
 .list{
@@ -118,9 +139,10 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap:40px;
-    width: 200px;
     text-align: center;
+    gap:12px;
+    width:calc(16.666% - 17px);
+    box-sizing: border-box;
 }
 
 .list img{
@@ -132,21 +154,20 @@
     background-color: var(--bg-purple);
     display: flex;
     flex-direction: row;
-    align-items: stretch;
     width: 100%;
-    margin: 0 0 10px 0;
+    margin: 0 auto;
     gap: 40px;
 }
 
 .missout-pic{
     width:40%;
-    height: 600px;
+    min-height:100%;
     overflow: hidden;
 }
 
 .missout-pic img{
     width: 100%;
-    height: 100%;
+    min-height: 100%;
     object-fit: cover;
     object-position: center;
     display: block;
@@ -158,65 +179,36 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap:40px;
-    padding:20px 40px;
     text-align: center;
     box-sizing: border-box;
+    gap:40px;
+    padding:60px 40px;
+    
+}
+
+@media screen and (max-width: 1054px) {
+    .list{
+        width:calc(33.333% - 14px);
+    }
+
+    .list img{
+        width: 50%;
+    }
+
+    .pic-wrap{
+        min-width:90%;
+        padding-top: 80%;
+        border-radius: 0;
+    }
+
+
 }
 
 @media screen and (max-width: 850px) {
 
     .seasonal-promotion{
-        max-width: 810px;
-        min-height: 1500px;
-        padding: 10px;
-    }
-
-    .body-text{
-        max-width: 500px;
-        max-height: none;
-        text-align: center;
-        display: flex;
-        align-self: center;
-    }
-
-    .container-seasonal-promotion-option{
-        max-width:809px;
-        max-height: 366px;
-    }
-
-    .seasonal-box{
-        max-width: 240px;
-        max-height:366px;
-        gap:40px;
-    }
-
-    .list img{
-        width: 70%;
-    }
-
-
-
-
-}
-
-@media screen and (max-width: 780px) {
-
-    .seasonal-promotion{
-        max-width: 1160px;
-        min-height: 1500px;
-    }
-
-    .section-title-purple{
-        max-width: none;
-    }
-
-    .body-text{
-        max-width: 370px;
-        max-height: none;
-        text-align: center;
-        display: flex;
-        align-self: center;
+        max-width: 700px;
+        padding: 0 10px;
     }
 
     .container-seasonal-promotion-option{
@@ -225,21 +217,27 @@
         justify-content: center;
         align-items: center;
         max-width:none;
-        max-height: none;
     }
 
     .seasonal-box{
-        max-width: 350px;
-        max-height:450px;
+        max-width: 400px;
     }
+ 
+    
+}
+
+@media screen and (max-width: 780px) {
 
     .promotion-picture{
-        max-width: 800px;
-        max-height: 350px;
+        width: 100%;
     }
 
     .promotion-list{
         max-width: 500px;
+    }
+
+    .list{
+        width:calc(50% - 10px);
     }
 
     .list img{
@@ -253,13 +251,11 @@
 
     .missout-pic{
         width: 100%;
-        max-height: 480px;
     }
 
     .missout-text{
         width: 100%;
-        max-height:400px;
-        padding: 40px 20px;
+        padding: 80px 40px;
         gap: 15px;
     }
 

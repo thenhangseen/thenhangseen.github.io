@@ -111,16 +111,25 @@
         <div class="section-intro">
             <h1 class="section-title-purple">Current Deals</h1>
             <p class="body-text">Enjoy our latest offers and special discounts on freshly baked favorites. Discover great deals available for a limited time and treat yourself to something delicious.</p>
-        </div>        
+        </div> 
+        
+        <div class="carousel">
 
-        <div class="promotion-picture" id="promotion-picture">
-            <img src="images/currentdeal 3.png" width="50%" height="50%">
-            <img src="images/currentdeal 1.png" width="100%">
-            <img src="images/currentdeal 2.png" width="50%" height="50%">
-        </div>
+            <div class="slides" id="slides">
 
-        <div class="circle-under-promotion-picture">
-            <img src="images/currentdeal down.png" width="100%">
+                <div class="slide"><img src="images/currentdeal 3.png"></div>
+
+                <div class="slide"><img src="images/currentdeal 1.png"></div>
+
+                <div class="slide"><img src="images/currentdeal 2.png"></div>
+
+            </div>
+
+            <div class="control">
+                <button onclick="prevSlide()">❮</button>
+                <button onclick="nextSlide()">❯</button>
+            </div>
+
         </div>
 
         <div class="promotion-list">
@@ -280,8 +289,8 @@
             stagger: 0.5
         })
 
-        const slides = document.querySelector("#promotion-picture");
-        const totalSlides = document.querySelectorAll(".promotion-picture").length;
+        const slides = document.querySelector("#slides");
+        const totalSlides = document.querySelectorAll(".slide").length;
 
         let index = 0;
 
@@ -303,10 +312,11 @@
             goToSlide(index - 1);
         }
 
-        // Optional autoplay
         setInterval(() => {
             nextSlide();
-        }, 1000);
+        }, 4000);
+
+    
 
     </script>
 
