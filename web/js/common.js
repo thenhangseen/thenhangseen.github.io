@@ -1,30 +1,29 @@
 
 const toggleButton = document.getElementById("menu");
-const menu = document.getElementById("navigationcontent");
+const mobilenavigation = document.getElementById("mobile-navigationcontent");
 
 toggleButton.addEventListener("click", () => {
-    menu.classList.toggle("active");
+    mobilenavigation.classList.toggle("active");
     // Change icon
-    if (menu.classList.contains("active")) {
+    if (mobilenavigation.classList.contains("active")) {
         toggleButton.innerHTML = "&times;"; // × (cross)
     } else {
         toggleButton.innerHTML = "&#9776;"; // ☰ (hamburger)
     }
 });
 
-const submenus = document.querySelectorAll(".has-submenu");
+const submenus = document.querySelectorAll("#mobile-menu .has-submenu");
 
 submenus.forEach((item) => {
 
-    const link = item.querySelector(".menu-item a");
+    const arrow = item.querySelector(".submenu-arrow");
     const submenu = item.querySelector(".submenu");
 
-    link.addEventListener("click", (e) => {
+    arrow.addEventListener("click", () => {
 
-        if (window.innerWidth <= 850) {
-            e.preventDefault();
-            submenu.classList.toggle("active");
-        }
+
+        submenu.classList.toggle("active");
+
 
     });
 

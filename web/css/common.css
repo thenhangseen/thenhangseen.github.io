@@ -140,6 +140,10 @@ a {
 }
 
 /*header*/
+#mobile-menu {
+    display: none;
+}
+
 .header {
     font-family: var(--font-regular);
 }
@@ -148,13 +152,6 @@ a {
     margin-top: 5px;
 }
 
-.menu {
-    display: none;
-    font-size: 30px;
-    cursor: pointer;
-    color: var(--text-purple);
-    z-index: 1001;
-}
 
 .navigationtop {
     background-color: #F0EDF5;
@@ -196,15 +193,13 @@ a {
 }
 
 .submenu a:hover {
-    text-decoration: none;
     border-radius: 6px;
     background-color: var(--bg-grey);
     color: var(--bg-drakblue);
 }
 
 .navigationcontent a:hover,
-.footercontent a:hover,
-.has-submenu:hover>a {
+.footercontent a:hover {
     text-decoration: underline;
     text-decoration-thickness: 2px;
     text-underline-offset: 10px;
@@ -215,24 +210,24 @@ a {
     text-decoration: none;
 }
 
-.header .submenu {
+.header .submenu,
+.footer .submenu {
     display: none;
     position: absolute;
-    top: 25px;
-    left: -28px;
     background-color: var(--bg-white);
     border-radius: 6px;
+}
+
+.header .submenu {
+    top: 25px;
+    left: -28px;
     min-width: 140px;
 }
 
 .footer .submenu {
-    display: none;
-    position: absolute;
     top: 29px;
-    left: 0;
-    background-color: var(--bg-white);
-    border-radius: 6px;
-    min-width: 180px;
+    left: -35px;
+    min-width: 155px;
 }
 
 
@@ -246,18 +241,13 @@ a {
     position: relative;
 }
 
-.has-submenu:hover>.submenu {
+#desktop-menu .has-submenu:hover>.submenu {
     display: block;
 }
 
-.account {
-    display: flex;
-    gap: 15px;
-    align-items: center;
-    padding: 8px 0px 10px;
-    color: var(--text-purple);
+.footercontent .has-submenu:hover>.submenu {
+    display: block;
 }
-
 
 /*footer*/
 .footer {
@@ -419,69 +409,86 @@ a {
 }
 
 @media screen and (max-width: 960px) {
-    .menu {
-        display: block;
+    #desktop-menu {
+        display: none;
+    }
+
+    #mobile-menu {
+        display: flex;
+        position: relative;
+        justify-content: space-between;
+        padding: 0 30px;
+    }
+
+    #mobile-menu .menu {
+        font-size: 30px;
+        color: var(--text-purple);
         cursor: pointer;
     }
 
-    .navigation {
-        position: relative;
-        justify-content: space-between;
-    }
 
-    .navigationcontent {
+    #mobile-navigationcontent {
         display: none;
         position: absolute;
-        top: 100%;
+        top: 110%;
         left: 0;
         width: 100%;
-        background-color: var(--bg-white);
         flex-direction: column;
         gap: 0;
-        margin: 0;
-        padding: 10px 0;
+        padding: 0;
+
         z-index: 1000;
         font-size: 12px;
     }
 
-    .navigationcontent.active {
+    #mobile-navigationcontent.active {
         display: flex;
     }
 
-    .navigationcontent>.menu-item,
-    .navigationcontent>.has-submenu>.menu-item {
+
+    #mobile-navigationcontent>.menu-item,
+    #mobile-navigationcontent>.has-submenu>.menu-item {
         padding: 20px;
         background-color: var(--bg-grey);
     }
 
 
+    #mobile-menu .has-submenu>.menu-item {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
 
-    .header .submenu {
+    #mobile-menu .submenu-arrow {
+        padding: 5px 10px;
+        font-size: 18px;
+        color: var(--text-purple);
+        cursor: pointer;
+    }
+
+    #mobile-menu .submenu {
         display: none;
         position: static;
         width: 100%;
         min-width: 0;
         margin: 0;
-    }
-
-    .header .submenu.active {
-        display: block;
-    }
-
-    .header .has-submenu:hover>.submenu {
-        display: none;
-    }
-
-    .header .has-submenu .submenu.active {
-        display: block;
-    }
-
-
-    .header .submenu .menu-item {
-        padding: 15px 20px;
+        padding: 0;
         background-color: var(--bg-white);
     }
+
+    #mobile-menu .submenu.active {
+        display: block;
+    }
+
+    #mobile-menu .submenu .menu-item {
+        padding: 15px 30px;
+        background-color: var(--bg-white);
+    }
+
 }
+
+
+
 
 @media screen and (max-width: 850px) {
 
