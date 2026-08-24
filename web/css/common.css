@@ -375,7 +375,6 @@ a {
         flex-direction: column;
         gap: 0;
         padding: 0;
-
         z-index: 1000;
         font-size: 12px;
     }
@@ -384,11 +383,15 @@ a {
         display: flex;
     }
 
-
     #mobile-navigationcontent>.menu-item,
     #mobile-navigationcontent>.has-submenu>.menu-item {
-        padding: 20px;
         background-color: var(--bg-grey);
+    }
+
+    #mobile-navigationcontent .menu-item>a {
+        display: block;
+        width: 100%;
+        padding: 20px;
     }
 
 
