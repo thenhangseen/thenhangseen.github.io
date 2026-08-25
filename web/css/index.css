@@ -94,6 +94,11 @@
     max-width: 1100px;
     margin: 100px auto;
     gap: 40px;
+
+    .section-title-purple {
+        padding: 0px 10px;
+        text-align: center;
+    }
 }
 
 .locationbottom {
