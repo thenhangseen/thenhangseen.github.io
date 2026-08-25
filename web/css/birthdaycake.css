@@ -15,7 +15,10 @@
 }
 
 .bestbirthdaycakesimages {
-    background-image: url(../images/birthdaycakeservice.png);
+    background-image: linear-gradient(to right,
+            transparent 0%,
+            transparent 75%,
+            #F0EDF5 100%), url(../images/birthdaycakeservice.png);
     width: 65%;
     background-size: cover;
     background-position: center;
@@ -27,6 +30,7 @@
     display: flex;
     flex-direction: column;
     gap: 30px;
+    width: 90%;
 }
 
 .reasonsrow {
@@ -35,12 +39,26 @@
     justify-content: space-between;
 }
 
+.reasonsrowhide {
+    display: none;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 500px;
+}
+
+.reasonsrowmobile {
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
 .reasons {
-    width: 20%;
+    width: 22%;
 }
 
 .reasonsimages {
     width: 100%;
+    margin-bottom: 10%;
 }
 
 .bestbdaycakedescription {
@@ -52,12 +70,45 @@
     text-align: center;
     background-color: var(--bg-purple);
     padding: 5%;
-    gap: 30px;
+    gap: 60px;
 
 }
 
-@media screen and (max-width: 850px) {
+@media screen and (max-width: 900px) {
     .bestbirthdaycakes {
         flex-direction: column;
+    }
+
+    .expose {
+        display: none;
+    }
+
+    .reasonsrowhide {
+        display: flex;
+    }
+
+    .reasons {
+        width: 35%;
+    }
+
+    .bestbdaycakedescription {
+        padding: 15%;
+    }
+}
+
+@media screen and (max-width: 850px) {}
+
+@media screen and (max-width: 500px) {
+    .reasons {
+        width: 100%;
+    }
+
+    .reasonsrow,
+    .reasonsrowhide {
+        display: none;
+    }
+
+    .reasonsrowmobile {
+        display: flex;
     }
 }
