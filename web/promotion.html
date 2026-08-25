@@ -288,17 +288,17 @@
         </div>
 
         <div class="socialmedia">
-            <a href="https://www.dasein.edu.my/" target=" _blank">
+            <a href="https://www.instagram.com/" target=" _blank">
                 <img src="images/instagram.png">
             </a>
-            <a href="https://www.dasein.edu.my/" target=" _blank">
+            <a href="https://x.com/" target=" _blank">
                 <img src="images/x.png">
-            </a> <a href="https://www.dasein.edu.my/" target=" _blank">
+            </a> <a href="https://www.facebook.com/" target=" _blank">
                 <img src="images/facebook.png">
-            </a> <a href="https://www.dasein.edu.my/" target=" _blank">
+            </a> <a href="https://www.pinterest.com/" target=" _blank">
                 <img src="images/pinterest.png">
             </a>
-            <a href="https://www.dasein.edu.my/" target=" _blank">
+            <a href="https://www.youtube.com/" target=" _blank">
                 <img src="images/youtube.png">
             </a>
 
@@ -310,12 +310,32 @@
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.15/dist/SplitText.min.js"></script>
     <script>
 
+        gsap.from(".seasonal-promotion", {
+            opacity: 0,
+            duration: 0.8,
+            scrollTrigger: {
+                trigger: ".seasonal-promotion",
+                start: "top center",
+            },
+            stagger: 0.3
+        })
+
         gsap.from(".seasonal-box", {
             y: 100,
             opacity: 0,
             duration: 1,
             scrollTrigger: {
                 trigger: ".seasonal-box",
+                start: "top center",
+            },
+            stagger: 0.3
+        })
+
+        gsap.from(".current-deals", {
+            opacity: 0,
+            duration: 0.8,
+            scrollTrigger: {
+                trigger: ".current-deals",
                 start: "top center",
             },
             stagger: 0.3
@@ -330,6 +350,16 @@
                 start: "top center",
             },
             stagger: 0.1
+        })
+
+        gsap.from(".dont-miss-out", {
+            opacity: 0,
+            duration: 0.8,
+            scrollTrigger: {
+                trigger: ".dont-miss-out",
+                start: "top center",
+            },
+            stagger: 0.3
         })
 
         const slides = document.querySelector("#slides");

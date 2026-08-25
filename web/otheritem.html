@@ -191,14 +191,14 @@
 
         <div class="tools">
             <div class="tool-box">
-                <img src="images/tool1.png" width="90%">
+                <img src="images/tool1.png" width="100%">
                 <h1 class="section-subtitle">Balloon Whisk</h1>
                 <p class="body-text">Whip, mix, and bake with ease.</p>
                 <span class="body-text">RM 20</span>
             </div>
 
             <div class="tool-box">
-                <img src="images/tool2.png" width="90%">
+                <img src="images/tool2.png" width="100%">
                 <h1 class="section-subtitle">Bakery Tongs</h1>
                 <p class="body-text">Perfect for hygienic serving</p>
                 <span class="body-text">RM 20</span>
@@ -218,7 +218,7 @@
             <div class="merch-img">
                 <img src="images/pinset.png" width="70%">
             </div>
-            <div class="merch-info-purple">
+            <div class="merch-info-purple1">
                 <h1 class="section-subtitle">Pin Set</h1>
                 <p class="body-text">Collect cute bakery-inspired pins to add a sweet touch to your style.</p>
                 <span class="body-text">RM 40</span>
@@ -244,7 +244,7 @@
                 <img src="images/t-shirt.png" width="70%">
             </div>
 
-            <div class="merch-info-purple">
+            <div class="merch-info-purple2">
                 <h1 class="section-subtitle">T-shirt</h1>
                 <p class="body-text">Bring bakery vibes into your everyday style.</p>
                 <span class="body-text">RM 30</span>
@@ -263,17 +263,17 @@
         <div class="birthday-gallery">
             <div class="birthday-item-box-up">
                 <img src="images/cakecandle.png" width="100%">
-                <h1 class="section-subtitle">Cake Candle</h1>
+                <h1 class="section-subtitle-white">Cake Candle</h1>
             </div>
 
             <div class="birthday-item-box-down">
                 <img src="images/birthdayhat.png" width="100%">
-                <h1 class="section-subtitle">Birthday Hat</h1>
+                <h1 class="section-subtitle-white">Birthday Hat</h1>
             </div>
 
             <div class="birthday-item-box-up">
                 <img src="images/caketopper.png" width="100%">
-                <h1 class="section-subtitle">Cake Topper</h1>
+                <h1 class="section-subtitle-white">Cake Topper</h1>
             </div>
         </div>
 
@@ -303,22 +303,84 @@
         </div>
 
         <div class="socialmedia">
-            <a href="https://www.dasein.edu.my/" target=" _blank">
+            <a href="https://www.instagram.com/" target=" _blank">
                 <img src="images/instagram.png">
             </a>
-            <a href="https://www.dasein.edu.my/" target=" _blank">
+            <a href="https://x.com/" target=" _blank">
                 <img src="images/x.png">
-            </a> <a href="https://www.dasein.edu.my/" target=" _blank">
+            </a> <a href="https://www.facebook.com/" target=" _blank">
                 <img src="images/facebook.png">
-            </a> <a href="https://www.dasein.edu.my/" target=" _blank">
+            </a> <a href="https://www.pinterest.com/" target=" _blank">
                 <img src="images/pinterest.png">
             </a>
-            <a href="https://www.dasein.edu.my/" target=" _blank">
+            <a href="https://www.youtube.com/" target=" _blank">
                 <img src="images/youtube.png">
             </a>
 
         </div>
     </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.15/dist/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.15/dist/ScrollTrigger.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.15/dist/SplitText.min.js"></script>
+    <script>
+
+        gsap.from(".tool-box", {
+            y: 100,
+            opacity: 0,
+            duration: 1,
+            scrollTrigger: {
+                trigger: ".tool-box",
+                start: "top center",
+            },
+            stagger: 0.3
+        })
+
+        gsap.from(".merch-info-purple1", {
+            x: 30,
+            opacity: 0,
+            duration: 1,
+            scrollTrigger: {
+                trigger: ".merch-info-purple1",
+                start: "top center",
+            },
+            stagger: 0.2
+        })
+
+        gsap.from(".merch-info-pink", {
+            x: -30,
+            opacity: 0,
+            duration: 1,
+            scrollTrigger: {
+                trigger: ".merch-info-pink",
+                start: "top center",
+            },
+            stagger: 0.2
+        })
+
+        gsap.from(".merch-info-purple2", {
+            x: 30,
+            opacity: 0,
+            duration: 1,
+            scrollTrigger: {
+                trigger: ".merch-info-purple2",
+                start: "top center",
+            },
+            stagger: 0.2
+        })
+
+        gsap.from(".birthday-gallery", {
+            y: 100,
+            opacity: 0,
+            duration: 1,
+            scrollTrigger: {
+                trigger: ".birthday-gallery",
+                start: "top center",
+            },
+            stagger: 0.2
+        })
+
+    </script>
 
     <script src="js/common.js"></script>
 
