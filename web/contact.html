@@ -418,7 +418,52 @@
         </div>
     </div>
 
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.15/dist/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.15/dist/ScrollTrigger.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.15/dist/SplitText.min.js"></script>
+    <script>
+
+        gsap.from(".location-box", {
+            y: 100,
+            opacity: 0,
+            duration: 1,
+            scrollTrigger: {
+                trigger: ".bukit-bintang",
+                start: "top center",
+            },
+            stagger: 0.2
+        })
+
+        gsap.from(".kepong", {
+            y: 100,
+            opacity: 0,
+            duration: 1,
+            scrollTrigger: {
+                trigger: ".kepong",
+                start: "top center",
+            },
+            stagger: 0.4
+        })
+
+        gsap.from(".view-all-location", {
+            y: 100,
+            opacity: 0,
+            duration: 1,
+            scrollTrigger: {
+                trigger: ".kepong",
+                start: "top center",
+            },
+            stagger: 0.5
+        })
+
+
+
+    </script>
+
     <script src="js/common.js"></script>
+
+
+
 
 
 </body>
