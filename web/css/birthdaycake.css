@@ -43,13 +43,10 @@
     display: none;
     flex-direction: row;
     justify-content: space-between;
-    gap: 500px;
 }
 
 .reasonsrowmobile {
     display: none;
-    flex-direction: column;
-    justify-content: space-between;
 }
 
 .reasons {
@@ -75,6 +72,20 @@
 }
 
 @media screen and (max-width: 900px) {
+
+    .bestbirthdaycakesimages {
+        background-image: linear-gradient(to bottom,
+                transparent 0%,
+                transparent 75%,
+                #F0EDF5 100%), url(../images/birthdaycakeservice2.png);
+        width: 100%;
+        height: 700px;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        display: flex;
+    }
+
     .bestbirthdaycakes {
         flex-direction: column;
     }
@@ -110,5 +121,17 @@
 
     .reasonsrowmobile {
         display: flex;
+        justify-content: space-around;
+        gap: 60px;
+        flex-direction: column;
+    }
+
+    .bestbirthdaycakesimages {
+        background-image: linear-gradient(to bottom,
+                transparent 0%,
+                transparent 75%,
+                #F0EDF5 100%), url(../images/birthdaycakeservice.png);
+        width: 100%;
+        height: 700px;
     }
 }
