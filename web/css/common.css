@@ -1,8 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,200..900;1,8..60,200..900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
 
 
-
-
 * {
     margin: 0;
     padding: 0;
@@ -21,34 +19,34 @@
     --bg-grey: #F9F9FB;
     --bg-drakblue: #212934;
     --border-grey: #D9D9D9;
-    --font-bold: "Source Serif 4", serif;
-    --font-regular: "Work Sans", sans-serif;
+    --font-source-serif-4: "Source Serif 4", serif;
+    --font-work-sans: "Work Sans", sans-serif;
 }
 
 /* === GLOBAL TYPOGRAPHY  === */
 .section-title-purple,
 .section-subtitle,
 .box-subtitle {
-    font-family: var(--font-bold);
+    font-family: var(--font-source-serif-4);
     color: var(--text-purple);
 }
 
 .section-title-white,
 .section-subtitle-white {
-    font-family: var(--font-bold);
+    font-family: var(--font-source-serif-4);
     color: var(--bg-white);
 }
 
 .section-subtitle-black,
 .section-title-black {
-    font-family: var(--font-bold);
+    font-family: var(--font-source-serif-4);
     color: var(--text-black);
 }
 
 .section-title-purple,
 .section-title-white,
 .section-title-black {
-    font-size: 56px;
+    font-size: 46px;
     line-height: 67.8px;
     letter-spacing: -1px;
     font-weight: 700;
@@ -69,17 +67,17 @@
 
 .body-text,
 .small-description {
-    font-family: var(--font-regular);
+    font-family: var(--font-work-sans);
     color: var(--text-black);
 }
 
 .body-text-purple {
-    font-family: var(--font-regular);
+    font-family: var(--font-work-sans);
     color: var(--text-purple);
 }
 
 .small-description-white {
-    font-family: var(--font-regular);
+    font-family: var(--font-work-sans);
     color: var(--bg-white);
 }
 
@@ -145,7 +143,7 @@ a {
 }
 
 .header {
-    font-family: var(--font-regular);
+    font-family: var(--font-work-sans);
 }
 
 .logo {
@@ -238,7 +236,7 @@ a {
 
 /*footer*/
 .footer {
-    font-family: var(--font-regular);
+    font-family: var(--font-work-sans);
     color: var(--text-purple);
     padding: 40px 10px 5px 10px;
     align-items: center;
@@ -251,7 +249,7 @@ a {
     width: 100%;
 
     h3 {
-        font-family: var(--font-bold);
+        font-family: var(--font-source-serif-4);
         font-size: 25px;
         text-align: center;
         line-height: 1.36;
@@ -275,7 +273,7 @@ a {
         border-radius: 6px;
         padding: 0px 16px;
         font-size: 14px;
-        font-family: var(--font-regular);
+        font-family: var(--font-work-sans);
     }
 
     .enteremail input {
@@ -437,7 +435,7 @@ a {
     .section-title-purple,
     .section-title-white,
     .section-title-black {
-        font-size: 52px;
+        font-size: 42px;
         line-height: 65.3px;
     }
 

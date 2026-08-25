@@ -154,9 +154,9 @@
     </div>
 
     <div class="promotion-banner">
-        <div class="section-intro-promotion">
-            <h1 class="section-title-purple">Merry Christmas</h1>
-            <p class="body-text">Celebrate this Christmas with our handcrafted cakes and sweet treats.</p>
+        <div class="section-intro-head">
+            <h1 class="section-title-purple">Promotion</h1>
+            <p class="body-text">Don't Miss Our Latest Offers</p>
         </div>
     </div>
 
@@ -257,7 +257,7 @@
             <p class="body-text">Freshly baked treats are waiting for you. Order today and enjoy our limited-time
                 promotions before they're gone.</p>
 
-            <a href="menu.html">
+            <a href="order.html">
                 <button class="button-purple">Order Now</button>
             </a>
 
@@ -309,26 +309,27 @@
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.15/dist/ScrollTrigger.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.15/dist/SplitText.min.js"></script>
     <script>
-        gsap.from(".fade-in", {
-            x: 100,
-            opacity: 0,
-            scrollTrigger: {
-                trigger: ".fade-in",
-                start: "top center",
-                scrub: true
-            },
-
-        });
 
         gsap.from(".seasonal-box", {
             y: 100,
             opacity: 0,
-            duration: 1.5,
+            duration: 1,
             scrollTrigger: {
                 trigger: ".seasonal-box",
                 start: "top center",
             },
-            stagger: 0.5
+            stagger: 0.3
+        })
+
+        gsap.from(".list", {
+            y: 100,
+            opacity: 0,
+            duration: 0.5,
+            scrollTrigger: {
+                trigger: ".promotion-list",
+                start: "top center",
+            },
+            stagger: 0.1
         })
 
         const slides = document.querySelector("#slides");
@@ -358,10 +359,7 @@
             nextSlide();
         }, 4000);
 
-
-
     </script>
-
 
     <script src="js/common.js"></script>
 
