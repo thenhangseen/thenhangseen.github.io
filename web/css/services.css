@@ -202,7 +202,7 @@
 .delivery {
     width: 100%;
     text-align: center;
-    margin-bottom: 40px;
+
 }
 
 
@@ -242,7 +242,7 @@
 
 .delivery-content .body-text {
     width: 70%;
-    margin: 40px auto 40px;
+    margin: 40px auto 0px;
 }
 
 

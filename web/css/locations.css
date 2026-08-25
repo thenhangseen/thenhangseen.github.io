@@ -57,7 +57,7 @@
 }
 
 .locations-heading .heading-icon {
-    width: 105px;
+    width: 80px;
 }
 
 
@@ -76,7 +76,7 @@
     width: calc(50% - 70px);
     max-width: 470px;
     min-height: 225px;
-    padding: 40px;
+    padding: 30px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -202,7 +202,6 @@
 .welcome-section {
     width: 100%;
     text-align: center;
-    margin-bottom: 30px;
 }
 
 .welcome-section .section-title-purple {
@@ -236,7 +235,7 @@
     }
 
     .locations-heading .heading-icon {
-        width: 100px;
+        width: 70px;
     }
 
     .locations-list {
@@ -244,9 +243,8 @@
         flex-direction: column;
         flex-wrap: nowrap;
         align-items: center;
-        gap: 45px;
+        gap: 20px;
     }
-
 
     .location-card {
         width: 100%;
@@ -323,7 +321,23 @@
 
 }
 
+@media (max-width: 548px) {
+    .locations-heading {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 5px;
+        flex-wrap: nowrap;
+    }
 
+    .locations-heading h1 {
+        white-space: nowrap;
+    }
+
+    .locations-heading img {
+        width: 45px;
+    }
+}
 
 @media (max-width: 500px) {
 
@@ -332,7 +346,6 @@
     }
 
     .locations-heading {
-        align-items: flex-start;
         gap: 7px;
         margin-bottom: 40px;
     }
@@ -415,6 +428,7 @@
     .welcome-section {
         padding: 30px 30px 30px;
         background-color: #f0edf5;
+        margin-top: 100px;
     }
 
     .welcome-section .section-title-purple {

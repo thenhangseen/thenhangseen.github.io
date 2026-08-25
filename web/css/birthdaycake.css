@@ -1,0 +1,63 @@
+.topsection {
+    text-align: center;
+    margin: 0 auto;
+    padding: 40px 0px;
+}
+
+.topsectiontitle {
+    padding: 40px 0px;
+}
+
+.bestbirthdaycakes {
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+}
+
+.bestbirthdaycakesimages {
+    background-image: url(../images/birthdaycakeservice.png);
+    width: 65%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+}
+
+.bestbirthdaytext {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.reasonsrow {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.reasons {
+    width: 20%;
+}
+
+.reasonsimages {
+    width: 100%;
+}
+
+.bestbdaycakedescription {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    justify-items: center;
+    align-items: center;
+    text-align: center;
+    background-color: var(--bg-purple);
+    padding: 5%;
+    gap: 30px;
+
+}
+
+@media screen and (max-width: 850px) {
+    .bestbirthdaycakes {
+        flex-direction: column;
+    }
+}

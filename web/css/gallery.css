@@ -329,43 +329,43 @@
         width: 80%;
         padding: 30px;
     }
+}
 
-    @media screen and (max-width: 550px) {
+@media screen and (max-width: 550px) {
 
-        .pastriesgalleryhide {
-            display: flex;
-        }
+    .pastriesgalleryhide {
+        display: flex;
+    }
 
-        .locationbackground1 {
-            display: none;
-        }
+    .locationbackground1 {
+        display: none;
+    }
 
-        .locationbackground4 {
-            display: none;
-        }
+    .locationbackground4 {
+        display: none;
+    }
 
 
-        .location {
-            width: 100%;
-        }
+    .location {
+        width: 100%;
+    }
 
-        .hidewhensmall {
-            display: none;
-        }
+    .hidewhensmall {
+        display: none;
+    }
 
-        .customerscreations {
-            flex-wrap: wrap;
-            flex-direction: column;
-        }
+    .customerscreations {
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
 
-        .customerscreationscards {
-            width: 100%;
-            display: flex;
+    .customerscreationscards {
+        width: 100%;
+        display: flex;
 
-        }
+    }
 
-        .socialmediapostscards {
-            width: 100%;
-        }
+    .socialmediapostscards {
+        width: 100%;
     }
 }
