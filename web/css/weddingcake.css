@@ -18,6 +18,7 @@
 .whytrustus {
     padding: 100px 30px;
     margin: 0 auto;
+    overflow: hidden;
 }
 
 .row {
@@ -179,7 +180,6 @@
     background-size: 65%;
     background-position: 0% 0%;
     background-repeat: no-repeat;
-    min-height: 1090px;
 
 }
 
