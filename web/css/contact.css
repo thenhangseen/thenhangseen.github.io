@@ -328,11 +328,11 @@
     .sharing-content,
     .sharing-photo-left,
     .sharing-photo-right {
-        width: 50%;
+        width: 70%;
     }
 
     .sharing-bottom img {
-        width: 50%;
+        width: 70%;
     }
 
 }
