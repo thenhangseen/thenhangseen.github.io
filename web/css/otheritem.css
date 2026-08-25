@@ -214,7 +214,7 @@
 
 @media screen and (max-width: 980px) {
     .merch-info-purple1,
-    .merch-info-purple2
+    .merch-info-purple2,
     .merch-info-pink{
         padding:40px;
     }
@@ -260,7 +260,7 @@
     }
 
     .merch-info-purple1,
-    .merch-info-purple2
+    .merch-info-purple2,
     .merch-info-pink{
         padding:20px;
     }
