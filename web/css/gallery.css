@@ -181,12 +181,12 @@
 
 .locationgallery {
     margin: 0% 3% auto;
-    margin-bottom: 5vw;
+    margin-bottom: 40px;
     width: 95%;
     display: flex;
     flex-direction: row;
     align-items: center;
-    row-gap: 3vw;
+    row-gap: 40px;
 }
 
 .locationgalleryrow {
@@ -234,7 +234,53 @@
     color: var(--bg-white);
 }
 
+.socialmediapostscards {
+    background-color: #F0EDF5;
+    padding: 3%;
+    display: flex;
+    flex-direction: column;
+}
 
+.socialmediaposts {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    gap: 3%;
+    padding: 3%;
+}
+
+.postimage {
+    width: 100%;
+    height: 400px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    align-items: center;
+}
+
+.post1 {
+    background-image: url(../images/socialmediaposts1.png);
+}
+
+.post2 {
+    background-image: url(../images/socialmediaposts2.png);
+}
+
+.post3 {
+    background-image: url(../images/socialmediaposts3.png);
+}
+
+.handle {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.postdescription {
+    padding-top: 30px;
+    justify-content: space-between;
+}
 
 @media screen and (max-width: 850px) {
 
@@ -270,39 +316,55 @@
     .customerscreationsexpose {
         display: flex;
     }
-}
 
-@media screen and (max-width: 550px) {
-
-    .pastriesgalleryhide {
-        display: flex;
-    }
-
-    .locationbackground1 {
-        display: none;
-    }
-
-    .locationbackground4 {
-        display: none;
-    }
-
-
-    .location {
-        width: 100%;
-    }
-
-    .hidewhensmall {
-        display: none;
-    }
-
-    .customerscreations {
-        flex-wrap: wrap;
+    .socialmediaposts {
         flex-direction: column;
+        row-gap: 40px;
+        justify-content: center;
+        align-items: center;
     }
 
-    .customerscreationscards {
-        width: 100%;
-        display: flex;
-
+    .socialmediapostscards {
+        height: 100%;
+        width: 80%;
+        padding: 30px;
     }
-}
+
+    @media screen and (max-width: 550px) {
+
+        .pastriesgalleryhide {
+            display: flex;
+        }
+
+        .locationbackground1 {
+            display: none;
+        }
+
+        .locationbackground4 {
+            display: none;
+        }
+
+
+        .location {
+            width: 100%;
+        }
+
+        .hidewhensmall {
+            display: none;
+        }
+
+        .customerscreations {
+            flex-wrap: wrap;
+            flex-direction: column;
+        }
+
+        .customerscreationscards {
+            width: 100%;
+            display: flex;
+
+        }
+
+        .socialmediapostscards {
+            width: 100%;
+        }
+    }
