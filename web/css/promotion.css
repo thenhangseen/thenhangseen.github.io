@@ -1,5 +1,5 @@
 .section-intro,
-.section-intro-promotion{
+.section-intro-head{
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -12,19 +12,21 @@
 .promotion-banner{
     margin:0 0 100px 0;
     width:100%;
-    height: 520px;
-    background-image: url('../images/promotionbanner.png');
+    padding: 50px 0;
+    background-image: url('../images/promotion-bg.png');
     background-size: cover;
     background-repeat: no-repeat;
+    background-position: center;
     overflow:hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-.section-intro-promotion{
-    max-width: 400px;
-    gap: 24px;
-    position:absolute;
-    top: 32%;
-    left: 8%;
+.section-intro-head{
+    background-color: var(--bg-purple);
+    width: 60%;
+    padding: 40px;
 }
 
 .seasonal-promotion{
