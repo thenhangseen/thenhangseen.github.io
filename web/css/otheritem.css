@@ -27,7 +27,7 @@
     display: flex;
     gap:0;
     margin: 0 0 100px 0;
-    max-width: 1280px;
+    width:100%;
 }
 
 .bakery-tool-head,
@@ -86,7 +86,7 @@
     background-color: var(--bg-purple);
     border-radius:35px;
     margin:0 auto;
-    padding:20px;
+    padding:50px;
     width:100%;
     max-width: 450px;
     display: flex;
