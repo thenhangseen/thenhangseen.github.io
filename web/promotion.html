@@ -310,6 +310,16 @@
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.15/dist/SplitText.min.js"></script>
     <script>
 
+        gsap.from(".seasonal-promotion", {
+            opacity: 0,
+            duration: 0.8,
+            scrollTrigger: {
+                trigger: ".seasonal-promotion",
+                start: "top center",
+            },
+            stagger: 0.3
+        })
+
         gsap.from(".seasonal-box", {
             y: 100,
             opacity: 0,
@@ -321,6 +331,16 @@
             stagger: 0.3
         })
 
+        gsap.from(".current-deals", {
+            opacity: 0,
+            duration: 0.8,
+            scrollTrigger: {
+                trigger: ".current-deals",
+                start: "top center",
+            },
+            stagger: 0.3
+        })
+        
         gsap.from(".list", {
             y: 100,
             opacity: 0,
@@ -330,6 +350,16 @@
                 start: "top center",
             },
             stagger: 0.1
+        })
+        
+        gsap.from(".dont-miss-out", {
+            opacity: 0,
+            duration: 0.8,
+            scrollTrigger: {
+                trigger: ".dont-miss-out",
+                start: "top center",
+            },
+            stagger: 0.3
         })
 
         const slides = document.querySelector("#slides");

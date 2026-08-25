@@ -137,7 +137,8 @@
     display:block;
 }
 
-.merch-info-purple,
+.merch-info-purple1,
+.merch-info-purple2,
 .merch-info-pink{
     display: flex;
     flex-direction: column;
@@ -153,7 +154,8 @@
 
 }
 
-.merch-info-purple{
+.merch-info-purple1,
+.merch-info-purple2{
     background-color: var(--bg-purple);
     top:18%;
     left:45%;
@@ -211,7 +213,8 @@
 }
 
 @media screen and (max-width: 980px) {
-    .merch-info-purple,
+    .merch-info-purple1,
+    .merch-info-purple2
     .merch-info-pink{
         padding:40px;
     }
@@ -245,7 +248,8 @@
         max-width: 750px;
     }
 
-    .merch-info-purple{
+    .merch-info-purple1,
+    .merch-info-purple2{
         top:15%;
         left:45%;
     }
@@ -255,7 +259,8 @@
         right:40%;
     }
 
-    .merch-info-purple,
+    .merch-info-purple1,
+    .merch-info-purple2
     .merch-info-pink{
         padding:20px;
     }
@@ -300,7 +305,7 @@
         display:block;
     }
 
-    .merch-info-pink,.merch-info-purple{
+    .merch-info-pink,.merch-info-purple1,.merch-info-purple2{
         position:static;
         margin:0;
         width:55%;

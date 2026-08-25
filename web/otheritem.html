@@ -218,7 +218,7 @@
             <div class="merch-img">
                 <img src="images/pinset.png" width="70%">
             </div>
-            <div class="merch-info-purple">
+            <div class="merch-info-purple1">
                 <h1 class="section-subtitle">Pin Set</h1>
                 <p class="body-text">Collect cute bakery-inspired pins to add a sweet touch to your style.</p>
                 <span class="body-text">RM 40</span>
@@ -244,7 +244,7 @@
                 <img src="images/t-shirt.png" width="70%">
             </div>
 
-            <div class="merch-info-purple">
+            <div class="merch-info-purple2">
                 <h1 class="section-subtitle">T-shirt</h1>
                 <p class="body-text">Bring bakery vibes into your everyday style.</p>
                 <span class="body-text">RM 30</span>
@@ -319,6 +319,68 @@
 
         </div>
     </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.15/dist/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.15/dist/ScrollTrigger.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.15/dist/SplitText.min.js"></script>
+    <script>
+
+        gsap.from(".tool-box", {
+            y: 100,
+            opacity: 0,
+            duration: 1,
+            scrollTrigger: {
+                trigger: ".tool-box",
+                start: "top center",
+            },
+            stagger: 0.3
+        })
+
+        gsap.from(".merch-info-purple1", {
+            x: 30,
+            opacity: 0,
+            duration: 1,
+            scrollTrigger: {
+                trigger: ".merch-info-purple1",
+                start: "top center",
+            },
+            stagger: 0.2
+        })
+
+        gsap.from(".merch-info-pink", {
+            x: -30,
+            opacity: 0,
+            duration: 1,
+            scrollTrigger: {
+                trigger: ".merch-info-pink",
+                start: "top center",
+            },
+            stagger: 0.2
+        })
+
+        gsap.from(".merch-info-purple2", {
+            x: 30,
+            opacity: 0,
+            duration: 1,
+            scrollTrigger: {
+                trigger: ".merch-info-purple2",
+                start: "top center",
+            },
+            stagger: 0.2
+        })
+        
+        gsap.from(".birthday-gallery", {
+            y: 100,
+            opacity: 0,
+            duration: 1,
+            scrollTrigger: {
+                trigger: ".birthday-gallery",
+                start: "top center",
+            },
+            stagger: 0.2
+        })        
+    
+    </script>
 
     <script src="js/common.js"></script>
 
