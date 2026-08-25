@@ -12,7 +12,7 @@
 <body>
     <div class="header">
         <div class="navigationtop">
-            <p>Free International Shipping - 10% OFF SITE</p>
+            <p>Free Local Shipping - 10% OFF SITE</p>
         </div>
 
         <div class="navigation" id="desktop-menu">
@@ -24,7 +24,7 @@
             <div class="navigationcontent" id="navigationcontent">
                 <div class="menu-item"><a href="index.html">HOME</a></div>
                 <div class="has-submenu">
-                    <div class="menu-item"><a href="about.html">ABOUT ▼</a></div>
+                    <div class="menu-item"><a href="about.html">ABOUT ᐯ</a></div>
 
                     <div class="submenu">
                         <div class="menu-item"><a href="history.html">HISTORY</a></div>
@@ -33,7 +33,7 @@
                     </div>
                 </div>
                 <div class="has-submenu">
-                    <div class="menu-item"><a href="menu.html">MENU ▼</a></div>
+                    <div class="menu-item"><a href="menu.html">MENU ᐯ</a></div>
 
                     <div class="submenu">
                         <div class="menu-item"><a href="order.html">ORDER PAGE</a></div>
@@ -42,7 +42,7 @@
                 </div>
 
                 <div class="has-submenu">
-                    <div class="menu-item active"><a href="services.html">SERVICES ▼</a></div>
+                    <div class="menu-item active"><a href="services.html">SERVICES ᐯ</a></div>
                     <div class="submenu">
                         <div class="menu-item"><a href="weddingcake.html">WEDDING CAKE</a></div>
                         <div class="menu-item"><a href="birthdaycake.html">BIRTHDAY CAKE</a></div>
@@ -50,14 +50,14 @@
                     </div>
                 </div>
                 <div class="has-submenu">
-                    <div class="menu-item"><a href="journal.html">JOURNAL ▼</a></div>
+                    <div class="menu-item"><a href="journal.html">JOURNAL ᐯ</a></div>
 
                     <div class="submenu">
                         <div class="menu-item"><a href="gallery.html">GALLERY</a></div>
                     </div>
                 </div>
                 <div class="has-submenu">
-                    <div class="menu-item"><a href="contact.html">CONTACT ▼</a></div>
+                    <div class="menu-item"><a href="contact.html">CONTACT ᐯ</a></div>
 
                     <div class="submenu">
                         <div class="menu-item"> <a href="locations.html">LOCATIONS</a></div>
@@ -69,11 +69,9 @@
         </div>
 
 
-
         <div class="navigation" id="mobile-menu">
             <a href="index.html">
                 <img class="logo" src="images/logo.png" alt="Bakery logo"></a>
-
 
 
             <div class="navigationcontent" id="mobile-navigationcontent">
@@ -159,21 +157,22 @@
 
 
     <div class="topsection">
-        <p class="body-text">WE'RE PREPARED FOR YOUR SPECIAL DAY</p>
-        <h2 class="section-title-purple topsectiontitle">
+        <div class="body-text">WE'RE PREPARED FOR YOUR SPECIAL DAY</div>
+        <div class="section-title-purple topsectiontitle">
             Birthday Cake Service
-        </h2>
-        <p class="body-text">Enjoy your most special moment with a birthday cake by us!</p>
+        </div>
+        <div class="body-text">Enjoy your most special moment with a birthday cake by us!</div>
     </div>
     <div class="bestbirthdaycakes">
         <div class="bestbirthdaycakesimages"></div>
         <div class="bestbdaycakedescription">
             <div class="bestbirthdaytext">
-                <h2 class="section-subtitle">Best Birthday Cakes in Town!</h2>
-                <p class="body-text">Our bakery are known for our birthday cakes for a reason! Here are the reasons why
+                <div class="section-subtitle">Best Birthday Cakes in Town!</div>
+                <div class="body-text">Our bakery are known for our birthday cakes for a reason! Here are the reasons
+                    why
                     you should trust
                     us
-                    with your birthday cake:</p>
+                    with your birthday cake:</div>
             </div>
 
             <div class="reasonsrow">
@@ -245,11 +244,11 @@
 
         </div>
     </div>
-    <div class="topsection">
-        <h2 class="section-title-purple topsectiontitle">
+    <div class="topsection paddingontop">
+        <div class="section-title-purple topsectiontitle">
             Cake Sizes
-        </h2>
-        <p class="body-text">We have many different sizes & prices ranges to suit your budget!</p>
+        </div>
+        <div class="body-text">We have many different sizes & prices ranges to suit your budget!</div>
     </div>
     <div class="cakesizessection">
         <div class="cakesizes">
@@ -321,9 +320,9 @@
         <div class="topnotchingredients">
         </div>
         <div class="topnotchingredientsdescriptions">
-            <h2 class="section-title-purple">
+            <div class="section-title-purple">
                 Top-notch Ingredients
-            </h2>
+            </div>
             <div class="body-text">We make sure that all of our ingredients are top-notch, perfect for all guests.
                 Our cakes are:</div>
             <div class="tickwithtext">
@@ -462,6 +461,32 @@
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.15/dist/gsap.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.15/dist/ScrollTrigger.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.15/dist/SplitText.min.js"></script>
+    <script>
+
+        gsap.from(".tickwithtext", {
+            x: 200,
+            opacity: 0,
+            duration: 1.5,
+            scrollTrigger: {
+                trigger: ".tickwithtext",
+                start: "top center",
+
+            },
+            stagger: 0.5,
+        });
+
+        gsap.from(".reasons ,.cakesizescard,.cakesizescardexpose", {
+            y: 100,
+            opacity: 0,
+            duration: 1.5,
+            scrollTrigger: {
+                trigger: ".reasons ,.cakesizescard,.cakesizescardexpose",
+                start: "top center",
+
+            },
+            stagger: 0.5,
+        });
+    </script>
     <script src="js/common.js"></script>
 </body>
 

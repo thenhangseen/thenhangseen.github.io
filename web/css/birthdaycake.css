@@ -26,6 +26,10 @@
     display: flex;
 }
 
+.bestbirthdaytext .section-subtitle {
+    font-weight: 700;
+}
+
 .bestbirthdaytext {
     display: flex;
     flex-direction: column;
@@ -71,10 +75,14 @@
 
 }
 
+.paddingontop {
+    padding-top: 100px;
+}
+
 .cakesizes {
     width: 100%;
-    padding: 3%;
-    gap: 3%;
+    padding: 30px;
+    gap: 30px;
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
@@ -82,8 +90,8 @@
 
 .cakesizeshide {
     width: 100%;
-    padding: 3%;
-    gap: 3%;
+    padding: 30px;
+    gap: 30px;
     display: none;
     flex-direction: row;
     justify-content: space-evenly;
@@ -140,10 +148,12 @@
 
 .topnotchingredientssection {
     width: 100%;
-    padding: 3%;
+    padding: 30px;
     display: flex;
     flex-direction: row;
-    gap: 3%;
+    gap: 30px;
+    overflow: hidden;
+    margin: 70px 0px;
 }
 
 .topnotchingredients {
@@ -167,12 +177,12 @@
 }
 
 .topnotchingredientsdescriptions {
-    padding: 3%;
+    padding: 30px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     text-align: left;
-    gap: 24px;
+    gap: 30px;
 }
 
 .tickicon {
@@ -188,7 +198,7 @@
     display: flex;
     flex-direction: row;
     min-height: 650px;
-    padding: 30px;
+    padding: 0px 30px;
     gap: 30px;
     justify-content: space-evenly;
     width: 100%;
@@ -298,6 +308,7 @@
     }
 
     .cakesizeshide {
+        padding-top: 0px;
         display: flex;
     }
 }
@@ -314,6 +325,7 @@
 
     .topnotchingredientsdescriptions {
         width: 80%;
+        padding: 0px;
     }
 
     .cakereviews {
@@ -345,8 +357,6 @@
     .customerimages {
         width: 80%;
     }
-
-    .reviews {}
 }
 
 @media screen and (max-width: 500px) {

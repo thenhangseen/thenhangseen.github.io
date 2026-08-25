@@ -4,15 +4,23 @@
     padding: 3% 5%;
 }
 
+.bottomsectionheadline {
+    text-align: left;
+    margin: 0 auto;
+    padding: 0% 5%;
+    padding-bottom: 3%;
+    padding-top: 100px;
+}
+
 
 .newscards {
     width: 100%;
     border: 1px solid #F0EDF5;
-    padding: 4% 7%;
+    padding: 40px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    gap: 35px;
+    gap: 30px;
 }
 
 .newscardssection {
@@ -26,7 +34,7 @@
     display: flex;
     flex-direction: row;
     align-items: center;
-    gap: 8%;
+    gap: 50px;
 }
 
 .dividervertical {
@@ -43,7 +51,7 @@
 }
 
 .chipsgroup {
-    gap: 5px;
+    gap: 20px;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -64,8 +72,10 @@
     flex-direction: row;
     align-items: top;
     justify-content: flex-start;
-    gap: 3%;
-    padding: 3%;
+    gap: 30px;
+    padding: 0px 30px;
+    padding-top: 30px;
+    padding-bottom: 100px;
 }
 
 .recipeimage {
@@ -78,7 +88,7 @@
     background-color: #F0EDF5;
     padding: 0% 2%;
     padding-top: 2%;
-    padding-bottom: 4%;
+    padding-bottom: 30px;
     align-items: top;
     display: flex;
     flex-direction: column;
@@ -165,7 +175,6 @@
     background-repeat: no-repeat;
     align-items: center;
     text-align: center;
-    color: #FFFFFF;
     display: flex;
     justify-content: space-around;
     flex-direction: column;
@@ -197,17 +206,6 @@
     row-gap: 40px;
 }
 
-.section-subtitle-white {
-    color: #55328B;
-    font-weight: 700;
-    margin: 0px 30px 0px 30px;
-}
-
-.small-description-white {
-    color: var(--bg-white);
-    text-decoration: underline;
-}
-
 @media screen and (max-width: 850px) {
     .upcomingeventscards {
         width: 30%;
@@ -215,14 +213,20 @@
         min-width: 365px;
         height: 570px;
     }
+
+    .newsandrecipes {
+        flex-wrap: wrap;
+        gap: 40px;
+        justify-content: center;
+    }
+
+    .recipes {
+        padding: 30px;
+    }
 }
 
 
 @media screen and (max-width: 500px) {
-    .newsandrecipes {
-        flex-wrap: wrap;
-        gap: 40px;
-    }
 
     .othernewsbuttonandheadline {
         flex-direction: column;
