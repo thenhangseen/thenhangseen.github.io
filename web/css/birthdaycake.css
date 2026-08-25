@@ -71,6 +71,137 @@
 
 }
 
+.cakesizes {
+    width: 100%;
+    padding: 3%;
+    gap: 3%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.cakesizeshide {
+    width: 100%;
+    padding: 3%;
+    gap: 3%;
+    display: none;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.cakesizescard {
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    text-align: center;
+    width: 100%;
+}
+
+.cakesizescardexpose {
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    text-align: center;
+    width: 100%;
+}
+
+.sizescard {
+    height: 300px;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.sizescard1 {
+    background-image: url(../images/cakesizes1.png);
+}
+
+.sizescard2 {
+    background-image: url(../images/cakesizes2.png);
+}
+
+.sizescard3 {
+    background-image: url(../images/cakesizes3.png);
+}
+
+.sizescard4 {
+    background-image: url(../images/cakesizes4.png);
+}
+
+.cakesizesdescriptions {
+    display: flex;
+    flex-direction: column;
+    padding: 24px;
+    gap: 10px;
+    align-items: center;
+    text-align: center;
+}
+
+.topnotchingredientssection {
+    width: 100%;
+    padding: 3%;
+    display: flex;
+    flex-direction: row;
+    gap: 3%;
+}
+
+.topnotchingredients {
+    background-image: url(../images/topnotchingredients.png);
+    width: 45%;
+    height: 650px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.ingredientsimage {
+    width: 100%;
+}
+
+.tickwithtext {
+    flex-direction: row;
+    display: flex;
+    gap: 30px;
+    text-align: left;
+}
+
+.topnotchingredientsdescriptions {
+    padding: 3%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: left;
+    gap: 24px;
+}
+
+.tickicon {
+    width: 80px;
+    height: 100%;
+}
+
+.ratinggrey {
+    filter: saturate(0%) brightness(300%);
+}
+
+.cakereviews {
+    display: flex;
+    flex-direction: row;
+}
+
+.allcustomercards {
+    display: flex;
+    flex-direction: row;
+}
+
+.cakereviewsintroduction {
+    background-color: var(--bg-purple);
+}
+
+.customercards {
+    background-color: var(--bg-purple);
+}
+
 @media screen and (max-width: 900px) {
 
     .bestbirthdaycakesimages {
@@ -105,9 +236,35 @@
     .bestbdaycakedescription {
         padding: 15%;
     }
+
+    .cakesizescardexpose {
+        display: none;
+    }
+
+    .cakesizeshide {
+        display: flex;
+    }
 }
 
-@media screen and (max-width: 850px) {}
+@media screen and (max-width: 850px) {
+    .topnotchingredientssection {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .topnotchingredients {
+        width: 100%;
+    }
+
+    .topnotchingredientsdescriptions {
+        width: 80%;
+    }
+
+    .cakereviews {
+        display: flex;
+        flex-direction: column;
+    }
+}
 
 @media screen and (max-width: 500px) {
     .reasons {
@@ -134,4 +291,22 @@
         width: 100%;
         height: 700px;
     }
+
+    .cakesizes,
+    .cakesizeshide {
+        margin: auto;
+        row-gap: 30px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+
+    .topnotchingredientsdescriptions {
+        width: 100%;
+    }
+
+    .allcustomercards {
+        flex-direction: column;
+    }
+
 }
