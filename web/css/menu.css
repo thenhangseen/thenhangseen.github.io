@@ -238,10 +238,7 @@
     .categoriesright2 {
         width: 100%;
     }
-}
 
-
-@media screen and (max-width: 1050px) {
     .bestcontent {
         display: flex;
         flex-direction: column;
@@ -256,6 +253,7 @@
         }
     }
 }
+
 
 @media screen and (max-width: 1000px) {
     .seasonal {
