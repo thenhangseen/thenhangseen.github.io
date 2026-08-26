@@ -105,17 +105,15 @@
 
 
 /*why choose us*/
-
-.body-text {
-    font-size: 25px;
-    margin: 0px;
-}
-
-
 .reason-content {
     .section-subtitle {
         margin: 41px 10px 0px 10px;
         font-weight: 700;
+    }
+
+    .body-text {
+        font-size: 25px;
+        margin: 0px;
     }
 }
 
