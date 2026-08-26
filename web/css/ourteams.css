@@ -123,6 +123,7 @@
     justify-content: center;
     align-self: center;
     margin: 0 auto;
+    padding: 0 20px;
     gap:40px
 }
 
@@ -150,6 +151,7 @@
     overflow:hidden;
     max-width: 1698px;
     margin:100px auto 0 auto;
+    padding: 0 20px;
 }
 
 .job{
