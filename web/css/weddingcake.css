@@ -1,5 +1,5 @@
 .topsection {
-    background-color: #F0EDF5;
+    background-color: var(--bg-purple);
     text-align: center;
     margin: 0 auto;
     padding: 40px 0px;
@@ -72,7 +72,7 @@
     margin: 0 auto;
     height: 397px;
     width: 288.71px;
-    background-color: #F0EDF5;
+    background-color: var(--bg-purple);
     box-shadow: 0px 4px 20px #67637125;
     justify-content: space-evenly;
     padding-top: 100px;
@@ -119,7 +119,7 @@
     margin: 0 auto;
     min-height: 216.61;
     max-width: 420px;
-    background-color: #F0EDF5;
+    background-color: var(--bg-purple);
     box-shadow: 0px 4px 20px #67637125;
     justify-content: space-evenly;
     padding: 40px 40px;
@@ -151,7 +151,7 @@
 
 .tiercards {
     padding: 50px 0px;
-    background-color: #F0EDF5;
+    background-color: var(--bg-purple);
     display: flex;
     align-items: center;
     text-align: center;
@@ -204,7 +204,7 @@
 
 .weddingcakeordernowcontent {
 
-    background-color: #F0EDF5;
+    background-color: var(--bg-purple);
     text-align: center;
     align-items: center;
     padding: 6% 10%;
@@ -325,7 +325,7 @@
         margin: 0 auto;
         min-height: 216.61;
         width: 80%;
-        background-color: #F0EDF5;
+        background-color: var(--bg-purple);
         box-shadow: 0px 4px 20px #67637125;
         justify-content: space-evenly;
         flex-direction: column;
@@ -432,7 +432,7 @@
     }
 
     .topsection {
-        background-color: #F0EDF5;
+        background-color: var(--bg-purple);
         text-align: center;
         margin: 0 auto;
         padding: 40px 30px;
