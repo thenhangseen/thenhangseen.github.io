@@ -278,4 +278,15 @@
         text-align: center;
     }
 
+    .othernewssection {
+        padding: 0px 30px;
+        justify-content: space-between;
+        padding-bottom: 30px;
+
+    }
+
+    .othernewscards {
+        width: 100%;
+    }
+
 }
