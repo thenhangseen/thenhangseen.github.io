@@ -56,7 +56,7 @@
     position: relative;
     width: 40%;
     padding-top: 172px;
-    background-color: #F0EDF5;
+    background-color: var(--bg-purple);
 
 }
 
@@ -92,7 +92,7 @@
     width: 100%;
     padding: 35px 0 45px;
     text-align: center;
-    background-color: #F9F1F2;
+    background-color: var(--bg-pink);
     margin-bottom: 100px;
 }
 
@@ -173,11 +173,11 @@
 }
 
 .purple-card {
-    background-color: #F0EDF5;
+    background-color: var(--bg-purple);
 }
 
 .pink-card {
-    background-color: #F9F1F2;
+    background-color: var(--bg-pink);
 }
 
 .people-number {
@@ -266,6 +266,7 @@
 
     .offer-services h1 {
         width: 100%;
+        padding: 0px 20px;
     }
 
     .offer-header .we {
@@ -390,6 +391,11 @@
         row-gap: 120px;
     }
 
+    .offer-services h1 {
+        width: 100%;
+        padding: 0px 40px;
+    }
+
     .offer-card {
         padding-top: 170px;
     }
@@ -447,7 +453,7 @@
 
     .delivery-title {
         width: 90%;
-        top: 20px;
+        top: 10px;
         left: 5%;
     }
 

@@ -27,7 +27,7 @@
     flex-direction: column;
     align-items: center;
     padding: 70px 30px;
-    background-color: #f0edf5;
+    background-color: var(--bg-purple);
 }
 
 .bakery-section .section-title-purple {
@@ -81,7 +81,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background-color: #F9F1F2;
+    background-color: var(--bg-pink);
     border-radius: 50%;
     text-align: center;
 }
@@ -150,7 +150,7 @@
     max-width: 840px;
     margin: 0 auto;
     padding: 40px 45px 40px;
-    background-color: #F9F1F2;
+    background-color: var(--bg-pink);
 }
 
 .opening-hours-header {
@@ -208,7 +208,7 @@
     width: 100%;
     margin: 0;
     padding: 28px 20px;
-    background-color: #f0edf5;
+    background-color: var(--bg-purple);
 }
 
 .welcome-section .body-text {
