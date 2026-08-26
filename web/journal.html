@@ -21,7 +21,7 @@
 
 
             <div class="navigationcontent" id="navigationcontent">
-                <div class="menu-item active"><a href="index.html">HOME</a></div>
+                <div class="menu-item"><a href="index.html">HOME</a></div>
                 <div class="has-submenu">
                     <div class="menu-item"><a href="about.html">ABOUT ᐯ
                         </a></div>
@@ -50,7 +50,7 @@
                     </div>
                 </div>
                 <div class="has-submenu">
-                    <div class="menu-item"><a href="journal.html">JOURNAL ᐯ</a></div>
+                    <div class="menu-item active"><a href="journal.html">JOURNAL ᐯ</a></div>
 
                     <div class="submenu">
                         <div class="menu-item"><a href="gallery.html">GALLERY</a></div>
@@ -158,7 +158,7 @@
 
 
 
-    <div class="sectionheadline">
+    <div class="sectionheadline paddingtopsmall">
         <div class="section-title-purple">
             News & Recipes
         </div>
@@ -430,32 +430,32 @@
 
     <script>
 
-        gsap.from(".,", {
+        gsap.from(".reasons, .weddingcakeordernowcontent", {
             x: 200,
             opacity: 0,
             duration: 1.5,
             scrollTrigger: {
-                trigger: ".,",
+                trigger: ".reasons, .weddingcakeordernowcontent",
                 start: "top center",
 
             },
             stagger: 0.5,
         });
 
-        gsap.from(".othernewscards, .othernews", {
+        gsap.from(".upcomingeventscards ,.othernewscards", {
             y: 100,
             opacity: 0,
             duration: 1.5,
             scrollTrigger: {
-                trigger: ".othernewscards ,.othernews",
+                trigger: ".upcomingeventscards, .othernewscards",
                 start: "top center",
 
             },
             stagger: 0.5,
         });
     </script>
-    <script src="js/common.js"></script>
 
+    <script src="js/common.js"></script>
 
 
 </body>
