@@ -133,35 +133,35 @@
 }
 
 .card1 {
-    background-image: url(../images/customerscreations1.png);
+    background-image: linear-gradient(#00000000, #00000000, #000000b3), url(../images/customerscreations1.png);
 }
 
 .card2 {
-    background-image: url(../images/customerscreations2.png);
+    background-image: linear-gradient(#00000000, #00000000, #000000b3), url(../images/customerscreations2.png);
 }
 
 .card3 {
-    background-image: url(../images/customerscreations3.png);
+    background-image: linear-gradient(#00000000, #00000000, #000000b3), url(../images/customerscreations3.png);
 }
 
 .card4 {
-    background-image: url(../images/customerscreations4.png);
+    background-image: linear-gradient(#00000000, #00000000, #000000b3), url(../images/customerscreations4.png);
 }
 
 .card5 {
-    background-image: url(../images/customerscreations5.png);
+    background-image: linear-gradient(#00000000, #00000000, #000000b3), url(../images/customerscreations5.png);
 }
 
 .card6 {
-    background-image: url(../images/customerscreations6.png);
+    background-image: linear-gradient(#00000000, #00000000, #000000b3), url(../images/customerscreations6.png);
 }
 
 .card7 {
-    background-image: url(../images/customerscreations7.png);
+    background-image: linear-gradient(#00000000, #00000000, #000000b3), url(../images/customerscreations7.png);
 }
 
 .card8 {
-    background-image: url(../images/customerscreations8.png);
+    background-image: linear-gradient(#00000000, #00000000, #000000b3), url(../images/customerscreations8.png);
 }
 
 .customerscreations {
@@ -321,11 +321,11 @@
     }
 
     .locationname1 {
-        background-image: url(../images/locationgallery2.png);
+        background-image: linear-gradient(#00000060, #00000060), url(../images/locationgallery2.png);
     }
 
     .locationname2 {
-        background-image: url(../images/locationgallery3.png);
+        background-image: linear-gradient(#00000080, #00000080), url(../images/locationgallery3.png);
     }
 
     .hidecreations {
