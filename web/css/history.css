@@ -88,7 +88,7 @@ body {
 .why-founded {
     display: flex;
     width: 100%;
-    background-color: #F0EDF5;
+    background-color: var(--bg-purple);
     margin-bottom: 100px;
     padding: 50px 20px;
     margin-top: 140px;
@@ -227,7 +227,7 @@ body {
 .timeline-card {
     width: calc((100% - 144px) / 4);
     padding: 25px 40px;
-    background-color: #F0EDF5;
+    background-color: var(--bg-purple);
     text-align: center;
 }
 
