@@ -398,4 +398,8 @@
         width: 100%;
     }
 
+    .topsection {
+        padding: 40px 30px;
+    }
+
 }
